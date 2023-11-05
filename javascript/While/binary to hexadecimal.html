@@ -1,0 +1,43 @@
+<script>
+    var i,n,c,a,b,s,x;
+    
+    n=parseInt(prompt("Enter n"));
+    i=0;
+    c=0;
+   
+    s="";
+    while(n>0)
+    {
+        a=n%10;
+        n=parseInt(n/10);
+        i=i+a*Math.pow(2,c);
+        c++;
+        
+    }
+    //document.write(i);
+    while(i>0)
+    {
+        b=i%16;
+        switch(b)
+        {
+            case 10: s="A"+s;
+                break;
+            case 11: s="B"+s;
+                break;
+            case 12: s="C"+s;
+                break;
+            case 13: s="D"+s;
+                break;
+            case 14: s="E"+s;
+                break;
+            case 15: s="F"+s;
+                break;
+            default:
+                    x=b.toString();
+                    s=x+s;
+        }
+        i=parseInt(i/16);
+
+    }
+    document.write(s);
+</script>

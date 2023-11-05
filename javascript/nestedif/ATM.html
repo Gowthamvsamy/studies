@@ -1,0 +1,29 @@
+<script>
+    var a,b,c,d,e,cash;
+    cash=parseInt(prompt("Select deposit(1) or credit(2) "));
+    if(cash==1)
+    {
+        a=parseInt(prompt("2000="));
+        b=parseInt(prompt("500 ="));
+        c=parseInt(prompt("200="));
+        d=parseInt(prompt("100="));
+        cash=((a*2000)+(b*500)+(c*200)+(d*100));
+        document.write("Deposit amount ="+cash);
+    }
+    else if(cash==2)
+    {
+        a=parseInt(prompt("2000="));
+        b=parseInt(prompt("500 ="));
+        c=parseInt(prompt("200="));
+        d=parseInt(prompt("100="));
+        cash=((a*2000)+(b*500)+(c*200)+(d*100));
+        e=25000-cash;
+        document.write("Credit amount ="+cash,"<br>");
+        document.write("Balance amount ="+e);
+        
+    }
+    else
+    {
+        document.write("invalid");
+    }
+</script>

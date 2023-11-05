@@ -1,0 +1,117 @@
+<script>
+    class pat1
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_pat1()
+        {
+            var i=1;
+            while(i<=this.n)
+            {
+                var j=1;
+                while(j<=i)
+                {
+                    document.write("*");
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+        }
+    }
+    class pat2 extends pat1
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_pat2()
+        {
+            this.h=this.n;
+            var i=1,k=1;
+            var s=this.n-1;
+            while(i<=this.n)
+            {
+                while(s>0)
+                {
+                    document.write("&nbsp&nbsp");
+                    s--;
+                }
+                var j=1;
+                while(j<=i)
+                {
+                    document.write("*");
+                    j++;
+                }
+                k=i-1;
+                while(k>=1)
+                {
+                    document.write("*");
+                    k--;
+                }
+                document.write("<br>");
+                i++;
+                s=this.n-i;
+                
+            }
+        }
+    }
+    class pat3 extends pat1
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_pat3()
+        {
+            //document.write(this.n);
+            var i=1,a=5;
+            var s=this.n-1;
+            var c=this.n-0;
+            while(i<=this.n)
+            {
+                while(s>0)
+                {
+                    document.write("&nbsp");
+                    s--;
+                }
+                var j=1;
+                while(j<=i)
+                {
+                    document.write("*");
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+                s=this.n-i;
+            }
+            this.n=this.n-4;
+            a=a-1;
+            while(this.n<=a)
+            {
+                while(c<6)
+                {
+                    document.write("&nbsp");
+                    c++;
+                }
+                var b=1;
+                while(b<=a)
+                {
+                    document.write("*");
+                    b++;
+                }
+                document.write("<br>");
+                a--;
+                c=this.n+a;
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new pat2(n);
+    var t1=new pat3(n);
+    t.get_pat1();
+    t.get_pat2();
+    t1.get_pat3();
+</script>

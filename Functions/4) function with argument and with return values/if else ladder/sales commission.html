@@ -1,0 +1,38 @@
+<script>
+    function comm(n)
+    {
+        s=n;
+        if(n<10000)
+        {
+            a=n;
+        }
+        else if(n>=10000 && n<20000)
+        {
+            b=s*5/100;
+            a=n+b;
+        }
+        else if(n>=20000 && n<50000)
+        {
+            b=s*10/100;
+            a=n+b;
+        }
+        else if(n>=50000 && n<100000)
+        {
+            b=s*15/100;
+            a=n+b;
+        }
+        else if(n>=100000)
+        {
+            b=s*20/100;
+            a=n+b+500;
+        }
+        else
+        {
+            a="Give valid input";
+        }
+        return(a);
+    }
+    n=parseInt(prompt("ENter the value of n"));
+    c=comm(n);
+    document.write(c);
+</script>

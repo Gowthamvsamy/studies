@@ -1,0 +1,18 @@
+<script>
+    function hcf()
+    {
+        var i,a,b,c;
+        a=parseInt(prompt("Enter a"));
+        b=parseInt(prompt("Enter b"));
+        i=1;
+        for(i=1;a>=i && b>=i;i++)
+        {
+            if(a%i==0 && b%i==0)
+            {
+                c=i;
+            }
+        }
+        document.write(c);
+    }
+    hcf();
+</script>

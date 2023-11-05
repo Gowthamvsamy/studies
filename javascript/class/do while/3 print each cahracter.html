@@ -1,0 +1,23 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_char()
+        {
+            this.i=0;
+            this.l=this.n.length;
+            do
+            {
+                document.write(this.n[this.i],"<br>");
+                this.i++;
+            }while(this.i<this.l);
+        }
+    }
+    var t=new test();
+    x=prompt("Enter the string");
+    t.get_data(x);
+    t.get_char();
+</script>

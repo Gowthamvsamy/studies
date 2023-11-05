@@ -1,0 +1,25 @@
+<script>
+    class test
+    {
+        get_data(x,y)
+        {
+            this.n=x;
+            this.m=y;
+        }
+        get_table()
+        {
+            this.i=1;
+            while(this.i<=this.n)
+            {
+                this.s=this.i*this.m;
+                document.write(this.i,"*",this.m,"=",this.s,"<br>");
+                this.i++;
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the table count"));
+    y=parseInt(prompt("Enter the what table you need"));
+    t.get_data(x,y);
+    t.get_table();
+</script>

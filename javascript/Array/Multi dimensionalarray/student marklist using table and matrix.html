@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a,b,i,j,row,col,name,roll;
+        row=parseInt(prompt("Enter value for row a"));
+        col=parseInt(prompt("Enter value for column a"));
+        rows=parseInt(prompt("Enter value for row b"));
+        cols=parseInt(prompt("Enter value for column b"));
+        a=new Array(row);
+        b=new Array(rows);
+        for(i=0;i<row;i++)
+        {
+            a[i]=new Array(col);
+        }
+        for(i=0;i<rows;i++)
+        {
+            b[i]=new Array(cols);
+        }
+        for(i=0;i<row;i++)
+        {
+            for(j=0;j<col;j++)
+            {
+                a[i][j]=prompt("Enter student subject");
+            }
+        }
+        for(i=0;i<row;i++)
+        {
+            for(j=0;j<col;j++)
+            {
+                b[i][j]=prompt("Enter student mark");
+            }
+        }
+        document.write("<table><tr>");
+        for(i=0;i<row;i++)
+        {
+            for(j=0;j<col;j++)
+            {
+                document.write("<th>",a[i][j],"</th>");
+                document.write("<td>",b[i][j],"</td>");
+            }
+            
+        }
+        document.write("</tr></table>");
+    </script>
+</body>
+</html>

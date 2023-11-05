@@ -1,0 +1,32 @@
+<script>
+/*
+Output:
+******
+*    *
+*   *
+*  *
+* *
+*
+*/
+    var i,n,j,s;
+    n=parseInt(prompt("Enter n"));
+    i=6;
+    while(i>=n)
+    {
+        j=1;
+        while(j<=i)
+        {
+            if(j==1 || i==j || i==6)
+            {
+                document.write("*");
+            }
+            else
+            {
+                document.write("&nbsp&nbsp");
+            }
+            j++;
+        }
+        document.write("<br>");
+        i--;
+    }
+</script>

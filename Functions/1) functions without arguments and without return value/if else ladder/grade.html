@@ -1,0 +1,40 @@
+<script>
+    function grade()
+    {
+        name=prompt("Enter student name");
+        no=prompt("Enter rollNo");
+        t=parseInt(prompt("Enter the Tamil mark"));
+        e=parseInt(prompt("Enter the English mark"));
+        m=parseInt(prompt("Enter the Maths mark"));
+        s=parseInt(prompt("Enter the Science mark"));
+        ss=parseInt(prompt("Enter the Social Science mark"));
+        document.write(name,"<br>");
+        document.write(no,"<br>");
+        document.write(t,"<br>");
+        document.write(e,"<br>");
+        document.write(m,"<br>");
+        document.write(s,"<br>");
+        document.write(ss,"<br>");
+        total=t+e+m+s+ss;
+        document.write(total,"<br>");
+        avg=(total*100)/500;
+        document.write(avg,"<br>");
+        if(t>=40 && e>=40 && m>=40 && s>=40 && ss>=40 && avg>=80 && avg<=100)
+        {
+            document.write("Grade A");
+        }
+        else if(t>=40 && e>=40 && m>=40 && s>=40 && ss>=40 && avg>=60 && avg<80)
+        {
+            document.write("Grade B")
+        }
+        else if(t>=40 && e>=40 && m>=40 && s>=40 && ss>=40 && avg>=40 && avg<60)
+        {
+            document.write("Grade c");
+        }
+        else
+        {
+            document.write("Fail");
+        }
+    }
+    grade();
+</script>

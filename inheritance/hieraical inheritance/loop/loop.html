@@ -1,0 +1,195 @@
+<script>
+    class natural
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_natural()
+        {
+            document.write("<h2 style=color:red;>Print the natural number</h2>","<br>");
+            var i=1;
+            while(i<=this.n)
+            {
+                document.write(i,"<br>");
+                i++;
+            }
+        }
+    }
+    class sumodd extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_sumodd()
+        {
+            document.write("<h2 style=color:green;>Print the sum of odd number</h2>","<br>");
+            var i=1,sum=0;
+            do
+            {
+                if(i%2!=0)
+                {
+                    sum=sum+i;
+                }
+                i++;
+            }while(i<=this.n);
+            document.write("Sum of odd number = ",sum);
+        }
+    }
+    class factorial extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_factorial()
+        {
+            document.write("<h2 style=color:brown;>To find the factorial value of n</h2>")
+            var m=1;
+            for(var i=1;i<=this.n;i++)
+            {
+                m=m*i;
+            }
+            document.write("factorial = ",m);
+        }
+    }
+    class curandpre extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_curandpre()
+        {
+            document.write("<h2 style=color:purple;>To print current and previous number</h2>");
+            var i=1;
+            while(i<=this.n)
+            {
+                if(i%2!=0)
+                {
+                    document.write("Current odd number = ",i,"<br>");
+                    var p=i-2;
+                    document.write("previous odd number = ",p,"<br>");
+                }
+                i++;
+            }
+        }
+    }
+    class cureven extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_cureven()
+        {
+            document.write("<h2 style=color:gold;>To print the current and previous even number</h2>");
+            var i=1;
+            do
+            {
+                if(i%2==0)
+                {
+                    document.write("Current odd number = ",i,"<br>");
+                    var p=i-2;
+                    document.write("previous odd number = ",p,"<br>");
+                }
+                i++;
+            }while(i<=this.n);
+        }
+    }
+    class table extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_table()
+        {
+            document.write("<h2 style=color:pink>Print Table</h2>");
+            var a=parseInt(prompt("Enter the value of a"));
+            for(var i=1;i<=this.n;i++)
+            {
+                var d=a*i;
+                document.write(i,"*",a,"=",d,"<br>");
+            }
+        }
+    }
+    class palindrome extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_palindrome()
+        {
+            var k=this.n;
+            k=k+100;
+            var s=k;
+            document.write("<h2 style=color:gray;>To find the palindrome or not</h2>");
+            var i=0;
+            while(k>0)
+            {
+                var a=k%10;
+                i=i*10+a;
+                k=parseInt(k/10);
+            }
+            //document.write(i);
+            if(i==s)
+            {
+                document.write("Given number is palindrome");
+            }
+            else
+            {
+                document.write("Given number is not a palindrome");
+            }
+        }
+    }
+    class armstrong extends natural
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_armstrong()
+        {
+            document.write("<h2>To find the given number is srmstrong number or not</h2>");
+            var i=0,b=0,d=this.n;
+            d=d+100;
+            var s=d;
+            do
+            {
+                var a=d%10;
+                var c=Math.pow(a,3);
+                b=b+c;
+                d=parseInt(d/10);
+                i++;
+            }while(d>0);
+            //document.write(d);
+            if(d==s)
+            {
+                document.write("Given number is armstrong number");
+            }
+            else
+            {
+                document.write("Given number is not a armstrong number");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new sumodd(n);
+    var t1=new factorial(n);
+    var t2=new curandpre(n);
+    var t3=new cureven(n);
+    var t4=new table(n);
+    var t5=new palindrome(n);
+    var t6=new armstrong(n);
+    t.get_natural();
+    t. get_sumodd();
+    t1.get_factorial();
+    t2.get_curandpre();
+    t3.get_cureven();
+    t4.get_table();
+    t5.get_palindrome();
+    t6.get_armstrong();
+</script>

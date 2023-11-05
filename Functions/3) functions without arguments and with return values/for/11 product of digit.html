@@ -1,0 +1,16 @@
+<script>
+    function pro()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        div=1;
+        do
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            div=div*a;
+        }while(n>0);
+        return(div);
+    }
+    x=pro();
+    document.write(x);
+</script>

@@ -1,0 +1,100 @@
+<script>
+    class test 
+    {
+        get_data(y)
+        {
+            this.n=y;
+            this.f=y;
+        }
+        get_decimal()
+        {
+            this.s=0;
+            this.c=0;
+            this.l=this.n.length;
+            this.l=this.l-1;
+            this.i=this.l;
+            this.x=0;
+            do
+            {
+                this.a=this.n.charAt(this.i);
+                switch(this.a)
+                {
+                    case 'A': this.s=10*Math.pow(16,this.x);
+                    break;
+                    case 'B': this.s=11*Math.pow(16,this.x);
+                    break;
+                    case 'C': this.s=12*Math.pow(16,this.x);
+                    break;
+                    case 'D': this.s=13*Math.pow(16,this.x);
+                    break;
+                    case 'E': this.s=14*Math.pow(16,this.x);
+                    break;
+                    case 'F': this.s=15*Math.pow(16,this.x);
+                    break;
+                    default:
+                        this.s=this.a*Math.pow(16,this.x);
+                
+                }
+                this.c=this.c+this.s;
+                this.i--;
+                this.x++;
+            }while(this.i>=0);
+            return(this.c)
+        }
+        get_binary()
+        {
+            this.s=0;
+            this.c=0;
+            this.l=this.n.length;
+            this.l=this.l-1;
+            this.i=this.l;
+            this.x=0;
+            this.m=0;
+            this.b=0;
+            do
+            {
+                this.a=this.n.charAt(this.i)
+                switch(this.a)
+                {
+                    case 'A':  this.s=10*Math.pow(16,this.x);
+                        break;
+                    case 'B': this.s=11*Math.pow(16,this.x);
+                        break;
+                    case 'C': this.s=12*Math.pow(16,this.x);
+                        break;
+                    case 'D': this.s=13*Math.pow(16,this.x);
+                        break;
+                    case 'E': this.s=14*Math.pow(16,this.x);
+                        break;
+                    case 'F': this.s=15*Math.pow(16,this.x);
+                        break;
+                    default:
+                        this.s=this.a*Math.pow(16,this.x);
+                }
+                this.c=this.c+this.s;
+                this.i--;
+                this.x++;
+
+            }while(this.i>=0);
+
+            //document.write(c,"<br>");
+
+            do
+            {
+                this.a=this.c%2;
+                this.c=parseInt(this.c/2);
+                this.m=this.m+this.a*Math.pow(10,this.b);
+                this.b++;
+
+            }while(this.c>0);
+            return(this.m)
+        }
+    }
+    var t=new test();
+    x=(prompt("Enter the hexadecimal value = "));
+    t.get_data(x);
+    m=t.get_decimal();
+    g=t.get_binary();
+    document.write(m,"<br>");
+    document.write(g);
+</script>

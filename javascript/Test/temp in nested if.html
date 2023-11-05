@@ -1,0 +1,44 @@
+<script>
+    var n;
+    n=parseInt(prompt("Enter temperature"));
+    
+    
+        if(n>0)
+        {
+            if(n>=11)
+            {
+                if(n>=21)
+                {
+                    if(n>=31)
+                    {
+                        if(n>=41)
+                        {
+                            document.write(" Very hot ");
+                        }
+                        else
+                        {
+                            document.write(" hot ");
+                        }
+                    }
+                    else
+                    {
+                        document.write(" normal");
+                    }
+                }
+                else
+                {
+                    document.write(" cold ");
+                }
+            }
+            else
+            {
+                document.write(" Very cold ");
+            }
+        }
+        else
+        {
+            document.write(" freezing ");
+        }
+        
+    
+</script>

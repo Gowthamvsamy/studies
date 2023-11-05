@@ -1,0 +1,17 @@
+<script>
+    var n,x,a,s,c,i,d;
+    n=parseInt(prompt("Enter n"));
+    x=parseInt(prompt("Enter x"));
+    i=1;
+    s=1;
+    d=0;
+    while(i<=n)
+    {
+        a=Math.pow(x,i);
+        s=s*i;
+        c=a/s;
+        d=c+d;
+        i++;
+    }
+    document.write(d)
+</script>

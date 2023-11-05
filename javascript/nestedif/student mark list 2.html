@@ -1,0 +1,34 @@
+<script>
+    var tot,name,rollno,tam,eng,mat,sci,soc,per;
+    var result,grade;
+    name=prompt("Enter name");
+    rollno=prompt("Enter rollno");
+    tam=parseInt(prompt("Enter Tamil mark"));
+    eng=parseInt(prompt("Enter English mark"));
+    mat=parseInt(prompt("Enter Maths mark"));
+    sci=parseInt(prompt("Enter Science mark"));
+    soc=parseInt(prompt("Enter Social Science mark"));
+    tot=tam+eng+mat+sci+soc;
+    avg=tot/5;
+    if((tam>=40)&&(eng>=40)&&(mat>=40)&&(sci>=40)&&(soc>=40))
+    {
+        result="pass";
+        if(avg>=75) grade="distinction";
+        else if((avg>=60)&&(avg<75))grade="first class";
+        else grade="second class";
+    }               
+    else
+    {
+        result="fail";
+        grade="------";
+    }
+    document.write("Student Name="+name);
+    document.write("Tamil ="+tam);
+    document.write("English="+eng);
+    document.write("Math="+mat);
+    document.write("Science="+sci);
+    document.write("Social Science="+soc);
+    document.write("Total="+tot);
+    document.write("result="+result);
+    document.write("grade="+grade);
+</script>

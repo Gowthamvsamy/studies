@@ -1,0 +1,38 @@
+<script>
+    var n,i,s,c,l,a,x;
+    n=prompt("Enter hexadecimal number");
+    s=0;
+    c=0;
+    l=n.length;
+    l=l-1;
+    i=l;
+    x=0;
+    while(i>=0)
+    {
+        a=n.charAt(i)
+        document.write("hjk",a);
+        switch(a)
+        {
+            case 'A': s=10*Math.pow(16,x);
+                break;
+            case 'B': s=11*Math.pow(16,x);
+                break;
+            case 'C': s=12*Math.pow(16,x);
+                break;
+            case 'D': s=13*Math.pow(16,x);
+                break;
+            case 'E': s=14*Math.pow(16,x);
+                break;
+            case 'F': s=15*Math.pow(16,x);
+                break;
+            default:
+                s=a*Math.pow(16,x);
+                break;
+        }
+        c=c+s;
+        i--;
+        x++;
+    }
+    document.write(c);
+
+</script>

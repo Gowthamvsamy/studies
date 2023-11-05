@@ -1,0 +1,49 @@
+<script>
+    "use strict";
+    var n,a,b,c,i,s;
+    n=parseInt(prompt("Enter n "));
+    a=0;
+    b=0;
+    c=0;
+    i=0;
+    s=n;
+
+    while(s>i)
+    {
+        switch(n)
+        {
+            case 1: s=111;
+            break;
+            case 2: s=222;
+            break;
+            case 3: s=333;
+            break;
+            case 4: s=444;
+            break;
+            case 5: s=555;
+            break;
+            case 6: s=666;
+            break;
+            case 7: s=777;
+            break;
+            case 8: s=888;
+            break;
+            case 9: s=999;
+            break;
+            default:
+                s=0;
+        }
+        c++;
+        if(c<=9)
+        {
+            document.write(a,b);
+        }
+        else if(c<=99)
+        {
+            document.write(a);
+        }
+        i++;
+        document.write(c,"<br>");
+    }
+
+</script>

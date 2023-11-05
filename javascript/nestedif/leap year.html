@@ -1,0 +1,29 @@
+<script>
+    var n;
+    n=parseInt(prompt("Enter the year"));
+    n=n%4;
+    n=n%100;
+    n=n%400;
+    if(0==n%4)
+    {
+        if(0==n%100)
+        {
+            if(0==n%400)
+            {
+              document.write("Given year is leap year");  
+            }
+            else
+            {
+                document.write("Given year is not a leap year");
+            }
+        } 
+        else
+        {
+            document.write("Given year is not a leap year");
+        }   
+    }
+    else
+    {
+        document.write("Given year is not a leap year");
+    }
+</script>

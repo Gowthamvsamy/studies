@@ -1,0 +1,20 @@
+<script>
+    function ang(x,y,z)
+    {
+        d=a+b+c;
+        if(d==180)
+        {
+            s="triangle";
+        }
+        else
+        {
+            s="Not a triangle";
+        }
+        return(s);
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    m=ang(a,b,c);
+    document.write(m);
+</script>

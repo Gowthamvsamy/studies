@@ -1,0 +1,20 @@
+<script>
+    var i,n,b;
+    n=parseInt(prompt("Enter n"));
+    b=0;
+    for(i=1;n>=i;i++)
+    {
+        if(n%i==0)
+        {
+            b=b+1;
+        }
+    }
+    if(b==2)
+    {
+        document.write("Given number is prime number");
+    }
+    else
+    {
+        document.write("Given number is not a prime number");
+    }
+</script>

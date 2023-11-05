@@ -1,0 +1,53 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        get_pat2()
+        {
+            this.n=parseInt(prompt("Enter the value of n"));
+            this.i=1;
+            do
+            {
+                if(this.i%2!=0)
+                {
+                    this.j=1;
+                    do
+                    {
+                        if(this.j%2!=0)
+                        {
+                            document.write("1");
+                        }
+                        else
+                        {
+                            document.write("0");
+                        }
+                        this.j++;
+                    }while(this.j<=this.i);
+                }
+                else
+                {
+                    this.j=1;
+                    do
+                    {
+                        if(this.j%2==0)
+                        {
+                            document.write("1");
+                        }
+                        else
+                        {
+                            document.write("0");
+                        }
+                        this.j++;
+                    }while(this.j<=this.i);
+                }
+                this.i++;
+                document.write("<br>");
+            }while(this.i<=this.n);
+        }
+    }
+    var t=new test();
+    t.get_pat2();
+</script>

@@ -1,0 +1,44 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_bill()
+        {
+            if(this.n<=199)
+            {
+                this.bill=this.n*1.20;
+            }
+            else if(this.n>=200 && this.n<400)
+            {
+                this.bill=((199*1.20)+((this.n-199)*1.50));
+            }
+            else if(this.n>=400 && this.n<600)
+            {
+                this.bill=((199*1.20)+(200*1.50)+(this.n-399)*1.80);
+            }
+            else if(this.n>=600)
+            {
+                this.bill=((199*1.20)+(200*1.50)+(200*1.80)+(this.n-599)*2);
+            }
+            if(this.bill>400)
+            {   
+                this.s=(this.n*15)/100;
+                this.bill=this.bill+this.s;
+            }
+            else if(this.bill<=100)
+            {
+                this.bill="100";
+            }
+            return(this.bill);
+        }
+        
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the EB unit"));
+    t.get_data(x);
+    m=t.get_bill();
+    document.write(m);
+</script>

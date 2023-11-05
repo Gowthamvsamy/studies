@@ -1,0 +1,65 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_Ase()
+        {
+            this.m=this.n;
+            var a=new Array;
+            for(var i=0;i<this.n;i++)
+            {
+                a[i]=parseInt(prompt("Enter the array element"));
+                var b=a.length;
+            }
+            for(i=0;i<this.n;i++)
+            {
+                for(var j=0;j<b;j++)
+                {
+                    if(a[i]<a[j])
+                    {
+                        var temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                    }
+                }
+            }
+            document.write(a,"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_des()
+        {
+            var a=new Array;
+            for(var i=0;i<this.m;i++)
+            {
+                a[i]=parseInt(prompt("Enter the array element"));
+                var b=a.length;
+            } 
+            for(i=0;i<this.m;i++)
+            {
+                for(var j=0;j<b;j++)
+                {
+                    if(a[i]>a[j])
+                    {
+                        var temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                    }
+                }
+            }
+            document.write(a,"<br>");
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_Ase();
+    t.get_des();
+</script>

@@ -1,0 +1,16 @@
+<script>
+    function dig()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        m=0;
+        while(n>0)
+        {
+            s=n%10;
+            n=parseInt(n/10);
+            m=m+1;
+        }
+        return(m);
+    }
+    x=dig();
+    document.write(x);
+</script>

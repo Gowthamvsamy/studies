@@ -1,0 +1,16 @@
+<script>
+    function div()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        sum=0;
+        do
+        {
+            sum=sum+1/Math.pow(i,2);
+            i++;
+        }while(i<=n);
+        return(sum);
+    }
+    x=div();
+    document.write(x);
+</script>

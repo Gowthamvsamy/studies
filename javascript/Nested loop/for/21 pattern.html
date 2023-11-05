@@ -1,0 +1,36 @@
+<script>
+    /*
+    Output:
+    *********
+     *     *
+      *   *
+       * *
+        *
+    */
+        var i,j,n,s,l,m;
+        n=parseInt(prompt("Enter the value of n"));
+        m=9;
+        l=1;
+        for(i=9;i>=n;)
+        {
+            s=parseInt(n/2)+1;
+            for(;s>l;s--)
+            {
+                document.write("&nbsp&nbsp");
+            }
+            for(j=1;j<=i;j++)
+            {
+                if(j==1 || i==j || i==m)
+                {
+                    document.write("*");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp");
+                }
+            }
+            document.write("<br>");
+            i=i-2;
+            l--;
+        }
+    </script>

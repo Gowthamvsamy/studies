@@ -1,0 +1,16 @@
+<script>
+    var i,n,a,temp;
+    a=new Array;
+    n=parseInt(prompt("Enter the size of array"));
+    for(i=0;i<n;i++)
+    {
+        a[i]=parseInt(prompt("Enter the array element"));
+    }
+    temp=a[0];
+    a[0]=a[n-1];
+    a[n-1]=temp;
+    for(i=0;i<n;i++)
+    {
+        document.write(a[i]+"<br>");
+    }
+</script>

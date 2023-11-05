@@ -1,0 +1,88 @@
+<script>
+    class A
+    {
+        constructor(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.n=z;
+        }
+        get_sum()
+        {
+            if(n=='1' && n=='+')
+            {
+                var c=this.a+this.b;
+                document.write("Sum of a and b is = ",c);
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sub()
+        {
+            if(n=='2' && n=='-')
+            {
+                var c=this.a-this.b;
+                document.write("sub of a and b is = ",c);
+            }
+        }
+    }
+    class C extends B
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_mul()
+        {
+            if(n=='3' && n=='*')
+            {
+                var c=this.a*this.b;
+                document.write("Mul of a and b = ",c);
+            }
+        }
+    }
+    class D extends C
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_div()
+        {
+            if(n=='4' && n=='/')
+            {
+                var c=this.a/this.b;
+                document.write("div of a and b = ",c);
+            }
+        }
+    }
+    class E extends D
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_rem()
+        {
+            if(n=='5' && n=='%')
+            {
+                var c=this.a%this.b;
+                document.write("rem of a and b = ",c);
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    var t=new E(a,b,c)
+    t.get_div();
+    t.get_mul();
+    t.get_rem();
+    t.get_sub();
+    t.get_sum();
+</script>

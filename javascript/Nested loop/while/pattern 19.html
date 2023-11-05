@@ -1,0 +1,71 @@
+<script>
+/*
+Output:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+*/
+    var i,j,n,s,a,b,c;
+    n=parseInt(prompt("Enter n"));
+    i=1;
+    a=10;
+    s=n-1;
+    c=n-0;
+    while(i<=n)
+    {
+        while(s>0)
+        {
+            document.write("&nbsp");
+            s--;
+        }
+
+        j=1;
+        while(j<=i)
+        {
+            if(i%2!=0)
+            {
+                document.write("*");
+            }
+            j++;
+        }
+        while(i%2!=0)
+        {
+            document.write("<br>");
+            i++;
+        }
+        i++;
+        s=n-i;
+    }
+    n=n-10;
+    a=a-2;
+    while(n<=a)
+    {
+        while(c<10)
+        {
+            document.write("&nbsp");
+            c++;
+        }
+        b=1;
+        while(b<=a)
+        {
+            if(a%2!=0)
+            {
+                document.write("*");
+            }
+            b++;
+        }
+        while(a%2!=0)
+        {
+            document.write("<br>");
+            a--;
+        }
+        a--;
+        c=n+a;
+    }
+</script>

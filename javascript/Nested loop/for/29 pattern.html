@@ -1,0 +1,28 @@
+<script>
+    /*
+    Output:
+         A
+        A B
+       A B C
+      A B C D
+     A B C D E
+    A B C D E F
+    */
+        var i,j,n,a;
+        a=prompt("Enter the string");
+        n=a.length;
+        s=n+1;
+        for(i=0;i<n;i++)
+        {
+            for(;s>0;s--)
+            {
+                document.write("&nbsp&nbsp");
+            }
+            for(j=0;j<=i;j++)
+            {
+                document.write("&nbsp&nbsp",a[j]);
+            }
+            document.write("<br>");
+            s=n-i;
+        }
+    </script>

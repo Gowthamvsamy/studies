@@ -1,0 +1,16 @@
+<script>
+    function cube()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        sum=0;
+        do
+        {
+            sum=sum+Math.pow(i,3);
+            i++;
+        }while(i<=n);
+        return(sum);
+    }
+    x=cube();
+    document.write(x);
+</script>

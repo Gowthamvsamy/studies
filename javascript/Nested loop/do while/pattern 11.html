@@ -1,0 +1,41 @@
+<script>
+/*
+Output:
+1
+12
+123
+1234
+12345
+1234
+123
+12
+1
+*/
+var i,n,j,k,m;
+    n=parseInt(prompt("Enter n"));
+    k=1;
+    i=5;
+    do
+    {
+        m=1;
+        do
+        {
+            document.write(m);
+            m++;
+        }while(m<=k);
+        document.write("<br>");
+        k++;
+    }while(k<n);
+    n=i-4;
+    do
+    {
+        j=1;
+        do
+        {
+            document.write(j);
+            j++;
+        }while(j<=i);
+        document.write("<br>");
+        i--;
+    }while(i>=n);
+</script>

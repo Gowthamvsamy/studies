@@ -1,0 +1,44 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_binary()
+        {
+            var i=0;
+            this.s=this.n;
+            for(var c=0;this.n>0;c++)
+            {
+                var a=this.n%2;
+                this.n=parseInt(this.n/2);
+                i=i+a*Math.pow(10,c);
+            }
+            document.write("Binary value is = ",i,"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_octal()
+        {
+            var i=0;
+            var p=this.s;
+            for(var c=0;p>0;c++)
+            {
+                var a=p%8;
+                p=parseInt(p/8);
+                i=i+a*Math.pow(10,c);
+            }
+            document.write("Octal value is = ",i);
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_binary();
+    t.get_octal();
+</script>

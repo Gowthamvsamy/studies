@@ -1,0 +1,60 @@
+<script>
+    function big(a,b,c,d)
+    {
+        if(a>b)
+        {
+            if(a>c)
+            {
+                if(a>d)
+                {
+                    document.write("a is biggest");
+                }
+                else 
+                {
+                    document.write("d is biggest");
+                }
+            }
+            else
+            {
+                if(c>d)
+                {
+                    document.write("c is biggest");
+                }
+                else
+                {
+                    document.write("d is biggest");
+                }
+            }
+        }
+        else
+        {
+            if(b>c)
+            {
+                if(b>d)
+                {
+                    document.write("b is biggest");
+                }
+                else 
+                {
+                    document.write("d is biggest");
+                }
+            }
+            else
+            {
+                if(c>d)
+                {
+                    document.write("c is biggest");
+                }
+                else
+                {
+                    document.write("d is biggest");
+                }
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    d=parseInt(prompt("Enter the value of d"));
+    big(a,b,c,d);
+</script>

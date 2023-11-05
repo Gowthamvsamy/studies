@@ -1,0 +1,47 @@
+<script>
+    function oche()
+    {
+        n=parseInt(prompt("Enter the OCTAL value"));
+        i=0;
+        c=0;
+        s="";
+        do
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            i=i+a*Math.pow(8,c);
+            c++;
+        }while(n>0);
+        do
+        {
+            b=i%16;
+            switch(b)
+            {
+                case 10:
+                    s="A"+s;
+                    break;
+                case 11:
+                    s="B"+s;
+                    break;
+                case 12:
+                    s="C"+s;
+                    break;
+                case 13:
+                    s="D"+s;
+                    break;
+                case 14:
+                    s="E"+s;
+                    break;
+                case 15:
+                    s="F"+s;
+                    break;
+                default:
+                    x=b.toString();
+                    s=x+s;
+            }
+            i=parseInt(i/16);
+        }while(i>0);
+        document.write(s);
+    }
+    oche();
+</script>

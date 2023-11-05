@@ -1,0 +1,44 @@
+<script>
+    var i,n,a,b,c,d,e,j;
+    n=parseInt(prompt("Enter the value of n"));
+    i=1;
+    do
+    {
+        k=i;
+        e=0;
+        j=0;
+        a=Math.pow(k,2);
+        do
+        {
+            b=k%10;
+            j=j*10+b;
+            k=parseInt(k/10);
+        }while(k!=0);
+        c=Math.pow(j,2);
+        do
+        {
+            d=c%10;
+            e=e*10+d;
+            c=parseInt(c/10);
+        }while(c!=0);
+        s=1;
+        t=n;
+        m=0;
+        if(a==e)
+        {
+            while(s<=t)
+            {
+                if(e%s==0)
+                {
+                    m=m+1;
+                }
+                s++;
+            }
+            if(m==2)
+            {
+                document.write(i,"<br>");
+            }
+        }
+        i++;
+    }while(i<=n);
+</script>

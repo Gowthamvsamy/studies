@@ -1,0 +1,26 @@
+<script>
+    function per(n)
+    {
+        c=n;
+        i=0;
+        b=0;
+        do
+        {
+            if(n%i==0)
+            {
+                b=b+i;
+            }
+            i++;
+        }while(i<n);
+        if(c==b)
+        {
+            document.write("Given numver is perfact number");
+        }
+        else
+        {
+            document.write("Given number is not a perfact number");
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    per(n);
+</script>

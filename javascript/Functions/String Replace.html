@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Replace</title>
+</head>
+<body>
+    <button onclick="myfunction()">click</button>
+    <p id="l">Microsoft</p>
+    <script>
+        function myfunction()
+        {
+            var str=document.getElementById("l").innerHTML;
+            var txt=str.replace("Microsoft","yuva");
+            document.getElementById("l").innerHTML=txt;
+        }
+    </script>
+</body>
+</html>

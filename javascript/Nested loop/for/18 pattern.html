@@ -1,0 +1,47 @@
+<script>
+    /*
+    Output:
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *
+     * * * *
+      * * *
+       * *
+        *
+    */
+        var i,j,n,s,a,b,c;
+        n=parseInt(prompt("Enter the value of n"));
+        a=5;
+        s=n;
+        c=n+1;
+        for(i=1;i<=n;i++)
+        {
+            for(;s>0;s--)
+            {
+                document.write("&nbsp&nbsp");
+            }
+            for(j=1;j<=i;j++)
+            {
+                document.write("&nbsp&nbsp*");
+            }
+            document.write("<br>");
+            s=n-i;
+        }
+        n=n-4;
+        a=a-1;
+        for(;n<=a;a--)
+        {
+            for(;c<=7;c++)
+            {
+                document.write("&nbsp&nbsp");
+            }
+            for(b=1;b<=a;b++)
+            {
+                document.write("&nbsp&nbsp*");
+            }
+            document.write("<br>");
+            c=n+a;
+        }
+    </script>

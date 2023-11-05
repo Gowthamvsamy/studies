@@ -1,0 +1,28 @@
+<script>
+    /*
+    Output:
+        1
+       12
+      123
+     1234
+    12345
+    */
+    var i,j,n,s;
+    n=parseInt(prompt("Enter n"));
+    s=n;
+    for(i=1;i<=n;i++)
+    {
+        
+        for(;s>0;s--)
+        {
+            document.write("&nbsp&nbsp");
+        }
+        for(j=1;j<=i;j++)
+        {
+            document.write(j);
+        }
+        document.write("<br>");
+        s=n-i;
+        
+    }
+</script>

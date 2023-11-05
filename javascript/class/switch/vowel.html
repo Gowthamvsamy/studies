@@ -1,0 +1,41 @@
+<script>
+    class test
+    {
+        get_data()
+        {
+            this.a=x;
+        }
+        get_vowel()
+        {
+            switch(this.a)
+            {
+                case 'A':
+                case 'a':
+                    document.write("It is vowel");
+                    break;
+                case 'E':
+                case 'e':
+                    document.write("It is vowel");
+                    break;
+                case 'I':
+                case 'i':
+                    document.write("It is vowel");
+                    break;
+                case 'O':
+                case 'o':
+                    document.write("It is vowel");
+                    break;
+                case 'U':          
+                case 'u':
+                    document.write("It is vowel");
+                    break;
+                default:
+                    document.write("It is not a vowel");
+            }
+        }
+    }
+    var t=new test();
+    x=prompt("Enter the string");
+    t.get_data();
+    t.get_vowel();
+</script>

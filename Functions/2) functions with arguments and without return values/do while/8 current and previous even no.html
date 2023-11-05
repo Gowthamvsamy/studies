@@ -1,0 +1,23 @@
+<script>
+    function cur(n)
+    {
+        i=1;
+        do
+        {
+            if(i%2==0)
+            {
+                document.write("current",i,"<br>");
+            }
+            j=i;
+            j=j-2;
+            if(j%2==0)
+            {
+                document.write("previous",j,"<br>");
+            }
+            
+            i++;
+        }while(i<=n);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    cur(n);
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery file/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").toggleClass("blue");
+            });
+        });
+    </script>
+    <title>Document</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <h2>heading2</h2>
+    <p>This is a paragraph</p>
+    <p>This is a another paragraph</p>
+    <br>
+    <button>Click</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<script>
+    var i,n,a,s;
+    n=parseInt(prompt("Enter n"));
+    s=n;
+    for(i=0;n>0;)
+    {
+        a=n%10;
+        i=i*10+a;
+        n=parseInt(n/10);
+    }
+    if(s==i)
+    {
+        document.write("Palindrome");
+    }
+    else
+    {
+        document.write("Not a palindrome");
+    }
+</script>

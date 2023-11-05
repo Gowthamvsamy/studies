@@ -1,0 +1,31 @@
+<script>
+    function ope(n)
+    {
+        switch(n)
+        {
+            case 1:
+                c=a+b;
+                document.write("Sum of two number = ",c);
+                break;
+            case 2:
+                c=a-b;
+                document.write("Sub of two number = ",c);
+                break;
+            case 3:
+                c=a*b;
+                document.write("Div of two number = ",c);
+                break;
+            case 4:
+                c=a/b;
+                document.write("Mul of two number = ",c);
+                break;
+            default:
+                document.write("Give a valid input");
+                break;
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    ope(n);
+</script>

@@ -1,0 +1,22 @@
+<script>
+    class test
+    {
+        test()//constructor without arguments or default argumets constructor or non-parameterized constructor
+        {
+          //this.a=0;
+          //this.b=0;
+        }
+        get_add()
+        {
+            this.a=parseInt(prompt("Enter a"));
+            this.b=parseInt(prompt("Enter b"));
+
+            this.sum=this.a+this.b;
+
+            document.write("Sum of a and b = ",this.sum);
+            
+        }
+    }
+    var t=new test();//without arguments constructor calling
+    t.get_add();
+</script>

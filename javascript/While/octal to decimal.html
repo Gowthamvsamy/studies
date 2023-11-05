@@ -1,0 +1,17 @@
+<script>
+    var i,n,a,c,s;
+    n=parseInt(prompt("Enter octal no"));
+    i=0;
+    c=0;
+    s=n;
+    while(n>0)
+    {
+        a=n%10;
+        n=parseInt(n/10);
+        i=i+a*Math.pow(8,c);
+        c++;
+        
+    }
+    document.write("Octal number"+s,"<br>");
+    document.write("Decimal number"+i);
+</script>

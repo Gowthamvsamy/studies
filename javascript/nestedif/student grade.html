@@ -1,0 +1,44 @@
+<script>
+    var name,rollno,tam,eng,mat,sci,soc,tot,result,grade,avg;
+    name=prompt("Enter name");
+    rollno=prompt("Enter rollno");
+    tam=parseInt(prompt("Enter Tamil mark"));
+    eng=parseInt(prompt("Enter English mark"));
+    mat=parseInt(prompt("Enter Maths mark"));
+    sci=parseInt(prompt("Enter Science mark"));
+    soc=parseInt(prompt("Enter Social Science mark"));
+    tot=(tam+eng+mat+sci+soc);
+    avg=tot/5;
+    if((tam>=40)&&(eng>=40)&&(mat>=40)&&(mat>=40)&&(sci>=40)&&(soc>=40))
+    {
+        result="pass";
+        if(avg>=80)
+        {
+            grade="S Grade";
+        }
+        else if((avg>=60)&&(avg<=80))
+        {
+            grade="A Grade";
+        }
+        else 
+        {
+            grade="B Grade";
+        }
+    }
+    else
+    {
+        result="fail";
+        grade="----";
+    }
+    document.write("Name= "+name,"<br>");
+    document.write("Roll no= "+rollno,"<br>");
+    document.write("Tamil= "+tam,"<br>");
+    document.write("English= "+eng,"<br>");
+    document.write("Maths= "+mat,"<br>");
+    document.write("Science= "+sci,"<br>");
+    document.write("Social Science= "+soc,"<br>");
+    document.write("Total= "+tot,"<br>")
+    document.write("Result= "+result,"<br>")
+    document.write("Grade= "+grade,"<br>")
+
+</script>

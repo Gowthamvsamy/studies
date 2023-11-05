@@ -1,0 +1,30 @@
+<script>
+    var i,n,a,b,c,d;
+    n=parseInt(prompt("Enter n value"));
+    i=0;
+    b=0;
+    c=0;
+    d=0;
+    do
+    {
+        a=parseInt(prompt("Enter a"));
+        if(a>0)
+        {
+            b=b+1;
+            
+        }
+        if(a<0)
+        {
+            c=c+1;
+            
+        }
+        if(a==0)
+        {
+            d=d+1;
+            
+        }
+        i++;
+
+    }while(i<n);
+    document.write("Pastive no = ",b,"<br>","Negative no =",c,"<br>","Zero = ",d );
+</script>

@@ -1,0 +1,41 @@
+<script>
+class Test
+{
+
+     get_data()//function without arguments and without return values
+     {
+        this.a=parseInt(prompt("Enter "));
+        this.b=parseInt(prompt("Enter a"));
+        this.c=this.a+this.b;
+        document.write("this.c=",this.c);
+     }
+     display()//function without arguments and with return values
+     {
+        this.c=this.a+this.b;
+        return(this.c);
+     }
+    get_subtraction(x,y)//function with arguments and without return values
+    {
+        this.a=x;
+        this.b=y;
+        this.c=this.a+this.b;
+        document.write("subtraction of two nos="+this.c);
+    }
+    get_multiplication(x,y)//function with arguments and with return values
+    {
+        this.a=x;
+        this.b=y;
+        this.c=this.a*this.b;
+        return(this.c);
+    }
+}
+t=new Test();
+t.get_data();
+var x=t.display();
+a=parseInt(prompt("Enter a"));
+b=parseInt(prompt("Enter b"));
+t.get_subtraction(a,b);
+var m=t.get_multiplication(a,b);
+document.write("sum of two nos="+x+"<br/>");
+document.write("multiplication of two nos="+m+"<br/>");
+</script>

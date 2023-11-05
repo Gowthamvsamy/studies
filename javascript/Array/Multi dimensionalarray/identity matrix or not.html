@@ -1,0 +1,38 @@
+<script>
+    var a,i,j,row,col,b;
+    row=parseInt(prompt("Enter value forr row"));
+    col=parseInt(prompt("Enter value for col"));
+    m=row;
+    a=new Array(row);
+    for(i=0;i<row;i++)
+    {
+        a[i]=new Array(col);
+    }
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            a[i][j]=parseInt(prompt("Enter array element"));
+        }
+    }
+    b=0;
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            if(a[i][j]==1)
+             {
+                 b=b+1;
+            }
+        }
+    } 
+    if(b==m)
+    {
+        document.write("It is a identity matrix<br>");
+    }
+    else
+    {
+        document.write("It is not a identity matrix<br>");
+    }
+  
+</script>

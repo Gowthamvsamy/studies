@@ -1,0 +1,29 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.a=Array;
+            this.n=x;
+        }
+        get_index()
+        {
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.a[this.i]=parseInt(prompt("Enter the array element"));
+            }
+            this.b=parseInt(prompt("Enter the index number what you want"));
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                if(this.b==this.i)
+                {
+                    document.write(this.a[this.i]);
+                }
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the size of array"));
+    t.get_data(x);
+    t.get_index();
+</script>

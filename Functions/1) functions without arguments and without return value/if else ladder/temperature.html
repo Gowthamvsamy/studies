@@ -1,0 +1,31 @@
+<script>
+    function temp()
+    {
+        a=parseInt(prompt("Enter the value of a"));
+        if(a<0)
+        {
+            document.write("Freezing");
+        }
+        else if(a>=0 && a<=10)
+        {
+            document.write("Very cold");
+        }
+        else if(a>=11 && a<=20)
+        {
+            document.write("Cold");
+        }
+        else if(a>=21 && a<=30)
+        {
+            document.write("Normal");
+        }
+        else if(a>=31 && a<=40)
+        {
+            document.write("Hot");
+        }
+        else
+        {
+            document.write("Very hot");
+        }
+    }
+    temp();
+</script>

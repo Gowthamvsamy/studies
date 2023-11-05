@@ -1,0 +1,19 @@
+<script>
+    function eve(n)
+    {
+        i=1;
+        sum=0;
+        a=1;
+        do
+        {   a=a*i;
+            if(i%2!=0)
+            {
+                sum=1/sum+a;
+            }
+            i++;
+        }while(i<=n);
+        document.write(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    eve(n);
+</script>

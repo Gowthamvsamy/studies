@@ -1,0 +1,36 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_perfact()
+        {
+            this.c=this.n;
+            this.i=0;
+            this.b=0;
+            do
+            {
+                if(this.n%this.i==0)
+                {
+                    this.b=this.b+this.i; 
+                }
+                this.i++;
+            }while(this.i<this.n);
+            //document.write(this.b+"<br>");
+            if(this.c==this.b)
+            {
+                document.write("perfact number");
+            }
+            else
+            {
+                document.write("Not a perfact number");
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_perfact();
+</script>

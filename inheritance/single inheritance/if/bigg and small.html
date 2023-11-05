@@ -1,0 +1,44 @@
+<script>
+    class A
+    {
+        constructor(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_bigg()
+        {
+            if(this.a>this.b)
+            {
+                document.write("A is biggest<br>");
+            }
+            else
+            {
+                document.write("B is biggest<br>");
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_small()
+        {
+            if(this.a<this.b)
+            {
+                document.write("A is smallest<br>");
+            }
+            else
+            {
+                document.write("B is smallest<br>");
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t=new B(a,b);
+    t.get_bigg();
+    t.get_small();
+</script>

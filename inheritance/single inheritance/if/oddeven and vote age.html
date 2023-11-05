@@ -1,0 +1,42 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.a=x;
+        }
+        get_odd_even()
+        {
+            if(this.a%2==0)
+            {
+                document.write("A is even<br>");
+            }
+            if(this.a%2!=0)
+            {
+                document.write("A is odd<br>");
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_age()
+        {
+            if(this.a<18)
+            {
+                document.write("Given age is not eligible for voting<br>");
+            }
+            else
+            {
+                document.write("Given age is eligible for voting<br>")
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    var t=new B(a);
+    t.get_odd_even();
+    t.get_age();
+</script>

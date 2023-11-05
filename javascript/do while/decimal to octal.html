@@ -1,0 +1,15 @@
+<script>
+    var i,n,a,b;
+    n=parseInt(prompt("Enter decimal value"));
+    i=0;
+    b=0;
+    do
+    {
+        a=n%8;
+        n=parseInt(n/8);
+        i=i+a*Math.pow(10,b);
+        b++;
+
+    }while(n>0);
+    document.write("Binary value is = ",i);
+</script>

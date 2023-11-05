@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js">
+    <title>Document</title>
+    <style>
+        #div1{
+            float: left;
+            margin-left: 30px;
+        } #div2{
+            float: left;
+            margin-left: 30px;
+            height: 192px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid border p-3 w-25 mx-auto bg-warning" id="div1">
+        <div class="row border px-3 mx-3 bg-white">
+            <p>row1</p>
+        </div>
+        <div class="row border px-3 my-3 mx-3 bg-white">
+            <p>row2</p>
+        </div>
+        <div class="row border px-3 mx-3 bg-white">
+            <p>row3</p>
+        </div>
+    </div>
+    <div class="container-fluid border p-3 px-3 w-25 bg-warning" id="div2">
+        <div class="row">
+            <p class="col border p-2 mb-0 bg-white ms-2">row1</p>
+            <p class="col border p-2 mb-0 mx-2 bg-white">row2</p>
+            <p class="col border p-2 mb-0 bg-white me-2">row3</p>
+        </div>
+    </div>
+</body>
+</html>

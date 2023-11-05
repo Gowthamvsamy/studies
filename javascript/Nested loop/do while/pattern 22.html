@@ -1,0 +1,73 @@
+<script>
+    /*
+    output:
+        *
+       * *
+      *   *
+     *     *
+    *       *
+     *     *
+      *   *
+       * *
+        *
+    */ 
+        var i,j,n,s,a,b,c,t;
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        m=1;
+        l=1;
+        a=9;
+        b=1;
+        do
+        {
+            s=parseInt(n/2)+1;
+            do
+            {
+                document.write("&nbsp&nbsp");
+                s--;
+            }while(s>=l);
+            j=1;
+            do
+            {
+                if(j==1 || i==j || i==m)
+                {
+                    document.write("*");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp");
+                }
+                j++;
+            }while(j<=i);
+            document.write("<br>");
+            i=i+2;
+            l++;
+        }while(i<n);
+        n=n-8;
+        l=1;
+        do
+        {
+            t=parseInt(n/2)+1;
+            do
+            {
+                document.write("&nbsp&nbsp");
+                t--;
+            }while(t>=l);
+            c=1;
+            do
+            {
+                if(c==1 || a==c)
+                {
+                    document.write("*");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp");
+                }
+                c++;
+            }while(c<=a);
+            document.write("<br>");
+            a=a-2;
+            l--;
+        }while(a>=n);
+    </script>

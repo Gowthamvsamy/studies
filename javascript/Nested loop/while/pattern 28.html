@@ -1,0 +1,26 @@
+<script>
+/*
+Output:
+ABCDE
+ABCD
+ABC
+AB
+A
+*/
+    var i,j,n,a;
+    a=prompt("Enter the string");
+    n=a.length;
+    i=5;
+    n=n-4;
+    while(i>=n)
+    {
+        j=0;
+        while(j<i)
+        {
+            document.write(a[j]);
+            j++;
+        }
+        document.write("<br>");
+        i--;
+    }
+</script>

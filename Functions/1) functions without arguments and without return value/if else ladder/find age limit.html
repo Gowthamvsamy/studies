@@ -1,0 +1,23 @@
+<script>
+    function age()
+    {
+        a=parseInt(prompt("Enter the value of a"));
+        if(a<0)
+        {
+            document.write("Not a valid age");
+        }
+        else if(a>=0 && a<18)
+        {
+            document.write("Child");
+        }
+        else if(a>=18 && a<=60)
+        {
+            document.write("Adult")
+        }
+        else if(a>60)
+        {
+            document.write("Senior citizen");
+        }
+    }
+    age();
+</script>

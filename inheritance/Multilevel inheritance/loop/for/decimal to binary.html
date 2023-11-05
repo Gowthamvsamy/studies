@@ -1,0 +1,192 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_binary()
+        {
+            document.write("<h3 style=color:blue;>Binary</h3>")
+            var c=0;
+            this.m=this.n;
+            for(var i=0;this.n>0;c++)
+            {
+                var a=this.n%2;
+                this.n=parseInt(this.n/2);
+                i=i+a*Math.pow(10,c);
+            }
+            document.write(i,"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_Octal()
+        {
+            document.write("<h3 style=color:blue>Octal</h3>")
+            var i=0
+            this.p=this.m;
+            for(var c=0;this.m>0;c++)
+            {
+                var a=this.m%8;
+                this.m=parseInt(this.m/8);
+                i=i+a*Math.pow(10,c);
+            }
+            document.write(i,"<br>");
+        }
+    }
+    class C extends B
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_hexa()
+        {
+            
+            document.write("<h3 style=color:blue>Hexa decimal</h3>");
+            for(s="";this.p>0;)
+            {
+                var s;
+                var a=this.p%16;
+                switch(a)
+                {
+                    case 10:
+                        s="A"+s;
+                        break;
+                    case 11:
+                        s="B"+s;
+                        break;
+                    case 12:
+                        s="C"+s;
+                        break;
+                    case 13:
+                        s="D"+s;
+                        break;
+                    case 14:
+                        s="E"+s;
+                        break;
+                    case 15:
+                        s="F"+s;
+                        break;
+                    default:
+                        var x=a.toString();
+                        s=x+s;
+                }
+                this.p=parseInt(this.p/16);
+            }
+            document.write(s,"<br>");
+            this.h=s;
+            
+        }
+    }
+    class D extends C
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_decimal()
+        {
+            document.write("<h3 style=color:blue;>Decimal number</h3>")
+            this.w=this.h;
+            var s=0,c=0;
+            var l=this.h.length;
+            l=l-1;
+            var i=l;
+            for(var x=0;i>=0;x++)
+            {
+                var a=this.h.charAt(i);
+                switch(a)
+                {
+                    case 'A':
+                        s=10*Math.pow(16,x);
+                        break;
+                    case 'B':
+                        s=11*Math.pow(16,x);
+                        break;
+                    case 'C':
+                        s=12*Math.pow(16,x);
+                        break;
+                    case 'D':
+                        s=13*Math.pow(16,x);
+                        break;
+                    case 'E':
+                        s=14*Math.pow(16,x);
+                        break;
+                    case 'F':
+                        s=15*Math.pow(16,x);
+                        break;
+                    default:
+                        s=a*Math.pow(16,x);
+                }
+                c=c+s;
+                i--;
+            }
+            document.write(c);
+        }
+    }
+    class E extends D
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_hebinary()
+        {
+            document.write("<h3 style=color:blue>Binary</h3>")
+            var c=0,s=0,b=0;
+            var l=this.w.length;
+            l=l-1;
+            var i=l;
+            for(var x=0;i>=0;x++)
+            {
+                var a=this.w.charAt(i);
+                switch(a)
+                {
+                    case 'A':
+                        s=10*Math.pow(16,x);
+                        break;
+                    case 'B':
+                        s=11*Math.pow(16,x);
+                        break;
+                    case 'C':
+                        s=12*Math.pow(16,x);
+                        break;
+                    case 'D':
+                        s=13*Math.pow(16,x);
+                        break;
+                    case 'E':
+                        s=14*Math.pow(16,x);
+                        break;
+                    case 'F':
+                        s=15*Math.pow(16,x);
+                        break;
+                    default:
+                        s=a*Math.pow(16,x);
+                }
+                c=c+s;
+                i--;
+            }
+            for(var m=0;c>0;)
+            {
+                var a=c%2;
+                c=parseInt(c/2);
+                m=m+a*Math.pow(10,b);
+                b++;
+            }
+            document.write(m,"<br>");
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new E(n);
+    t.get_binary();
+    t.get_Octal();
+    t.get_hexa();
+    t.get_decimal();
+    t.get_hebinary()
+</script>

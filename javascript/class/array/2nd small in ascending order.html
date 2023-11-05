@@ -1,0 +1,36 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+            this.a=Array;
+        }
+        get_2ndsmall()
+        {
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.a[this.i]=parseInt(prompt("Enter the array element"));
+            }
+            for(this.i=0;this.i<this.n-1;this.i++)
+            {
+                for(this.j=this.i+1;this.j<this.n;this.j++)
+                {
+                    if(this.a[this.i]>this.a[this.j])
+                    {
+                        this.temp=this.a[this.i];
+                        this.a[this.i]=this.a[this.j];
+                        this.a[this.j]=this.temp;
+                    }
+                }
+            }
+            
+                document.write(this.a[1]);
+            
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter tha size of array"));
+    t.get_data(x);
+    t.get_2ndsmall();
+</script>

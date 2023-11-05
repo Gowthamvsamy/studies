@@ -1,0 +1,80 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+            this.s=x;
+            this.t=x;
+        }
+        get_binary()
+        {
+            this.i=0;
+            this.c=0;
+            do
+            {
+                this.a=this.n%2;
+                this.n=parseInt(this.n/2);
+                this.i=this.i+this.a*Math.pow(10,this.c);
+                this.c++;
+            }while(this.n>0);
+            return(this.i);
+        }
+        get_octal()
+        {
+            this.i=0;
+            this.c=0;
+            do
+            {
+                this.a=this.s%8;
+                this.s=parseInt(this.s/8);
+                this.i=this.i+this.a*Math.pow(10,this.c);
+                this.c++;
+            }while(this.s>0);
+            return(this.i);
+        }
+        get_hexa()
+        {
+            this.s="";
+            do
+            {
+                this.a=this.t%16;
+                switch(this.a)
+                {
+                    case 10:
+                        this.s="A"+this.s;
+                        break;
+                    case 11:
+                        this.s="B"+this.s;
+                        break;
+                    case 12:
+                        this.s="C"+this.s;
+                        break;
+                    case 13:
+                        this.s="D"+this.s;
+                        break;
+                    case 14:
+                        this.s="E"+this.s;
+                        break;
+                    case 15:
+                        this.s="F"+this.s;
+                        break;
+                    default:
+                        this.x=this.a.toString();
+                        this.s=this.s+this.x;
+                }
+                this.t=parseInt(this.t/16);
+            }while(this.t>0);
+            return(this.s);
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the decimal value"));
+    t.get_data(x);
+    m=t.get_binary();
+    p=t.get_octal();
+    q=t.get_hexa();
+    document.write("Binary value is = ",m,"<br>");
+    document.write("Octal value is = ",p,"<br>");
+    document.write("Hexadecimal value is = ",q,"<br>");
+</script>

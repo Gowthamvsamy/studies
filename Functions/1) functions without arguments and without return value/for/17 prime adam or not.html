@@ -1,0 +1,45 @@
+<script>
+    function adam()
+    {
+        n=parseInt(prompt("Enter n"));
+        s=0;
+        t=n;
+            a=Math.pow(n,2);
+        for(i=0;n>0;)
+        {
+            b=n%10;
+            i=i*10+b;
+            n=parseInt(n/10);
+        }
+            c=Math.pow(i,2);
+        for(e=0;c>0;)
+        {
+            d=c%10;
+            e=e*10+d;
+            c=parseInt(c/10);
+        }
+        if(a==e)
+        {
+            for(j=0;j<=t;j++)
+            {
+                if(e%j==0)
+                {
+                s=s+1;
+                }
+            }
+            if(s==2)
+            {
+                document.write("It is prime adam number");
+            }
+            else
+            {
+                document.write("It is not a prime adam number");
+            }
+        }   
+        else
+        {
+            document.write("It is not a prime adam number");
+        }
+    }
+    adam();
+</script>

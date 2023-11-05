@@ -1,0 +1,25 @@
+<script>
+/*
+Output:
+1
+22
+333
+4444
+55555
+*/
+    var n,i,j;
+    n=parseInt(prompt("Enter n"));
+    i=0;
+    do
+    {
+        j=0;
+        do
+        {
+            a=i+1;
+            document.write(a);
+            j++;
+        }while(j<=i);
+        document.write("<br>");
+        i++;
+    }while(i<n);
+</script>

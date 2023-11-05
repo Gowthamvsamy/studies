@@ -1,0 +1,54 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_com()
+        {
+            if(this.n<100000)
+            {
+                if(this.n>0 && this.n<10000)
+                {
+                    document.write("0% commission = 0");
+                }
+                else if(this.n>=10000 && this.n<20000)
+                {
+                    this.a=this.n*5/100;
+                    document.write("5% commission = ",this.a);
+                }
+                else if(this.n>=20000 && n<50000)
+                {
+                    this.a=this.n*10/100;
+                    document.write("10% commission = ",this.a);
+                }
+                else if(this.n>=50000 && n<100000)
+                {
+                    this.a=this.n*15/100;
+                    document.write("15% commission = ",this.a);
+                }
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_comm()
+        {
+            if(this.n>100000)
+            {
+                this.a=this.n*20/100;
+                this.a=this.a+500;
+                document.write("20% commission = ",this.a);
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_com();
+    t.get_comm();
+</script>

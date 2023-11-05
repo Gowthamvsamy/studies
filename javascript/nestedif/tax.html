@@ -1,0 +1,31 @@
+<script>
+    var tax,first,second, remainder,amount,a,b,c,d,e;
+    amount=parseInt(prompt("Enter purchasing amount"));
+    if(amount>=10000)
+    {
+        if(amount<=20000)
+        {
+            a=amount*0/100;
+            b=amount-10000;
+		    c=b*10/100;
+		    tax=a+c;
+        }
+        else
+        {
+            a=amount*0/100;
+            b=amount-10000
+		    c=b*10/100;
+            d=b-10000;
+		    e=d*20/100;
+		    tax=a+c+e;
+        }
+    }
+    else
+    {
+        if(amount<10000)
+        {
+            tax=first*0/100;
+        }
+    }
+    document.write("Tax for purchasing = "+tax);
+</script>

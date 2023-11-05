@@ -1,0 +1,27 @@
+<script>
+    var i,n,a,p,q,r;
+    n=parseInt(prompt("Enter how meny numbers you want"));
+    i=0;
+    p=0;
+    q=0;
+    r=0;
+    while(n>i)
+    {
+        a=parseInt(prompt("Enter Pastive or Nagative or Zero"));
+        i++;
+            if(a>=1)
+            {   
+                p=p+1;   
+            }
+            if(a<=-1)
+            {
+                q=q+1;   
+            }
+            if(a==0)
+            {
+                r=r+1;
+            }       
+    }  
+    document.write("Pastive no = ",p,"<br>","Negative no = ",q,"<br>","Zeros = ",r,"<br>");
+    
+</script>

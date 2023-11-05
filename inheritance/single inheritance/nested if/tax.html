@@ -1,0 +1,43 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_tax1()
+        {
+            if(this.n<20000)
+            {
+                if(this.n>0 && this.n<10000)
+                {
+                    document.write("0% tax = 0");
+                }
+                else if(this.n>10000 && this.n<20000)
+                {
+                    this.a=this.n*10/100;
+                    document.write("10% tax = ",this.a);
+                }
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_tax2()
+        {
+            if(this.n>20000)
+            {
+                this.a=this.n*20/100;
+                document.write("20% tax = ",this.a);
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_tax1();
+    t.get_tax2();
+</script>

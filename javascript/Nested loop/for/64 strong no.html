@@ -1,0 +1,26 @@
+<script>
+    var n,i,j;
+    n=parseInt(prompt("Enter the value of n"));
+    b=0;
+    t=n;
+        for(i=1;n>0;)
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            s=1;
+            for(;i<=a;i++)
+            {
+                s=s*i;
+            }
+            i=1;
+            b=b+s;             
+        }
+        if(t==b)
+        {
+            document.write(b," is a strong number");
+        }
+        else
+        {
+            document.write(b,"is not a strong number");
+        }
+</script>

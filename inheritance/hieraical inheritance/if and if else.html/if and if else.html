@@ -1,0 +1,86 @@
+<script>
+    class odd_even
+    {
+        constructor(x,y,z)
+        {
+            this.n=x;
+            this.a=y;
+            this.b=z;
+        }
+        get_odd_even()
+        {
+            if(this.n%2!=0)
+            {
+                document.write("Given number is odd<br>");
+            }
+            else
+            {
+                document.write("Given number is even number<br>");
+            }
+        }
+    }
+    class bigg extends odd_even
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_bigg()
+        {
+            if(this.a>this.b)
+            {
+                document.write("A is biggest<br>");
+            }
+            else
+            {
+                document.write("B is biggest<br>")
+            }
+        }
+    }
+    class small extends odd_even
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_small()
+        {
+            if(this.a>this.b)
+            {
+                document.write("B is smallest<br>");
+            }
+            else
+            {
+                document.write("A is smallest<br>");
+            }
+        }
+    }
+    class vote extends odd_even
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_vote()
+        {
+            if(this.n>=18)
+            {
+                document.write("Given age is eligible for voteing<br>");
+            }
+            else
+            {
+                document.write("Given number is not eligible for voteing<br>");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t=new bigg(n,a,b);
+    var t1=new small(n,a,b);
+    var t2=new vote(n,a,b);
+    t.get_odd_even();
+    t.get_bigg();
+    t1.get_small();
+    t2.get_vote();
+</script>

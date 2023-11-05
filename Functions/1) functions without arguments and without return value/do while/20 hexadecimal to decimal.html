@@ -1,0 +1,45 @@
+<script>
+    function hede()
+    {
+        n=prompt("Enter the HEXADECIMAL number");
+        s=0;
+        c=0;
+        l=n.length;
+        l=l-1;
+        i=l;
+        x=0;
+        do
+        {
+            a=n.charAt(i)
+            switch(a)
+            {
+                case 'A':  
+                    s=(10*Math.pow(16,x));
+                    break;
+                case 'B': 
+                    s=(11*Math.pow(16,x));
+                    break;
+                case 'C': 
+                    s=12*Math.pow(16,x);
+                    break;
+                case 'D': 
+                    s=13*Math.pow(16,x);
+                    break;
+                case 'E': 
+                    s=14*Math.pow(16,x);
+                    break;
+                case 'F': 
+                    s=15*Math.pow(16,x);
+                    break;
+                default:
+                    s=(a*Math.pow(16,x));
+                    break;
+            }
+            c=c+s;
+            i--;
+            x++;
+        }while(i>=0);
+        document.write(c);
+    }
+    hede();
+</script>

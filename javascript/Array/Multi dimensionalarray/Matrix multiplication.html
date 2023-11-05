@@ -1,0 +1,43 @@
+<script>
+    var a,b,c,row,col,i,j,result;
+    row=parseInt(prompt("Enter value for row a"));
+    col=parseInt(prompt("Enter value for colomun a"));
+    rows=parseInt(prompt("Enter value for row b"));
+    cols=parseInt(prompt("Enter value for colomun b"));
+    a=new Array(row);
+    b=new Array(rows);
+    c=new Array(row);
+    
+    for(i=0;i<row;i++)
+    {
+        a[i]=new Array(col);
+    }
+    for(i=0;i<rows;i++)
+    {
+        b[i]=new Array(cols);
+    }
+   
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            a[i][j]=parseInt(prompt("Enter the array element a"));
+        }
+    }
+    for(i=0;i<rows;i++)
+    {
+        for(j=0;j<cols;j++)
+        {
+            b[i][j]=parseInt(prompt("Enter the array element b"));
+        }
+    }
+    for (i = 0; i < col.length; i++) {
+        for (j = 0; j < cols.length; j++) {
+            for (let k = 0; k < cols.length; k++) {
+                result[i][j] += matrixA[i][k] * matrixB[k][j];
+            }
+        }
+    }
+    document.write(result[i][j]);
+    
+</script>

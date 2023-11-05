@@ -1,0 +1,21 @@
+<script>
+	var n,i,a,b,c,d,e,f,k,N,m;
+    	n=parseInt(prompt("Enter the value"));
+	N=n;
+	m=0;
+	i=0;
+   	while(n>0)
+	{
+		n=parseInt(n/10);
+		m=m+1;
+		i=m-1;
+		k=N%10;
+		a=N%(Math.pow(10,i));
+		b=parseInt(N/(Math.pow(10,i)));
+		c=k*(Math.pow(10,i));
+		d=a+c;
+		e=d-k;
+		f=e+b;
+	}
+	document.write(f);	
+</script>

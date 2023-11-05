@@ -1,0 +1,12 @@
+body{
+    border: 1px solid none;
+    height: 600px;
+    width: 800px;
+}
+#icon{
+    font-size:40px;
+    float: left;
+    margin-left: 750px;
+    margin-top: -25px;
+    color: rgb(17, 169, 189);
+}

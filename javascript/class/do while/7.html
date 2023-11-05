@@ -1,0 +1,58 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_octal()
+        {
+            this.i=0;
+            this.c=0;
+            this.s="";
+            do
+            {
+                this.a=this.n%10;
+                this.n=parseInt(this.n/10);
+                this.i=this.i+this.a*Math.pow(8,this.c);
+                this.c++;
+            }while(this.n>0);
+            this.v=this.i;
+            do
+            {
+                this.b=this.i%16;
+                switch(this.b)
+                {
+                    case 10:
+                        this.s="A"+this.s;
+                        break;
+                    case 11:
+                        this.s="B"+this.s;
+                        break;
+                    case 12:
+                        this.s="C"+this.s;
+                        break;
+                    case 13:
+                        this.s="D"+this.s;
+                        break;
+                    case 14:
+                        this.s="E"+this.s;
+                        break;
+                    case 15:
+                        this.s="F"+this.s;
+                        break;
+                    default:
+                        this.x=this.b.toString();
+                        this.s=this.x+this.s;
+                }
+                this.i=parseInt(this.i/16);
+            }while(this.i>0);
+            return(this.s);
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    m=t.get_octal();
+    document.write(m);
+</script>

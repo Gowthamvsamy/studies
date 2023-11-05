@@ -1,0 +1,19 @@
+<script>
+    class cuboid
+    {
+        get_cuboid(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+            this.d=2*((this.a*this.b)+(this.b*this.c)+(this.c*this.a));
+            return(this.d);
+        }
+    }
+    var t=new cuboid();
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    var x=t.get_cuboid(a,b,c);
+    document.write("Cuboid = ",x);
+</script>

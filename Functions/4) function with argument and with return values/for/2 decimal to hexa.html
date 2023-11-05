@@ -1,0 +1,39 @@
+<script>
+    function hexa(n)
+    {
+        s="";
+        for(;n>0;)
+        {
+            a=n%16;
+            switch(a)
+            {
+                case 10:
+                    s="A"+s;
+                    break;
+                case 11:
+                    s="B"+s;
+                    break;
+                case 12:
+                    s="C"+s;
+                    break;
+                case 13:
+                    s="D"+s;
+                    break;
+                case 14:
+                    s="E"+s;
+                    break;
+                case 15:
+                    s="F"+s;
+                    break;
+                default:
+                    x=a.toString();
+                    s=x+s;
+            }
+            n=parseInt(n/16);
+        }
+        return(s);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    y=hexa(n);
+    document.write(y);
+</script>

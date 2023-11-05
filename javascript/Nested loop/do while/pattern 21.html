@@ -1,0 +1,40 @@
+<script>
+    /*
+    Output:
+    *********
+     *     *
+      *   *
+       * *
+        *
+    */
+        var i,j,n,s,l,m;
+        n=parseInt(prompt("Enter the value of n"));
+        i=9;
+        m=9;
+        l=1;
+        do
+        {
+            s=parseInt(n/2)+1;
+            do
+            {
+                document.write("&nbsp&nbsp");
+                s--;
+            }while(s>=l);
+            j=1;
+            do
+            {
+                if(j==1 || i==j || i==m)
+                {
+                    document.write("*");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp");
+                }
+                j++;
+            }while(j<=i);
+            document.write("<br>");
+            i=i-2;
+            l--;
+        }while(i>=n);
+    </script>

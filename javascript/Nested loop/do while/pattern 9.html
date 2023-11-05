@@ -1,0 +1,31 @@
+<script>
+/*
+Output:
+1
+10
+101
+1010
+10101
+*/
+    var i,n,j,l,k;
+    n=parseInt(prompt("Enter the value of n"));
+    i=1;
+    do
+    {
+        j=1;
+        do
+        {
+            if(j%2!=0)
+            {
+                document.write("1");
+            }
+            else
+            {
+                document.write("0");
+            }
+            j++;
+        }while(i>=j);
+        document.write("<br>");
+        i++;
+    }while(i<=n);
+</script>

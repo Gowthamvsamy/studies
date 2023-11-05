@@ -1,0 +1,51 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_prime()
+        {
+            var b=0;
+            for(var i=1;this.n>=i;i++)
+            {
+                if(this.n%i==0)
+                {
+                    var b=b+1;
+                }
+            }
+            if(b==2)
+            {
+                document.write("Given number is prime number");
+            }
+            else
+            {
+                document.write("Given number is not prime number");
+            }
+            document.write("<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_fib()
+        {
+            var a=0,b=1;
+            for(var i=1;n>=i;i++)
+            {
+                var c=a+b;
+                document.write(a,"<br>");
+                a=b;
+                b=c;
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_prime();
+    t.get_fib();
+</script>

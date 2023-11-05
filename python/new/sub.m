@@ -1,0 +1,6 @@
+s=int(input("enter a"))
+t=int(input("enter b"))
+q=int(input("enter c"))
+r=int(input("enter d"))
+c=(s*t)*(q*r)
+print("mul of s,t,q, and r=",c)

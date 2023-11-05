@@ -1,0 +1,40 @@
+<script>
+    class A   // parent class or super class or base class 
+    {
+        constructor(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_add()
+        {
+            this.c=this.a+this.b;
+            document.write("Sum of a and b = ",this.c,"<br>");
+        }
+        get_sub()
+        {
+            this.c=this.a-this.b;
+            document.write("sub of a and b = ",this.c);
+        }
+    }
+    class B extends A  // child class or derived class or sub class
+    {
+        constructor(x,y)
+        {
+        
+            super(x,y); // to call super class constructor
+        }
+        get_mult()
+        {
+            this.d=this.a*this.b;
+            document.write("multiplication of two nos="+this.d);
+        }
+
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t=new B(a,b);// to call derived class constructor
+    t.get_add();
+    t.get_sub();
+    t.get_mult();
+</script>

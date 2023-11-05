@@ -1,0 +1,27 @@
+<script>
+    var n,l,a,b,c;
+    n=parseInt(prompt("Enter n"));
+    l=Math.pow(n,2);
+    document.write(l,"<br>");
+    s=n;
+    a=0;
+    do
+    {
+        b=n%10;
+        n=parseInt(n/10);
+        a=a+1;
+
+    }while(n>0);
+
+    c=l%Math.pow(10,a);
+    document.write(c,"<br>");
+
+    if(c==s)
+    {
+        document.write("Automorphic number");
+    }
+    else
+    {
+        document.write("Not a automorphic number");
+    }
+</script>

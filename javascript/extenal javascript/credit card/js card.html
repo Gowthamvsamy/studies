@@ -1,0 +1,36 @@
+<script>
+    var number,i;
+    i=0;
+    number=prompt("Enter number");
+    l=number.length;
+    if(l>i)
+    {
+        //document.write(l);
+    }
+    if(number[0]==4)
+    {
+        if(l==16)
+        {
+            document.write("Valid VISA credit card = "+number);
+        }
+        else
+        {
+            document.write("Enter valid card number");
+        }
+    }
+    else
+    {
+       if(number[1]==1 || number[1]==2 || number[1]==3 || number[1]==4 || number[1]==5 ) 
+       {
+           if(l==16)
+           {
+               document.write("Valid MASTER credit card = "+number);
+           }
+       }
+       else
+       {
+            document.write("Enter valid card number");
+       }
+    }
+   
+</script>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border:2px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n,i,j,a,p,q;
+        p=prompt("Enter student name ");
+        q=parseInt(prompt("Enter student roll no"));
+        document.write("<table><tr><th>FIELD</th><th>VALUE</th><th>GRADE</th>>")
+        document.write("<tr><th>Name</th><td>",p,"</td></tr>");
+        document.write("<tr><th>Roll no</th><td>",q,"</td></tr>");
+        n=5;
+        for(i=1;i<=n;i++)
+        {
+            for(j=i;j<=i;j++)
+            {
+                k=parseInt(prompt("Enter the mark \n1) Tamil\n2) English\n3) Maths\n4) Science\n5)Social Science"));
+                if(j==1)
+                {
+                    document.write("<tr><th>Tamil</th>");
+                }
+                else if(j==2)
+                {
+                    document.write("<tr><th>English</th>");
+                }
+                else if(j==3)
+                {
+                    document.write("<tr><th>Maths</th>");
+                }
+                else if(j==4)
+                {
+                    document.write("<tr><th>Science</th>");
+                }
+                else
+                {
+                    document.write("<tr><th>Social Science</th>");
+                }
+                a=(k*100)/100;
+                if(a>=80 && a<=100 )
+                {
+                    document.write("<td>",a,"%</td><td>","A</td></tr>");
+                }
+                else if(a>=60 && a<=80)
+                {
+                    document.write("<td>",a,"%</td><td>","B</td></tr>");
+                }
+                else if(a>=40 && a<=60)
+                {
+                    document.write("<td>",a,"%</td><td>","C</td></tr>");
+                }
+                else
+                {
+                    document.write("<td>",a,"%</td><td>","FAIL</td></tr></table>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

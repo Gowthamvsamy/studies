@@ -1,0 +1,25 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        get_binary()
+        {
+            this.n=parseInt(prompt("Enter the valie of n"));
+            this.i=0;
+            this.c=0;
+            do
+            {
+                this.a=this.n%2;
+                this.n=parseInt(this.n/2);
+                this.i=this.i+this.a*Math.pow(10,this.c);
+                this.c++;
+            }while(this.n>0);
+            document.write("binary = ",this.i);
+        }
+    }
+    var t=new test();
+    t.get_binary();
+</script>

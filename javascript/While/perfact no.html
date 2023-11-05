@@ -1,0 +1,24 @@
+<script>
+    var n,i,b,c;
+    n=parseInt(prompt("Enter n"));
+    c=n;
+    i=0;
+    b=0;
+    while(i<n)
+    {
+        if(n%i==0)
+        {
+            b=b+i; 
+        }
+        i++;
+    }
+    document.write(b+"<br>");
+    if(c==b)
+    {
+        document.write("perfact no");
+    }
+    else
+    {
+        document.write("Not a perfact no");
+    }
+</script>

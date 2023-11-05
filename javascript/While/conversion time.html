@@ -1,0 +1,28 @@
+<script>
+    var n,a,b;
+    n=parseInt(prompt("Enter n\n1 hours to sec.\n2 min to hour\n3 sec to min"));
+    i=0;
+
+    if(n==1)
+    {
+        a=parseInt(prompt("Enter hovers"));
+        b=a*3600;
+
+        document.write(b,"Sec");
+    }
+    if(n==2)
+    {
+        a=parseInt(prompt("Enter min"));
+        b=a/60;
+
+        document.write(b,"hours");
+    }
+    if(n==3)
+    {
+        a=parseInt(prompt("Enter sec"));
+        b=a/60;
+
+        document.write(b,"min");
+    }
+
+</script>

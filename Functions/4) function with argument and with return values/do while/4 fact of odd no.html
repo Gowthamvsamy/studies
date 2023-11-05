@@ -1,0 +1,21 @@
+<script>
+    function fact0d(n)
+    {
+        i=1;
+        sum=0;
+        m=1;
+        do
+        {
+            if(i%2!=0)
+            {
+                m=m*i;
+                sum=sum+m;
+            }
+            i++;
+        }while(i<=n);
+        return(sum);
+    }
+    n=parseInt(prompt("Ente rthe value of n"));
+    x=fact0d(n)
+    document.write(x);
+</script>

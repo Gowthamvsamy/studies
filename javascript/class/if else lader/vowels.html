@@ -1,0 +1,40 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_vowel()
+        {
+            if(this.n=='A' || this.n=='a')
+            {
+                document.write("It is vowel");
+            }
+            else if(this.n=='E' || this.n=='e')
+            {
+                document.write("It is vowel");
+            }
+            else if(this.n=='I' || this.n=='i')
+            {
+                document.write("It is vowel");
+            }
+            else if(this.n=='O' || this.n=='o')
+            {
+                document.write("It is vowel");
+            }
+            else if(this.n=='U' || this.n=='u')
+            {
+                document.write("It is vowel");
+            }
+            else
+            {
+                document.write("It is Not a vowel");
+            }
+        }
+    }
+    var t=new test();
+    x=prompt("Enter the string");
+    t.get_data(x);
+    t.get_vowel();
+</script>

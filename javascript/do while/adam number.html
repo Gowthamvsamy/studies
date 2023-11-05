@@ -1,0 +1,39 @@
+<script>
+    var i,n,a,b,c,d,j;
+    n=parseInt(prompt("Enter n"));
+    i=0;
+    j=0;
+
+    a=Math.pow(n,2);
+    //document.write(a,"<br>");
+
+    do
+    {   
+        b=n%10;
+        i=i*10+b;
+        n=parseInt(n/10);
+
+    }while(n>0);
+    //document.write(i,"<br>");
+
+    c=Math.pow(i,2);
+    //document.write(c,"<br>");
+
+    do
+    {
+        d=c%10;
+        j=j*10+d;
+        c=parseInt(c/10);
+
+    }while(c>0);
+    //document.write(j,"<br>");
+
+    if(j==a)
+    {
+        document.write("Given number is adam number");
+    }
+    else
+    {
+        document.write("Given number is not a adam number");
+    }
+</script>

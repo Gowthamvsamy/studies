@@ -1,0 +1,44 @@
+<script>
+    /*
+    Output:
+    3
+    44
+    555
+    6666
+    555
+    44
+    3
+    */
+        var i,j,n;
+        n=parseInt(prompt("Enter the value of n"));
+        i=3;
+        do
+        {
+            j=3;
+            do
+            {
+                document.write(i);
+                j++;
+            }while(j<=i);
+            document.write("<br>");
+            i++;
+        }while(i<n);
+        n=n-5;
+        k=6;
+        do
+        {
+            l=3;
+            do
+            {
+                if(l<=k)
+                {
+                    document.write(k);
+                }
+                l++;
+            }while(l<=k);
+            document.write("<br>");
+            k--; 
+            
+            
+        }while(k>n);
+    </script>

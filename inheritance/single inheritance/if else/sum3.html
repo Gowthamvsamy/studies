@@ -1,0 +1,66 @@
+<script>
+    class A
+    {
+        constructor(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_add()
+        {
+            this.c=this.a+this.b;
+            return(this.c);
+        }
+        get_sum()
+        {
+            this.c=this.a-this.b;
+            return(this.c);
+        }
+        get_div()
+        {
+            this.c=this.a/this.b;
+            return(this.c);
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_mul()
+        {
+            this.c=this.a*this.b;
+            return(this.c);
+        }
+        get_rem()
+        {
+            this.c=this.a%this.b;
+            return(this.c);
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t=new B(a,b);
+    /*e=t.get_add();
+    f=t.get_sum();
+    g=t.get_div();
+    h=t.get_mul();
+    i=t.get_rem();
+    document.write(e,"<br>");
+    document.write(f,"<br>");
+    document.write(g,"<br>");
+    document.write(h,"<br>");
+    document.write(i,"<br>");*///first mathed
+
+    e=t.get_add();
+    document.write(e,"<br>");
+    e=t.get_sum();
+    document.write(e,"<br>");
+    e=t.get_div();
+    document.write(e,"<br>");
+    e=t.get_mul();
+    document.write(e,"<br>");
+    e=t.get_rem();
+    document.write(e,"<br>");//secand mathed
+</script>

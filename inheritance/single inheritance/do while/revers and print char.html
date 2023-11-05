@@ -1,0 +1,41 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_revers()
+        {
+            var l=this.n.length;
+            do
+            {
+                document.write(n[l-1]);
+                l--;
+            }while(l>0);
+            document.write("<br>");
+        }
+        
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_print()
+        {
+            var i=0;
+            var l=this.n.length;
+            do
+            {
+                document.write(n[i],"<br>");
+                i++;
+            }while(l>i);
+        }
+    }
+    n=prompt("Enter the string value");
+    var t=new B(n);
+    t.get_revers();
+    t.get_print();
+</script>

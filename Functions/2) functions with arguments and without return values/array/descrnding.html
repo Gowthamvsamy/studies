@@ -1,0 +1,27 @@
+<script>
+    function des(n)
+    {
+        a=new Array;
+        for(i=0;i<n;i++)
+        {
+            a[i]=parseInt(prompt("Enter the array element"));
+            b=a.length;
+        }
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<b;j++)
+            {
+                if(a[i]>a[j])
+                {
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        document.write(a,"<br>")
+
+    }
+    n=parseInt(prompt("Enter the size of array"));
+    des(n);
+</script>

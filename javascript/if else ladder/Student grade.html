@@ -1,0 +1,35 @@
+<script>
+	var name,rollno,a,b,c,d,e,per;
+	name=prompt("Enter name");
+	rollno=prompt("Enter rollno");
+	a=parseFloat(prompt("Enter Tamil mark"));
+	b=parseFloat(prompt("Enter English mark"));
+	c=parseFloat(prompt("Enter Maths mark"));
+	d=parseFloat(prompt("Enter Science mark"));
+	e=parseFloat(prompt("Enter Social Science mark"));
+	per=(a+b+c+d+e)*100/500;
+
+	
+		document.write("Enter name = "+name,"<br>");
+		document.write("Roll no = "+rollno,"<br>");
+		document.write(" Tamil = "+a,"<br>");
+		document.write(" English = "+b,"<br>");
+		document.write(" Maths = "+c,"<br>");
+		document.write(" Science = "+d,"<br>");
+		document.write(" Social scince = "+e,"<br>");
+
+	if(per>80 && per<=100 && a>=40 && b>=40 && c>=40 && d>=40 && e>=40)
+	{
+		document.write(" A Grade ");
+	}
+	else if(per>50 && per<=80 && a>=40 && b>=40 && c>=40 && d>=40 && e>=40)
+	{
+		document.write(" B Grade ");
+	}
+	else
+	{
+		document.write(" Fail ");
+	}
+		
+	
+</script>	

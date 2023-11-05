@@ -1,0 +1,88 @@
+<script>
+    /*
+    Output:
+                  *
+    
+             *    *   *
+    
+           *      *      *
+    
+        *         *         *
+    
+      *  *  *  *  *  *  *  *  *
+    
+        *         *         *
+    
+            *     *     *
+    
+              *   *   *
+    
+                  *
+    */
+        var i,j,n,s,a,b,c;
+        n=parseInt(prompt("Enter n"));
+        a=10;
+        s=n;
+        c=n;
+        for(i=1;i<=n;i++)
+        {
+            for(;s>0;s--)
+            {
+                document.write("&nbsp&nbsp");
+            }
+            for(j=1;j<=i;j++)
+            {
+                if(i%2!=0)
+                {
+                    if((i==5 && j==2) || (i==5 && j==4) || (i==7 && j==2) || (i==7 && j==3) 
+                        || (i==7 && j==5) || (i==7 && j==6))
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp");
+                    }
+                    else 
+                    {
+                        document.write("&nbsp&nbsp*");
+                    }
+                }
+            }
+            for(;i%2!=0;i++)
+            {
+                document.write("<br><br>");
+            }
+            s=n-i;
+        }
+        n=n-9;
+        c=n+9;
+        a=a-2;
+        for(;n<=a;a--)
+        {
+            for(;c<9;c++)
+            {
+                document.write("&nbsp&nbsp");
+            }
+            for(b=1;b<=a;b++)
+            {
+                if(a%2!=0)
+                {
+                    if((a==7 && b==2) || (a==7 && b==3) || (a==7 && b==5) || (a==7 && b==6) || (a==5 && b==2)
+                        || (a==5 && b==4))
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp")
+                    }
+                    else if(a==1)
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*");
+                    }
+                    else
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp*");
+                    } 
+                }
+            }
+            for(;a%2!=0;a--)
+            {
+                document.write("<br><br>");
+            }
+            c=n+a;
+        }
+    </script> 

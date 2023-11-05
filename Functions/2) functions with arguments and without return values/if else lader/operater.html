@@ -1,0 +1,38 @@
+<script>
+    function oper(n)
+    {
+        if(n==1 || n=='+')
+        {
+            c=a+b;
+            document.write("sum of two numbers",c);
+        }
+        else if(n==2 || n=='-')
+        {
+            c=a-b;
+            document.write("sub of two numbers",c);
+        }
+        else if(n==3 || n=='*')
+        {
+            c=a*b;
+            document.write("mul of two numbers",c);
+        }
+        else if(n==4 || n=='/')
+        {
+            c=a/b;
+            document.write("Div of two numbers",c);
+        }
+        else if(n==5 || n=='%')
+        {
+            c=a%b;
+            document.write("Rem of tow numbers",c);
+        }
+        else
+        {
+            document.write("Give a valid number");
+        }
+    }
+    n=prompt("Enter the value of n");
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    oper(n);
+</script>

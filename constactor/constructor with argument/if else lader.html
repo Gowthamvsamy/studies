@@ -1,0 +1,31 @@
+<script>
+    class test
+    {
+        test(x,y)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+        }
+        get_if_else_lader()
+        {
+            if(a>b && a>c)
+            {
+                document.write("A is biggest");
+            }
+            else if(b>a && b>c)
+            {
+                document.write("B is biggest");
+            }
+            else
+            {
+                document.write("C is biggest");
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the a value"));
+    b=parseInt(prompt("Enter the b value"));
+    c=parseInt(prompt("Enter the c value"));
+    var t=new test();
+    t.get_if_else_lader();
+</script>

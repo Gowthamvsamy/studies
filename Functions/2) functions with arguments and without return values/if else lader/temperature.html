@@ -1,0 +1,31 @@
+<script>
+    function temp(n)
+    {
+        if(n<=0)
+        {
+            document.write("Freezing");
+        }
+        else if(n>0 && n<=10)
+        {
+            document.write("Very cold");
+        }
+        else if((n>10) && (n<=20))
+        {
+            document.write("Cold");
+        }
+        else if(n>20 && n<=30)
+        {
+            document.write("Normal");
+        }
+        else if(n>30 && n<=40)
+        {
+            document.write("Hot");
+        }
+        else if(n>40)
+        {
+            document.write("Very hot");
+        }
+    }
+    n=parseInt(prompt("Enter the th value of n"));
+    temp(n);
+</script>

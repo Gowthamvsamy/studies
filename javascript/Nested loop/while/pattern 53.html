@@ -1,0 +1,95 @@
+<script>
+/*
+Output:
+*
+* 1 *
+* 1 2 1 *
+* 1 2 3 2 1 *
+* 1 2 1 *
+* 1 *
+*
+*/
+    var i,n,j,s,t,k,l;
+    n=parseInt(prompt("Enter the value of n"));
+    i=1; t=1; p=1; q=1;
+    document.write("*<br>");
+    while(i<n)
+    {
+        while(p>=q)
+        {
+            document.write("*");
+            q++;
+        }
+        p++;
+        j=1;
+        while(j<=i)
+        {
+            if(i==1)
+            {
+                document.write("&nbsp",j,"&nbsp*");
+            }
+            else
+            {
+                document.write("&nbsp",j);
+            }
+            j++;
+        }
+        t=i-1;
+        while(t!=0)
+        {
+            if(i==2 && t==1)
+            {
+                document.write("&nbsp",t,"&nbsp*");
+            }
+            else
+            {
+                document.write("&nbsp",t);
+            }
+            
+            t--;
+        }
+        document.write("<br>");
+        i++;
+    }
+    n=n-2;
+    k=3;
+    s=1;
+    while(k>=1)
+    {
+        while(p>=q)
+        {
+            document.write("*");
+            q++;
+        }
+        p++;
+        l=1;
+        while(l<=k)
+        {
+            if(k==1)
+            {
+                document.write("&nbsp",l,"&nbsp*");
+            }
+            else
+            {
+                document.write("&nbsp",l);
+            }
+            l++;
+        }
+        s=k-1;
+        while(s!=0)
+        {
+            if((k==3 && s==1) || (k==2 && s==1))
+            {
+                document.write("&nbsp",s,"&nbsp*");
+            }
+            else
+            {
+                document.write("&nbsp",s);
+            }
+            s--;
+        }
+        document.write("<br>");
+        k--;
+    }
+    document.write("*<br>");
+</script>

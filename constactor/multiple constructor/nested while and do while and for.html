@@ -1,0 +1,67 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        test(x)
+        {
+            this.n=x;
+        }
+        test(x)
+        {
+            this.n=x;
+        }
+        get_while()
+        {
+            this.n=parseInt(prompt("Enter the value of n"));
+            this.i=1;
+            while(this.i<=this.n)
+            {
+                this.j=1;
+                while(this.j<=this.i)
+                {
+                    document.write(this.j);
+                    this.j++;
+                }
+                document.write("<br>");
+                this.i++;
+            }
+        }
+        get_do_while()
+        {
+            this.i=1;
+            do
+            {
+                this.j=1;
+                do
+                {
+                    document.write(this.j); 
+                    this.j++;
+                }while(this.j<=this.i);
+                this.i++;
+                document.write("<br>");
+            }while(this.i<=n);
+        }
+        get_for()
+        {
+            for(this.i=1;this.i<=n;this.i++)
+            {
+                for(this.j=1;this.j<=this.i;this.j++)
+                {
+                    document.write(this.j);
+                }
+                document.write("<br>");
+            }
+        }
+    }
+    var t=new test();
+
+    t.get_while();
+    n=parseInt(prompt("Enter the value of n"));
+    var u=new test(n);
+    u.get_do_while();
+    var v=new test(n);
+    v.get_for();
+</script> 

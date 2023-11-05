@@ -1,0 +1,54 @@
+<script>
+    class A
+    {
+        constructor(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+        }
+        get_sum1()
+        {
+            if((this.a>this.b) && (this.a>this.c))
+            {
+                document.write("A is biggest<br>");
+            }
+            else if((this.b>this.a) && (this.b>this.c))
+            {
+                document.write("B is biggest<br>");
+            }
+            else
+            {
+                document.write("C is biggest<br>");
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum2()
+        {
+            if(this.a>0)
+            {
+                document.write("Pastive number");
+            }
+            else if(this.a<0)
+            {
+                document.write("Negative number")
+            }
+            else
+            {
+                document.write("nuteral");
+            }
+        }
+    }
+    a=parseInt(prompt('Enter the value of a'));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    var t=new B(a,b,c);
+    t.get_sum1();
+    t.get_sum2();
+</script>

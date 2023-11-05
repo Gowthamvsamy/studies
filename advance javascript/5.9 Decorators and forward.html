@@ -1,0 +1,78 @@
+<!-- <script>
+    let x=5;
+    function slow() {
+    alert(`class with ${x}`);
+    return x;
+}
+function cachingDecorator(func) {
+    let cache = new Map();
+    return function(x) {
+        if(cache.has(x)){
+            return cache.get(x);
+    }
+    let result = func(x);
+    cache.set(x,result);
+    return result;
+};
+}
+slow = cachingDecorator(slow);
+alert(slow(1));
+alert("Again: "+ slow(1));
+alert(slow(2));
+alert("Again: "+ slow(2));
+</script> -->
+
+<!-- <script>
+    let worker = {
+        someMethod() {
+            return 1;
+        },
+        slow(x) {
+            alert("called with " +x);
+            return x * this.someMethod();
+        }
+    };
+    function cachingDecorator(func) {
+        let cache = new Map();
+        return function(x) {
+            if(cache.has(x)) {
+                return cache.get(x);
+            }
+            let result = func.call(this,x);
+            cache.set(x,result);
+            return result;
+        };
+    }
+    worker.slow = cachingDecorator(worker.slow);
+    alert(worker.slow(2));
+    alert(worker.slow(2));
+</script> -->
+
+<!-- multiple argument -->
+
+<!-- <script>
+    let worker = {
+        slow(min,max) {
+            alert(`called with ${min},${max}`);
+            return min + max;
+        }
+    };
+    function cachingDecorator(func,hash) {
+        let cache = new Map();
+        return function() {
+            let key = hash(arguments);
+            if(cache.has(key)) {
+                return cache.get(key);
+            }
+            let result = func.call(this,...arguments);
+            cache.set(key,result);
+            return result;
+        };
+    }
+    function hash(args) {
+        return args[0] + ',' + args[1];
+    }
+    worker.slow = cachingDecorator(worker.slow,hash);
+    alert(worker.slow(3,5));
+    alert("Again " + worker.slow(3,5));
+</script> -->

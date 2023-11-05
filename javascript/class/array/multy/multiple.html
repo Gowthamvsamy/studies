@@ -1,0 +1,79 @@
+<script>
+    class test
+    {
+        get_data(w,x,y,z)
+        {
+            this.row=w;
+            this.col=x;
+            this.rows=y;
+            this.cols=z;
+            this.a=Array(this.row);
+            this.b=Array(this.rows);
+            this.c=Array(this.row);
+        }
+        get_mul()
+        {
+            for(this.i=0;this.i<this.row;this.i++)
+            {
+                this.a[this.i]=Array(this.col);
+            }
+            for(this.i=0;this.i<this.rows;this.i++)
+            {
+                this.b[this.i]=Array(this.cols);
+            }
+            for(this.i=0;this.i<this.row;this.i++)
+            {
+                this.c[this.i]=Array(this.col);
+            }
+            for(this.i=0;this.i<this.row;this.i++)
+            {
+                for(this.j=0;this.j<this.col;this.j++)
+                {
+                    this.a[this.i][this.j]=parseInt(prompt("Enter the array element a"));
+                }
+            }
+            for(this.i=0;this.i<this.row;this.i++)
+            {
+                for(this.j=0;this.j<this.cols;this.j++)
+                {
+                    this.b[this.i][this.j]=parseInt(prompt("Enter the array of element b"));
+                }
+            }
+            for(this.i=0;this.i<this.row-1;this.i++)
+            {
+                this.d=0;
+                for(this.j=0;this.j<this.col;this.j++)
+                {
+                    this.c[this.i][this.j]=this.a[this.i][this.j]*this.b[this.j][this.i];
+                    this.d=this.d+this.c[this.i][this.j]; 
+                }
+                document.write(this.d,"&nbsp&nbsp");
+                this.d=0;
+                for(this.j=0;this.j<this.col;this.j++)
+                {
+                    this.c[this.i][this.j]=this.a[this.i][this.j]*this.b[this.j][1];
+                    this.d=this.d+this.c[this.i][this.j];
+                }
+                document.write(this.d);
+                document.write("<br>");
+            }
+            for(this.i=0;this.i<this.row;this.i++)
+            {
+                this.d=0;
+                for(this.j=0;this.j<this.col;this.j++)
+                {
+                    this.c[this.i][this.j]=this.a[1][this.j]*this.b[this.j][this.i];
+                    this.d=this.d+this.c[this.i][this.j];
+                }
+                document.write(this.d,"&nbsp&nbsp");
+            }
+        }
+    }
+    var t=new test();
+    w=parseInt(prompt("Enter the size of row a"));
+    x=parseInt(prompt("Enter the size of col b"));
+    y=parseInt(prompt("Enter the size of row b"));
+    z=parseInt(prompt("Enter the size of col b"));
+    t.get_data(w,x,y,z);
+    t.get_mul();
+</script>

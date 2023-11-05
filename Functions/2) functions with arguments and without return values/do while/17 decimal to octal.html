@@ -1,0 +1,17 @@
+<script>
+    function oct(n)
+    {
+        i=0;
+        c=0;
+        do
+        {
+            a=n%8;
+            n=parseInt(n/8);
+            i=i+a*Math.pow(10,c);
+            c++;
+        }while(n>0)
+        document.write(i);
+    }
+    n=parseInt(prompt("ENter the value of n"));
+    oct(n);
+</script>

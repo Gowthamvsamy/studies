@@ -1,0 +1,18 @@
+<script>
+    var i,n,a,sum;
+    n=parseInt(prompt("Enter n value"));
+    i=0;
+    sum=0;
+    do
+    {
+        a=parseInt(prompt("Enter a"));
+        if(a%2!=0)
+        {
+            sum=sum+a;
+
+        }
+        i++;
+    }while(i<n);
+
+    document.write("Sum of odd n numbers = ",sum);
+</script>

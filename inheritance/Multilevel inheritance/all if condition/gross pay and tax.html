@@ -1,0 +1,71 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.a=x;
+        }
+        get_gross()
+        {
+            if(this.a<=20000)
+            {
+                if(this.a>0 && this.a<=10000)
+                {
+                    var HRA=this.a*20/100;
+                    var DA=this.a*80/100;
+                    var gross=this.a+HRA+DA;
+                    document.write(gross);
+                }
+                else if(this.a>10000 && this.a<=20000)
+                {
+                    HRA=this.a*25/100;
+                    DA=this.a*90/100;
+                    gross=this.a+HRA+DA;
+                }
+            }
+            else
+            {
+                if(this.a>20000)
+                {
+                    HRA=this.a*30/100;
+                    DA=this.a*95/100;
+                    gross=this.a+HRA+DA;   
+                }
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_tax()
+        {
+            if(this.a<=20000)
+            {
+                if(this.a>0 && this.a<=10000)
+                {
+                    document.write("0% tax = 0");
+                }
+                else if(this.a>10000 && this.a<=20000)
+                {
+                   var tax=this.a*10/100;
+                   document.write("10% tax = ",tax);
+                }
+            }
+            else
+            {
+                if(this.a>20000)
+                {
+                    var tax=this.a*20/100;
+                    document.write("20% tax = ",tax);
+                }
+            }
+        }
+    }
+    a=parseInt(prompt("Enetr the value of a"));
+    var t=new B(a);
+    t.get_gross();
+    t.get_tax();
+</script>

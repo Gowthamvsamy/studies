@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern 65</title>
+    <style>
+        div{
+            float: left;
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        var n,i,j,a;
+        n=parseInt(prompt("Enter table limit"));
+        a=parseInt(prompt("Enter how many row in table"));
+        i=1;
+        while(i<=n)
+        {
+            document.write("<div>");
+            j=1;
+            while(j<=a)
+            {
+                s=i*j;
+                document.write(j,"*",i,"=",s,"<br>");
+                j++;
+            }
+            document.write("</div>");
+            i++;
+        }
+    </script>
+</body>
+</html>

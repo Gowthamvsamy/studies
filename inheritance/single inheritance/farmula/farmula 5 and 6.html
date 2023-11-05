@@ -1,0 +1,34 @@
+<script>
+    class A
+    {
+        constructor(x,y,z)
+        {
+            this.l=x;
+            this.b=y;
+            this.h=z;
+        }
+        get_far5()
+        {
+            this.a=2*((this.l*this.b)+(this.b*this.h)+(this.h*this.l));
+            document.write("far5 = ",this.a,"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_far6()
+        {
+            this.a=4*(this.l+this.b+this.h);
+            document.write("far6 = ",this.a);
+        }
+    }
+    l=parseInt(prompt("Enter the value of l"));
+    b=parseInt(prompt("Enter the value of b"));
+    h=parseInt(prompt('Enter the value of h'));
+    var t=new B(l,b,h);
+    t.get_far5();
+    t.get_far6();
+</script>

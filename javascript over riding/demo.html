@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        class A 
+        {
+            constructor(a)
+            {
+                this.a = a;
+
+                
+            }
+            display()
+            {
+                    
+                document.write("Its a parent class Oveeriding");
+                document.write("this is parent a=",this.a);
+            }
+        }
+        class B extends A
+        {
+            constructor(a)
+            {
+                super(a);
+            }
+            display()
+            {
+                document.write("Its a child class Oveeriding");
+                document.write("this is child a=",this.a);
+            }
+        }
+
+        let a;
+        a = parseInt(prompt("enter number a"));
+
+        let t = new B(a);
+        t.display();
+        
+
+
+    </script>
+</body>
+</html>

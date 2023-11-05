@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content changing2</title>
+</head>
+<body>
+    <p>Welcome</p>
+    <button onclick="MyFunction('Gowtham','pavin')">Try it</button>
+    <p id="l"></p>
+    <script>
+        function MyFunction(name,job){
+            document.getElementById("l").innerHTML="Welcome "+name+", the " +job+".";
+        }
+    </script>
+</body>
+</html>

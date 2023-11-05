@@ -1,0 +1,23 @@
+<script>
+    var i,a,b;
+    a=parseInt(prompt("Enter the number"));
+    b=parseInt(prompt("Enter the number"));
+    h=1;
+    for(i=2;((i<a) || (i<b));)
+    {
+        if(a%i==0 && b%i==0)
+        {
+            a=parseInt(a/i);
+            b=parseInt(b/i);
+            h=i*h;
+            i=i;
+        }
+        else
+        {
+            i++;
+        }
+        d=h*a*b;
+	document.write(d,"<br>");
+    }
+    
+</script>

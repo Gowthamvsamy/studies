@@ -1,0 +1,27 @@
+<script>
+    class demo
+    {
+        demo(x)
+        {
+            this.n=x;
+        }
+        get_pat1()
+        {
+            this.i=1;
+            while(this.i<=n)
+            {
+                this.j=1;
+                while(this.j<=this.i)
+                {
+                    document.write(this.j);
+                    this.j++;
+                }
+                this.i++;
+                document.write("<br>");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var m=new demo();
+    m.get_pat1();
+</script>

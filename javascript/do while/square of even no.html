@@ -1,0 +1,15 @@
+<script>
+    var i,n,sum;
+    n=parseInt(prompt("Enter n"));
+    i=1;
+    sum=0;
+    do
+    {
+        if(i%2==0)
+        {
+            sum=Math.pow(i,2)+sum;
+        }
+        i++;
+    }while(n>=i);
+    document.write(sum);
+</script>

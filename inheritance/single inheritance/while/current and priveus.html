@@ -1,0 +1,50 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_even()
+        {
+            var i=1;
+            var sum;
+            while(i<=this.n)
+            {
+                if(i%2==0)
+                {
+                    document.write("Current even no = ",i,"<br>");
+                    sum=i-2;
+                    document.write("privius even no = ",sum,"<br>");
+                }
+                i++;
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_odd()
+        {
+            var i=1;
+            var sum;
+            while(i<=this.n)
+            {
+                if(i%2!=0)
+                {
+                    document.write("Current odd no = ",i,"<br>");
+                    sum=i-2;
+                    document.write("privius odd no = ",sum,"<br>");
+                }
+                i++
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_even();
+    t.get_odd();
+</script>

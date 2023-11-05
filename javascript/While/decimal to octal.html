@@ -1,0 +1,15 @@
+<script>
+    var n,i,a,c;
+    n=parseInt(prompt("Enter n"));
+    i=0;
+    c=0;
+    while(n>0)
+    {
+        a=n%8;
+        n=parseInt(n/8);
+        i=i+a*Math.pow(10,c);
+        c++;
+	document.write(i,"<br>");
+    }
+    
+</script>

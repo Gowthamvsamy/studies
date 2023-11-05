@@ -1,0 +1,66 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_pal()
+        {
+            var i=0;
+            var s=this.n;
+            this.m=s;
+            do
+            {
+                var a=this.n%10;
+                i=i*10+a;
+                this.n=parseInt(this.n/10);
+            }while(this.n!=0);
+            document.write(i);
+            if(i==s)
+            {
+                document.write("Given number is palindrome<br>");
+            }
+            else
+            {
+                document.write("Given number is not palindrome<br>");
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_auto()
+        {
+            var l=Math.pow(this.m,2);
+            document.write("l=",l);
+            var s=this.m;
+            var a=0;
+            while(this.m>0)
+            { 
+                var b=this.m%10;
+                this.m=parseInt(this.m/10);
+                a=a+1;
+            }
+            document.write("a =",a);
+            var c=l%Math.pow(10,a);
+            document.write("c=",c);
+            document.write("s=",s);
+            if(c==s)
+            {
+                document.write("Automorphic no<br>");
+            }
+            else
+            {
+                document.write("Not a automorphic no<br>");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the vlaue of n"));
+    var t=new B(n);
+    t.get_pal();
+    t.get_auto();
+</script>

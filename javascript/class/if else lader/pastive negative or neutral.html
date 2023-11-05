@@ -1,0 +1,28 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.a=x;
+        }
+        get_pastive()
+        {
+            if(this.a>0)
+            {
+                document.write("A ia pastive number");
+            }
+            else if(this.a<0)
+            {
+                document.write("A is negative number");
+            }
+            else if(this.a==0)
+            {
+                document.write("A is neutral number");
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of x"));
+    t.get_data(x);
+    t.get_pastive();
+</script>

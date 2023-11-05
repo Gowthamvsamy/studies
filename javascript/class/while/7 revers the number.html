@@ -1,0 +1,25 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_revers()
+        {
+            this.i=0;
+            while(this.n>0)
+            {
+                this.a=this.n%10;
+                this.i=this.i*10+this.a;
+                this.n=parseInt(this.n/10);
+                
+            }
+            document.write(this.i);
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_revers();
+</script>

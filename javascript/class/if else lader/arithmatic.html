@@ -1,0 +1,49 @@
+<script>
+    class test
+    {
+        get_data(x,y,z)
+        {
+            this.n=x;
+            this.a=y;
+            this.b=z;
+        }
+        get_arith()
+        {
+            if(this.n=='1' || this.n=='+')
+            {
+                this.c=this.a+this.b;
+                document.write("sum of a and b =",this.c);
+            }
+            else if(this.n=='2' || this.n=='-')
+            {
+                this.c=this.a-this.b;
+                document.write("sub of a and b =",this.c);
+            }
+            else if(this.n=='3' || this.n=='*')
+            {
+                this.c=this.a*this.b;
+                document.write("mul of a and b =",this.c);
+            }
+            else if(this.n=='4' || this.n=='/')
+            {
+                this.c=this.a/this.b;
+                document.write("div of a and b =",this.c);
+            }
+            else if(this.n=='5' || this.n=='%')
+            {
+                this.c=this.a%this.b;
+                document.write("mod of a and b =",this.c);
+            }
+            else
+            {
+                document.write("Give valid input",this.c);
+            }
+        }
+    }
+    var t=new test();
+    x=prompt("Enter the value of x");
+    y=parseInt(prompt("Enter the value of a"));
+    z=parseInt(prompt("Enter the value of b"));
+    t.get_data(x);
+    t.get_arith();
+</script>

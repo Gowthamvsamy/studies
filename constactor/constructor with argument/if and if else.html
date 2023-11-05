@@ -1,0 +1,29 @@
+<script>
+    class test2
+    {
+        test2(x,y)
+        {
+            this.a=x;
+            this.b=y;
+            
+        }
+        get_ifandifelse()
+        {
+          
+            if(a>b)
+            {
+                document.write("A is biggest");
+               
+            }
+            else
+            {
+                document.write("B is biggest");
+                
+            }
+        }
+    }
+    var a=parseInt(prompt("Enter A"));
+    var b=parseInt(prompt("Enter B"));
+    var t=new test2(a,b);
+    t.get_ifandifelse();
+</script>

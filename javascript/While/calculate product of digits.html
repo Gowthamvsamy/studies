@@ -1,0 +1,14 @@
+<script>
+    var n,i,a,div;
+    n=parseInt(prompt("Enter product of digits"));
+    i=0;
+    div=1;
+    while(n>0)
+    {
+        a=n%10;
+        n=parseInt(n/10);
+        div=div*a;
+        
+    }
+    document.write(div);
+</script>

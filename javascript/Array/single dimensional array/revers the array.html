@@ -1,0 +1,15 @@
+<script>
+    var i,n,a;
+    a=new Array;
+    n=parseInt(prompt("Enter the size of array"));
+    z=n-1;
+    for(i=0;i<n;i++)
+    {
+        a[i]=parseInt(prompt("Enter the array element"));
+    }
+    n=n-(z+2);
+    for(i=z;i>n;i--)
+    {
+        document.write(a[i]+"<br>");
+    }
+</script>

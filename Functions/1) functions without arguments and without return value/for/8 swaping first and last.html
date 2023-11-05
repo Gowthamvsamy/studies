@@ -1,0 +1,35 @@
+<script>
+    function swap()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+
+        a=n%10;
+        document.write(a);
+        b=parseInt(n/10);
+
+    for(i=0;b>0;)
+    {
+        c=b%10;
+        i=i*10+c;
+        b=parseInt(b/10);
+    }
+    e=parseInt(i/10);
+
+    for(j=0;e>0;)
+    {
+        f=e%10;
+        j=j*10+f;
+        e=parseInt(e/10);
+    }
+    document.write(j);
+
+    for(k=0;c>0;)
+    {
+        d=c%10;
+        k=k*10+d;
+        document.write(k);
+        c=parseInt(c/10);
+    }
+    }
+    swap();
+</script>

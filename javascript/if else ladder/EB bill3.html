@@ -1,0 +1,39 @@
+<script>
+	var id,name,unit,bill=0,a;
+	id=prompt("Enter the id number ");
+	name=prompt("Enter the name ");
+	unit=parseInt(prompt("Enter the unit"));
+	if(unit<=199)
+	{
+		bill=unit*1.20;
+	}
+	else if(unit>199 && unit<=399)
+	{
+		bill=(199*1.20)+((unit-199)*1.50);
+	}
+	else if(unit>399 && unit<=599)
+	{
+		bill=(199*1.20)+(200*1.50)+((unit-399)*1.80);
+	}
+	else if(unit>599)
+	{
+		bill=(199*1.20)+(200*1.50)+(200*1.80)+((unit-599)*2);
+	}
+	if(bill>400)
+	{
+		a=bill*15/100;
+		bill=bill+a;
+	}
+		
+		document.write("User id number = "+id,"<br>");
+		document.write("User name = "+name,"<br>");
+		document.write("Using unit = "+unit,"<br>");
+		if(bill<=100)
+		{
+		document.write("Minimum bill amount = 100");
+		}
+		else
+		{
+		document.write("Bill amount = "+bill,"<br>");
+		}
+</script>

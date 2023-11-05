@@ -1,0 +1,13 @@
+<script>
+    var i,n,a;
+    n=parseInt(prompt("Enter decimal no"));
+    i=0;
+    for(c=0;n>0;c++)
+    {
+        a=n%2;
+        n=parseInt(n/2);
+        i=i+a*Math.pow(10,c);
+        
+    }
+    document.write("Binary value is = ",i);
+</script>

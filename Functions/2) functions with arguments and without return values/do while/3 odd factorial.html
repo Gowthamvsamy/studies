@@ -1,0 +1,20 @@
+<script>
+    function odd(n)
+    {
+        i=1;
+        a=1;
+        sum=0;
+        do
+        {
+            a=a*i;
+            if(i%2!=0)
+            {
+                sum=sum+a;
+            }
+            i++;
+        }while(i<=n);
+        document.write(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    odd(n);
+</script>

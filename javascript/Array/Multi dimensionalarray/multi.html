@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,row,col,i,j;
+        row=parseInt(prompt("Enter value for row"));
+        col=parseInt(prompt("Enter value for colomn"));
+        a=new Array(row);
+	
+        for(i=0;i<row;i++)
+        {
+            a[i]=new Array(col);
+	
+        }
+        for(i=0;i<row;i++)
+        {
+            for(j=0;j<col;j++)
+            {
+                a[i][j]=parseInt(prompt("Enter array element"));
+            }
+        }
+        for(i=0;i<row;i++)
+        {
+            for(j=0;j<col;j++)
+            {
+                document.write(a[i][j]);
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

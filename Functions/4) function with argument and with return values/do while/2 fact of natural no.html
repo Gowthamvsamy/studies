@@ -1,0 +1,18 @@
+<script>
+    function fact(n)
+    {
+        i=1;
+        m=1;
+        sum=0;
+        do
+        {
+            m=m*i;
+            sum=sum+m;
+            i++;
+        }while(i<=n);
+        return(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    x=fact(n);
+    document.write(x);
+</script>

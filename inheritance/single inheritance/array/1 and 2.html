@@ -1,0 +1,45 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+            
+        }
+        get_one()
+        {
+            var a=new Array;
+            for(var i=0;i<this.n;i++)
+            {
+                a[i]=parseInt(prompt("Enter the element of array"));
+            }
+                document.write("<h1>First sum</h1><br>")
+                document.write("3<sub>rd</sub> element = ",a[2],"<br>");
+                document.write("5<sup>th</sup> element = ",a[n-1],"<br>");
+            
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_two()
+        {
+            var a=new Array;
+            for(var i=0;i<this.n;i++)
+            {
+                a[i]=parseInt(prompt("Enter the element of array"));
+            }
+                document.write("<h1>Secand sum</h1><br>")
+                document.write("3<sub>rd</sub> element = ",a[0],"<br>");
+                document.write("5<sup>th</sup> element = ",a[n-1],"<br>");
+        }
+        
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_one();
+    t.get_two();
+</script>

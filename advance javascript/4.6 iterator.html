@@ -1,0 +1,59 @@
+<!-- <script>
+    // number
+    let range = {
+        from: 1,
+        to: 5,
+        [Symbol.iterator]() {
+            this.current = this.from;
+            return this;
+        },
+        next() {
+            if(this.current <= this.to) {
+                return { done: false, value: this.current++ };
+            } else {
+                return { done: true };
+            }
+        }
+    };
+    for (let num of range) {
+        alert(num);
+    }
+</script> -->
+
+<!-- <script>
+    // string
+    
+    let str = prompt("Enter the string");
+    let iterator = str[Symbol.iterator]();
+    while (true) {
+        let result = iterator.next();
+        if(result.done) break;
+        alert(result.value);
+    }
+</script> -->
+
+<!-- <script>
+    //Array.form
+
+    let arrayLike = {
+        0: "Hello",
+        1: "World",
+        length: 2
+    };
+    let arr = Array.from(arrayLike);
+    alert(arr.pop());
+</script> -->
+
+<script>
+    //Array.form
+
+    let arrayLike = {
+        0: "Hello",
+        1: "World",
+        length: 2
+    };
+    let arr = Array.from(arrayLike);
+    for(let i = 0; i < 3; i++) {
+        alert(arrayLike[i]);
+    }
+</script>

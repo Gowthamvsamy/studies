@@ -1,0 +1,38 @@
+<script>
+    class test
+    {
+        get_vote(x)
+        {
+            this.a=x;
+            if(this.a>=18)
+            {
+                document.write("Eligible for voting<br>");
+            }
+            if(this.a<18)
+            {
+                document.write("Not eligible for voting<br>");
+            }
+
+        }
+        get_profit(m)
+        {
+            this.b=m;
+            this.c=10;
+            if(this.c>this.b)
+            {
+                this.z="loss<br>";
+            }
+            if(this.c<this.b)
+            {
+                this.z="Profit<br>";
+            }
+            return(this.z);
+        }
+    }
+    var t=new test();
+    a=parseInt(prompt("Enter the value of a"));
+    y=t.get_vote(a);
+    b=parseInt(prompt("Enter the value of b"));
+    z=t.get_profit(b);
+    document.write(z);
+</script>

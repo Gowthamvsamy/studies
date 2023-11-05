@@ -1,0 +1,36 @@
+<script>
+    class A
+    {
+        constructor(w,x,y,z)
+        {
+            this.a=w;
+            this.b=x;
+            this.c=y;
+            this.s=z;
+        }
+        get_Area()
+        {
+            this.area=Math.sqrt(this.s*(this.s-this.a)*(this.s-this.b)*(this.s-this.c));
+            document.write("far 1 = ",this.area,"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(w,x,y,z)
+        {
+            super(w,x,y,z);
+        }
+        get_perimeter()
+        {
+            this.per=(this.a+this.b+this.c)/2;
+            document.write("far 2 = ",this.per);
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    s=parseInt(prompt("Enter the value of s"));
+    var t=new B(a,b,c,s);
+    t.get_Area();
+    t.get_perimeter();
+</script>

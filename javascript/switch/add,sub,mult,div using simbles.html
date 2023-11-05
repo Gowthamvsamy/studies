@@ -1,0 +1,27 @@
+<script>
+    var a,b,c,n;
+    n=prompt("Enter n\n1)+\n2)-\n3)*\n4)/");
+    a=parseInt(prompt("Enter a"));
+    b=parseInt(prompt("Enter b"));
+    switch(n)
+    {
+        case "+":
+            c=a+b;
+            document.write("Add="+c);
+            break;
+        case "-":
+            c=a-b;
+            document.write("Sub="+c);
+            break;
+        case "*":
+            c=a*b;
+            document.write("Mult="+c);
+            break;
+        case "/":
+                c=a/b;
+                document.write("div="+c);
+                break;
+        default:
+            document.write("Invalid");
+    }
+</script>

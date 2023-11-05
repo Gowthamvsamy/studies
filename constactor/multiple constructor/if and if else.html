@@ -1,0 +1,44 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        test(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_add()
+        {
+            this.a=parseInt(prompt("Enter the value of a"));
+            this.b=parseInt(prompt("Enter the value of b"));
+            if(this.a>this.b)
+            {
+                document.write("A is biggest<br>");
+            }
+            else
+            {
+                document.write("B is biggest<br>");
+            }
+        }
+        get_mul()
+        {
+            if(this.a > this.b)
+            {
+                document.write("A is biggest<br>");
+            }
+            else
+            {
+                document.write("B is biggest<br>");
+            }
+        }
+    } 
+    var t=new test();
+    t.get_add();
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("ENter the value of b"));
+    var t1=new test(a,b);
+    t1.get_mul();
+</script>

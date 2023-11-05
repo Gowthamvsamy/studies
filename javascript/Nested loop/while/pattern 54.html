@@ -1,0 +1,95 @@
+<script>
+/*
+Output:
+              *
+
+         *    *   *
+
+       *      *      *
+
+    *         *         *
+
+  *  *  *  *  *  *  *  *  *
+
+    *         *         *
+
+        *     *     *
+
+          *   *   *
+
+              *
+*/
+    var i,j,n,s,a,b,c;
+    n=parseInt(prompt("Enter n"));
+    i=1;
+    a=10;
+    s=n-1;
+    c=n-0;
+    while(i<=n)
+    {
+        while(s>0)
+        {
+            document.write("&nbsp&nbsp");
+            s--;
+        }
+
+        j=1;
+        while(j<=i)
+        {
+            if(i%2!=0)
+            {
+                if((i==5 && j==2) || (i==5 && j==4) || (i==7 && j==2) || (i==7 && j==3) 
+                    || (i==7 && j==5) || (i==7 && j==6))
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp");
+                }
+                else 
+                {
+                    document.write("&nbsp&nbsp*");
+                }
+            }
+            j++;
+        }
+        while(i%2!=0)
+        {
+            document.write("<br><br>");
+            i++;
+        }
+        i++;
+        s=n-i;
+    }
+    n=n-9;
+    a=a-2;
+    while(n<=a)
+    {
+        while(c<9)
+        {
+            document.write("&nbsp&nbsp");
+            c++;
+        }
+        b=1;
+        while(b<=a)
+        {
+            if(a%2!=0)
+            {
+                if((a==7 && b==2) || (a==7 && b==3) || (a==7 && b==5) || (a==7 && b==6) || (a==5 && b==2)
+                    || (a==5 && b==4))
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp")
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp*");
+                } 
+            }
+            b++;
+        }
+        while(a%2!=0)
+        {
+            document.write("<br><br>");
+            a--;
+        }
+        a--;
+        c=n+a;
+    }
+</script> 

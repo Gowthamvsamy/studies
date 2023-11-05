@@ -1,0 +1,25 @@
+<script>
+    function pal()
+    {
+        n=parseInt(prompt("Enter trhe value of n"));
+        i=0;
+        s=n;
+        while(n>0)
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            i=i*10+a;
+        }
+        if(s==i)
+        {
+            x="palindrome";
+        }
+        else
+        {
+            x="Not a palindrome";
+        }
+        return(x);
+    }
+    x=pal();
+    document.write(x);
+</script>

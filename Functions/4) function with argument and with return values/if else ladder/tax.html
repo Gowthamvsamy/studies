@@ -1,0 +1,23 @@
+<script>
+    function tax(n)
+    {
+        if(n<10000)
+        {
+            a=n;
+        }
+        else if(n>=10000 && n<20000)
+        {
+            b=(n*10)/100;
+            a=b+n;
+        }
+        else if(n>=20000)
+        {
+            b=(n*20)/100;
+            a=b+n;
+        }
+        return(a);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    x=tax(n);
+    document.write(x);
+</script>

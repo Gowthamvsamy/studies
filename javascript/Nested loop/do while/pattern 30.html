@@ -1,0 +1,82 @@
+<script>
+    /*
+    Output:
+         A
+        B B
+       C   C
+      D     D
+     E       E
+    F         F
+     E       E
+      D     D
+       C   C
+        B B
+         A
+    */
+        var n,i,j,a,b,c,r,k;
+        c=prompt("Enter the string");
+        n=c.length;
+        b=n;
+        i=0;
+        n=n-1;
+        do
+        {
+            a=0;
+            do
+            {
+                document.write("&nbsp&nbsp");
+                a++;
+            }while(a<=b);
+            j=0;
+            do
+            {
+                if(j==0)
+                {
+                    document.write("&nbsp",c[i]);
+                }
+                else if(j==i)
+                {
+                    document.write("&nbsp&nbsp",c[j]);
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp");
+                }
+                j++;
+            }while(j<=i);
+            document.write("<br>");
+            b--;
+            i++;
+        }while(i<n);
+        s=0;
+        do
+        {
+            r=0;
+            do
+            {
+                document.write("&nbsp&nbsp");
+                r++;
+            }while(r<=s);
+            s++;
+            j=n;
+            do
+            {
+                if(j==n)
+                {
+                    document.write("&nbsp&nbsp",c[j]);
+                    k=j;
+                }
+                else if(j==0)
+                {
+                    document.write("&nbsp",c[k]);
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+                j--;
+            }while(j>=0);
+            document.write("<br>");
+            n--;
+        }while(n>=0);
+    </script>

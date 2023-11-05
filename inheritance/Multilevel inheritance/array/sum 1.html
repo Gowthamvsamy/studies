@@ -1,0 +1,136 @@
+<script>
+    class A
+    {
+        x=new Array;
+        c=new Array;
+        addarr=new Array;
+        constructor(k,y,w)
+        {
+            this.x=k;
+            this.a=y;
+            this.c=w;
+
+        }
+        get_3and5()
+        {
+            document.write("<h3>Find 2<sup>nd</sup> and 5<sup>th</sup> element</h3>")
+            document.write("3<sup>rd</sup> element = ",this.x[2],"<br>");
+            document.write("5<sup>th</sup> element = ",this.x[i-1],"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(k,y,w)
+        {
+            super(k,y,w);
+        }
+        get_firstandlast()
+        {
+            document.write("<h3>Find 1<sup>st</sup> and last element</h3>")
+            document.write("1<sup>st</sup> element = ",this.x[0],"<br>");
+            document.write("Last element = ",this.x[i-1],"<br>");
+        }
+    }
+    class C extends B
+    {
+        constructor(k,y,w)
+        {
+            super(k,y,w);
+        }
+        get_change2nd()
+        {
+            document.write("<h3>Change the 2<sub>nd</sub> value in the array</h3>")
+            this.x[1]=50;
+            for(i=0;i<this.a;i++)
+            {
+                document.write(this.x[i],"<br>");
+            }
+        }
+    }
+    class D extends C
+    { 
+        constructor(k,y,w)
+        {
+            super(k,y,w);
+        }
+        get_idex()
+        {
+            document.write("<h3>Find the index value of the array</h3>");
+            var z=parseInt(prompt("Enter the z value"));
+            for(var i=0;i<this.x.length;i++)
+            {
+                if(this.x[i]==z)
+                {
+                   var k=i;
+                }
+            }
+                document.write("Index value id = ",k);   
+        }
+    }
+    class E extends D
+    { 
+        addarr=[];
+        constructor(k,y,w)
+        {
+            super(k,y,w);
+        }
+        get_sumof2(a)
+        {
+            document.write("<h3>Sum of two arrays</h3>");
+            /*document.write(this.x,'<br>');
+            document.write(a,'<br>');
+            document.write(this.c,'<br>');*/
+           
+            for(var i=0;i<a;i++)
+            {
+                addarr[i]=this.x[i]+this.c[i];
+                document.write(addarr[i],"<br>");
+            }
+            
+        }
+    }
+    class F extends E
+    {
+        constructor(k,y,w)
+        {
+            super(k,y,w);
+        }
+        get_ascending()
+        {
+            document.write("<h3>ascending order</h3>");
+            
+            document.write('X', this.x,'<br>');
+            //Ascending Order 
+            for(var i=0;i<a;i++){
+                for(var j=i+1;j<a;j++){
+                    if(this.x[i]>this.x[j]){
+                        var b=this.x[j];
+                        this.x[j]=this.x[i];
+                        this.x[i]=b;
+                    }
+                }
+                document.write(this.x[i],'<br>');
+            }
+            
+        }
+    }
+    a=parseInt(prompt("Enter the size of array"));
+    b=[];
+    for(var i=0;i<a;i++)
+    {
+        b[i]=parseInt(prompt("Enter the element of b"));
+    }
+    c=[];
+    for(var i=0;i<a;i++)
+    {
+        c[i]=parseInt(prompt("Enter the element of c"));
+    }
+    addarr=[];
+    var t=new F(b,a,c);
+    t.get_3and5();
+    t.get_firstandlast();
+    t.get_change2nd();
+    t.get_idex();
+    t.get_sumof2(a);
+    t.get_ascending();
+</script>

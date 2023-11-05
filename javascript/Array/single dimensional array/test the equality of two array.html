@@ -1,0 +1,20 @@
+<script>
+    var a,i,j,n,k,c;
+    a=new Array;
+    b=new Array;
+    c=0;
+    n=parseInt(prompt("Enter the size of array"));
+    for(i=0;i<n;i++)
+    {
+        a[i]=parseInt(prompt("Enter the array element a"));
+        b[i]=parseInt(prompt("Enter the array element b"));
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==b[i])
+        {
+            c=c+1;
+        }
+    }
+    document.write(c);
+</script>

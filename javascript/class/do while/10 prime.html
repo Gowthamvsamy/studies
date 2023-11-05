@@ -1,0 +1,34 @@
+<script>
+    class test
+    {
+        get_data()
+        {
+            this.n=x;
+        }
+        get_prime()
+        {
+            this.i=1;
+            this.b=0;
+            do
+            {
+                if(this.n%this.i==0)
+                {
+                    this.b=this.b+1;
+                }
+                this.i++;
+            }while(this.i<=this.n);
+            if(this.b==2)
+            {
+                document.write("Given number is prime number");
+            }
+            else
+            {
+                document.write("Given number is not a prime number")
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data();
+    t.get_prime();
+</script>

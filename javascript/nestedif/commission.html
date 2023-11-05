@@ -1,0 +1,29 @@
+<script>
+    var n,a,b
+    n=parseInt(prompt("ENter the sales amount"));
+    if(n>=10000)
+    {
+        if(n>=10000 && n<=20000)
+        {
+            a=n*5/100;
+        }
+        else if(n>=20001 && n<=50000)
+        {
+            a=n*10/100;
+        }
+        else if(n>=50001 && n<=100000)
+        {
+            a=n*15/100;
+        }
+        else if(n>=100001)
+        {
+            b=n*20/100;
+            a=b+500;
+        }
+    }
+    else
+    {
+        a=n*0/100;
+    }
+    document.write("commission value is = "+a)
+</script>

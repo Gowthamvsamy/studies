@@ -1,0 +1,32 @@
+<script>
+    /*
+    Output:
+        *    *    *    *    *
+        *                   *
+        *    *    *    *    *
+    */
+        var i,n,j;
+        n=parseInt(prompt("Enter tha value of n"));
+        i=1;
+        a=5;
+        do
+        {
+            j=1;
+            do
+            {
+                if((i==2 && j==2) || (i==2 && j==3) || (i==2 && j==4))
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp")
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp*");
+                }
+                j++;
+            }while(j<=a);
+            
+            document.write("<br>");
+            i++;
+    
+        }while(i<=n);
+    </script>

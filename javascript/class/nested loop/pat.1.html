@@ -1,0 +1,28 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_pat1()
+        {
+            this.i=1;
+            while(this.i<=this.n)
+            {
+                this.j=1;
+                while(this.j<=this.i)
+                {
+                    document.write("*");
+                    this.j++;
+                }
+                this.i++;
+                document.write("<br>");
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt('Ent6er the value of n'));
+    t.get_data(x);
+    t.get_pat1();
+</script>

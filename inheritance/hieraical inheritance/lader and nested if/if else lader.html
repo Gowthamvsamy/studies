@@ -1,0 +1,92 @@
+<script>
+    class bigg3
+    {
+        constructor(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+        }
+        get_bigg()
+        {
+            if((this.a>this.b) && (this.a>this.c))
+            {
+                document.write("A is biggest<br>");
+            }
+            else if((this.b>this.a) && (this.b>this.c))
+            {
+                document.write("B is biggest<br>");
+            }
+            else
+            {
+                document.write("C is biggest<br>");
+            }
+        }
+    }
+    class pas extends bigg3
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_pas()
+        {
+            if(this.a>0)
+            {
+                document.write("Given number is pastive<br>");
+            }
+            else if(this.a<0)
+            {
+                document.write("Given number is negative<br>");
+            }
+            else
+            {
+                document.write("Given number is neutral<br>");
+            }
+        }
+    }
+    class arth extends bigg3
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_arth()
+        {
+            var n=prompt("Enter the value of n\n1) 1 or +\n2) 2 or -\n3) 3 or *\n4) 4 or /\n5) 5 or %");
+            if(n=="1" || n=="+")
+            {
+                var sum=this.a+this.b;
+                document.write("Addison of given two number is = ",sum,"<br>");
+            }
+            else if(n=="2" || n=="-")
+            {
+                var sub=this.a-this.b;
+                document.write("Subtraction of given two number is = ",sub,"<br>");
+            }
+            else if(n=="3" || n=="*")
+            {
+                var mul=this.a*this.b;
+                document.write("Multiplication of given two number is  = ",mul,"<br>");
+            }
+            else if(n=="4" || n=="/")
+            {
+                var div=this.a/this.b;
+                document.write("Division of given two number is = ",div,"<br>");
+            }
+            else if(n=="5" || n=="%")
+            {
+                var rem=this.a%this.b;
+                document.write("Remainder of given two number is = ",rem,"<br>");
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    var t=new pas(a,b,c);
+    var t1=new arth(a,b,c);
+    t.get_bigg();
+    t.get_pas();
+    t1.get_arth();
+</script>

@@ -1,0 +1,19 @@
+<script>
+    function divod(n)
+    {
+        i=1;
+        sum=0;
+        while(i<=n)
+        {
+            if(i%2!=0)
+            {
+                sum=sum+(1/Math.pow(i,2));
+            }
+            i++;
+        }
+        return(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    x=divod(n);
+    document.write(x);
+</script>

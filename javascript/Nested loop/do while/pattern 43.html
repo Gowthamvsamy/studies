@@ -1,0 +1,88 @@
+<script>
+    /*
+    Output:
+     * * * * * * * * * *
+     * * * *     * * * *
+     * * *         * * *
+     * *             * *
+     *                 *
+     *                 *
+     * *             * *
+     * * *         * * *
+     * * * *     * * * *
+     * * * * * * * * * *
+    */
+        var n,i,j,s,k,a,b,c,d,e,l;
+        n=parseInt(prompt("Enter the value of n"));
+        i=5;
+        a=1;
+        l=5;
+        s=n;
+        do
+        {
+            j=1;
+            do
+            {
+                document.write("&nbsp*");
+                j++;
+            }while(j<=i);
+            do
+            {
+                if(i==5)
+                {
+                    document.write("");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+                s--;
+            }while(s>0);
+            k=l;
+            do
+            {
+                document.write("&nbsp*");
+                k--;
+            }while(k>=1);
+            document.write("<br>");
+            i--;
+            l--;
+            s=a;
+            a++;
+        }while(i>=n);
+        b=1;
+        n=b+4;
+        s=n-1;
+        d=1;
+        do
+        {
+            c=1;
+            do
+            {
+                document.write("&nbsp*");
+                c++;
+            }while(c<=b);
+            do
+            {
+                if(b==5)
+                {
+                    document.write("");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+                s--;
+            }while(s>0);
+            e=d;
+            do
+            {
+                document.write("&nbsp*");
+                e--;
+            }while(e>=1);
+            document.write("<br>");
+            b++;
+            d++;
+            s=n-d;
+        }while(b<=n);
+    </script>

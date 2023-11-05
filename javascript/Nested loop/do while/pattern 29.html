@@ -1,0 +1,34 @@
+<script>
+    /*
+    Output:
+         A
+        A B
+       A B C
+      A B C D
+     A B C D E
+    A B C D E F
+    */
+        var i,j,n,a;
+        a=prompt("Enter the string");
+        n=a.length;
+        i=0;
+        s=n;
+        do
+        {
+            do
+            {
+                document.write("&nbsp&nbsp");
+                s--;
+            }while(s>=0);
+    
+            j=0;
+            do
+            {
+                document.write("&nbsp&nbsp",a[j]);
+                j++;
+            }while(j<=i);
+            document.write("<br>");
+            i++;
+            s=n-i;
+        }while(i<n);
+    </script>

@@ -1,0 +1,100 @@
+<script>
+    /*
+    Output:
+                  *
+    
+             *    *   *
+    
+           *      *      *
+    
+        *         *         *
+    
+      *  *  *  *  *  *  *  *  *
+    
+        *         *         *
+    
+            *     *     *
+    
+              *   *   *
+    
+                  *
+    */
+        var i,j,n,s,a,b,c;
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        a=9;
+        s=n-1;
+        
+        do
+        {
+            do
+            {
+                document.write("&nbsp&nbsp");
+                s--;
+            }while(s>=0);
+    
+            j=1;
+           do
+            {
+                if(i%2!=0)
+                {
+                    if((i==5 && j==2) || (i==5 && j==4) || (i==7 && j==2) || (i==7 && j==3) 
+                        || (i==7 && j==5) || (i==7 && j==6))
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp");
+                    }
+                    else 
+                    {
+                        document.write("&nbsp&nbsp*");
+                    }
+                }
+                j++;
+            } while(j<=i);
+            do
+            {
+                document.write("<br><br>");
+                i++;
+            }while(i%2!=0);
+            i++;
+            s=n-i;
+        }while(i<=n);
+        n=n-8;
+        a=a-1;
+        c=n+9;
+        do
+        {
+            do
+            {
+                document.write("&nbsp&nbsp");
+                c++;
+            }while(c<9);
+            b=1;
+           do
+            {
+                if(a%2!=0)
+                {
+                    if((a==7 && b==2) || (a==7 && b==3) || (a==7 && b==5) || (a==7 && b==6) || (a==5 && b==2)
+                        || (a==5 && b==4))
+                    {
+                        document.write("&nbsp&nbsp&nbsp");
+                    }
+                    else if(a==1)
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*");
+                    }
+                    else
+                    {
+                        document.write("&nbsp&nbsp&nbsp&nbsp*");
+                    } 
+                }
+                b++;
+            } while(b<=a);
+            if(a%2!=0)
+            {
+                document.write("<br><br>");
+                a--;
+            }
+            a--;
+            c=n+a;
+        }while(n<=a);
+    </script> 

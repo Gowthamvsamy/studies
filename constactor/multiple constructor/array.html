@@ -1,0 +1,26 @@
+<script>
+    class test
+    {
+        test()
+        {
+            
+        }
+        
+        get_array1()
+        {
+            this.n=parseInt(prompt("Enter the size of array"));
+            this.a=Array;
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.a[this.i]=parseInt(prompt("Enter the array element"));
+            }
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                document.write(this.a[this.i],"<br>");
+            }
+        }
+        
+    }
+    var t=new test();
+    t.get_array1(); 
+</script>

@@ -1,0 +1,39 @@
+<script>
+/*
+Output:
+*********
+ *******
+  *****
+   ***
+    *
+*/
+    var i,j,n,s;
+    n=parseInt(prompt("Enter n"));
+    s=n+9;
+    i=10;
+    while(n<=i)
+    {
+        while(s<10)
+        {
+            document.write("&nbsp");
+            s++;
+        }
+        j=1;
+        while(j<=i)
+        {
+            if(i%2!=0)
+            {
+                document.write("*");
+            }
+            j++;
+        }
+        while(i%2!=0)
+        {
+            document.write("<br>");
+            i--;
+        }
+        i--;
+        s=n+i;
+        
+    }
+</script>

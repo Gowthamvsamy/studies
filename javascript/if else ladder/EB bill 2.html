@@ -1,0 +1,52 @@
+<script>
+	var id,name,unit,bill;
+	var temp,a,b,c,d,e,f,g;
+	//id=prompt("Enter the id number");
+	//name=prompt("Enter the name");
+	unit=parseInt(prompt("Enter the unit"));
+	if (unit<=199)
+	{
+		bill=unit*1.20;
+	}
+	else if(unit>199 && unit<=266)
+	{
+		temp=unit-199;
+		a=199*1.20;
+		b=temp*1.50;
+		bill=a+b;
+	}
+	else if(unit>266 && unit<=399)
+	{
+		temp=unit-199;
+		c=199*1.20;
+		b=temp*1.50; 
+		a=c+b;            //(temp)
+		d=a*15/100;
+		bill=a+d;
+	}
+	else if(unit>399 && unit<=599)
+	{
+		temp=unit-199;
+		a=temp-200;
+		b=199*1.20;
+		c=200*1.50;
+		d=a*1.80;
+		e=b+c+d;
+		f=e*15/100;
+		bill=f+e;
+	}
+	else if(unit>599)
+	{
+		temp=unit-199;
+		a=temp-200;
+		b=a-200;
+		c=199*1.20;
+		d=200*1.50;
+		e=200*1.80;
+		f=c+d+e;
+		g=f*15/100;
+		bill=f+g;
+	}
+		document.write("Bill amount = "+temp,"<br>",+c,"<br>",+b,"<br>",+a,"<br>",+d,"<br>",+bill);
+
+</script>

@@ -1,0 +1,41 @@
+<script>
+    function day()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        if(n==1)
+        {
+            x="sun";
+        }
+        else if(n==2)
+        {
+            x="Mon";
+        }
+        else if(n==3)
+        {
+            x="Tus";
+        }
+        else if(n==4)
+        {
+            x="Wed";
+        }
+        else if(n==5)
+        {
+            x="Thu";
+        }
+        else if(n==6)
+        {
+            x="Fri";
+        }
+        else if(n==7)
+        {
+            x="sat";
+        }
+        else
+        {
+            x="Give valid input";
+        }
+        return(x);
+    }
+    x=day();
+    document.write(x);
+</script>

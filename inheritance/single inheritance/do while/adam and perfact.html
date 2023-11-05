@@ -1,0 +1,73 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_adam()
+        {
+            var i=0;
+            var j=0;
+            this.m=this.n;
+            var a=Math.pow(this.n,2);
+            do
+            {   
+                var b=this.n%10;
+                i=i*10+b;
+                this.n=parseInt(this.n/10);
+
+            }while(this.n>0);
+            var c=Math.pow(i,2);
+            do
+            {
+                var d=c%10;
+                j=j*10+d;
+                c=parseInt(c/10);
+
+            }while(c>0);
+            if(j==a)
+            {
+                document.write("Given number is adam number");
+            }
+            else
+            {
+                document.write("Given number is not a adam number");
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_perfact()
+        {
+            var i=0;
+            var b=0;
+            var c=this.m;
+            do
+            {
+                if(this.m%i==0)
+                {
+                    b=b+i;
+                }
+                i++;
+            }while(i<this.m);
+
+            if(b==c)
+            {
+                document.write(b," is a perfact number");
+            }
+            else
+            {
+                document.write(b," is a not a perfact number");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_adam();
+    t.get_perfact();
+</script>

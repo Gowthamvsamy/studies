@@ -1,0 +1,62 @@
+<!-- <script>
+    function sayHi() {
+        alert('Hello');
+    }
+    alert(sayHi.name);
+</script> -->
+
+<!-- <script>
+    let sayHi = function() {
+        alert("Hi");
+    };
+    alert(sayHi.name);
+</script> -->
+
+<!-- <script>
+    function f(sayHii = function() {}) {
+        alert(sayHii.name);
+    }
+    f();
+</script> -->
+
+<!-- <script>
+    let user = {
+        sayHi() {
+
+        },
+        sayBye: function() {
+
+        }
+    }
+    alert(user.sayHi.name);
+    alert(user.sayBye.name);
+</script> -->
+
+<!-- length -->
+<!-- <script>
+    function f1(a) {}
+    function f2(a,b) {}
+    function many(a,b,...more) {}
+    alert(f1.length);
+    alert(f2.length);
+    alert(many.length);
+</script> -->
+
+<!-- Named -->
+<!-- <script>
+    let sayHi = function func(who) {
+        alert (`Hello, ${who}`);
+    };
+    sayHi('james');
+</script> -->
+
+<script>
+    let sayHi = function func(who) {
+        if(who) {
+            alert(`Hello, ${who}`);
+        } else {
+            func("Guest");
+        }
+    };
+    sayHi();
+</script>

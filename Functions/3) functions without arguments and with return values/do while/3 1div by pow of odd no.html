@@ -1,0 +1,19 @@
+<script>
+    function odd()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        sum=0;
+        do
+        {
+            if(i%2!=0)
+            {
+                sum=sum+1/Math.pow(i,2);
+            }
+            i++;
+        }while(i<=n);
+        return(sum);
+    }
+    x=odd();
+    document.write(x);
+</script>

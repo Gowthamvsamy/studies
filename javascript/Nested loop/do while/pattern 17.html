@@ -1,0 +1,31 @@
+<script>
+    /*
+    Output:
+        *
+       * *
+      * * * 
+     * * * *
+    * * * * * 
+    */
+        var i,j,n,s;
+        n=parseInt(prompt("Enter n"));
+        i=1;
+        s=n-1;
+        do
+        {
+            do
+            {
+                document.write("&nbsp");
+                s--;
+            }while(s>=0)
+            j=1;
+            do
+            {
+                document.write("*");
+                j++;
+            }while(j<=i);
+            document.write("<br>");
+            i++;
+            s=n-i;
+        }while(i<=n);
+    </script>

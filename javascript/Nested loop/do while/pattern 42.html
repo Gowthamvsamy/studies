@@ -1,0 +1,39 @@
+<script>
+    /*
+    Output:
+    ********1********
+    *******2*2*******
+    ******3*3*3******
+    *****4*4*4*4*****
+    ****5*5*5*5*5****
+    */
+        var i,n,j,s,l,t;
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        l=1;
+        do
+        {
+            s=parseInt(n/2)+6;
+            do
+            {
+                document.write("*");
+                s--;
+            }while(s>l);
+            j=1;
+            do
+            {
+                document.write("*",i);
+                j++;
+            
+            }while(j<=i);
+            s=parseInt(n/2)+6;
+            do
+            {
+                document.write("*");
+                s--;
+            }while(s>=l);
+            document.write("<br>");
+            i++;
+            l++;
+        }while(i<=n);
+    </script>

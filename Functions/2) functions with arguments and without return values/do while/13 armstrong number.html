@@ -1,0 +1,17 @@
+<script>
+    function arm(n)
+    {
+        i=0;
+        sum=0;
+        do
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            //document.write(a,"<br>");
+            sum=sum+Math.pow(a,3);
+        }while(n!=0);
+        document.write(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    arm(n);
+</script>

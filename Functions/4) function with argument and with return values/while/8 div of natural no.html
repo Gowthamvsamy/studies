@@ -1,0 +1,16 @@
+<script>
+    function div(n)
+    {
+        i=1;
+        sum=0;
+        while(i<=n)
+        {
+            sum=sum+(1/Math.pow(i,2));
+            i++;
+        }
+        return(sum);
+    }
+    n=parseInt(prompt("Ente rthe value of n"));
+    x=div(n);
+    document.write(x);
+</script>

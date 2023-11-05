@@ -1,0 +1,28 @@
+<script>
+    /*
+    Output:
+    ******
+    *    *
+    *   *
+    *  *
+    * *
+    *
+    */
+        var i,n,j,s;
+        n=parseInt(prompt("Enterthe value of n"));
+        for(i=6;i>=n;i--)
+        {
+            for(j=1;j<=i;j++)
+            {
+                if(j==1 || i==j || i==6)
+                {
+                    document.write("*");
+                }
+                else
+                {
+                    document.write("&nbsp&nbsp");
+                }
+            }
+            document.write("<br>");
+        }
+    </script>

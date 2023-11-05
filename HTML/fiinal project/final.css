@@ -1,0 +1,22 @@
+#main{
+    background-color: rgb(164, 225, 233);
+    height: 100%;
+    width: 100%;
+}
+#dot{
+    color: red;
+    font-size: 90px;
+}
+.checked {
+    color: orange;
+}
+.hover:active,.hover:hover{
+    color: black;
+    text-decoration: underline;
+   
+}
+.ankhover{
+    color: rgba(0, 0, 0, 0.589);
+    text-decoration: none;
+    
+}

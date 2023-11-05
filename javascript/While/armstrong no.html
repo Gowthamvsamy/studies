@@ -1,0 +1,30 @@
+<script>
+    var n,i,a,b,c,s;
+    n=parseInt(prompt("Enter n"));
+    i=n;
+    b=0;
+    c=n;
+    s=0;
+    
+    while(n>0)
+    {
+        a=n%10;
+        n=parseInt(n/10);
+        s=s+1;
+    }
+    while(c>0)
+    {
+        a=c%10;
+        c=parseInt(c/10);
+        b=b+Math.pow(a,s);
+        
+    }
+    if(i==b)
+    {
+        document.write("armstrong no");
+    }    
+    else
+    {
+        document.write("not armstrong no");
+    }
+</script>

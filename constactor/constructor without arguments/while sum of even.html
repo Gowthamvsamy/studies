@@ -1,0 +1,26 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        get_sum_of_even()
+        {
+            this.n=parseInt(prompt("Enter the value of n"));
+            this.i=1;
+            this.sum=0;
+            while(this.i<=this.n)
+            {
+                if(this.i%2==0)
+                {
+                    this.sum=this.sum+this.i;
+                }
+                this.i++;
+            }
+            document.write("sum of eve no = ",this.sum);
+        }
+    }
+    var t=new test();
+    t.get_sum_of_even();
+</script>

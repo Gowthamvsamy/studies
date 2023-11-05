@@ -1,0 +1,33 @@
+<script>
+    class oddeven
+    {
+        get_oddeven()
+        {
+            this.a=parseInt(prompt("Enter the value of a"));
+            if(this.a%2!=0)
+            {
+                document.write("A is odd number<br>");
+            }
+            if(this.a%2==0)
+            {
+                document.write("A is even number<br>");
+            }
+        }
+        get_pasorneg(x)
+        {
+            this.a=x;
+            if(this.a>0)
+            {
+                document.write("A is pastive number<br>");
+            }
+            if(this.a<0)
+            {
+                document.write("A is negative number<br>");
+            }
+        }
+    }
+    var t= new oddeven();
+    x=t.get_oddeven();
+    a=parseInt(prompt("Enter the value of a"));
+    t.get_pasorneg(a);
+</script>

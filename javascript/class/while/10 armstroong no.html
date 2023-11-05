@@ -1,0 +1,40 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_armstrong()
+        {
+            this.i=this.n;
+            this.b=0;
+            this.c=this.n;
+            this.s=0;
+            while(this.n>0)
+            {
+                this.a=this.n%10;
+                this.n=parseInt(this.n/10);
+                this.s=this.s+1;
+            }
+            while(this.c>0)
+            {
+                this.a=this.c%10;
+                this.c=parseInt(this.c/10);
+                this.b=this.b+Math.pow(this.a,this.s);
+            }
+            if(this.i==this.b)
+            {
+                document.write("Given number is armstrong number");
+            }
+            else
+            {
+                document.write("Given number is not a armstrong number");
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_armstrong();
+</script>

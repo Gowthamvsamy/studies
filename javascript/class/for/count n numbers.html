@@ -1,0 +1,24 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_number()
+        {
+            this.s=0;
+            for(this.i=1;this.i<=this.n;this.i++)
+            {
+                this.a=parseInt(prompt("Enter the value of a"));
+                this.s=this.s+1;
+                
+            }
+            document.write(this.s);
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_number();
+</script>

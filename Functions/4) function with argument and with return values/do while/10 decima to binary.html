@@ -1,0 +1,18 @@
+<script>
+    function dec(n)
+    {
+        i=0;
+        c=0;
+        do
+        {
+            a=n%2;
+            n=parseInt(n/2);
+            i=i+a*Math.pow(10,c);
+            c++;
+        }while(n>0);
+        return(i);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    x=dec(n);
+    document.write(x);
+</script>

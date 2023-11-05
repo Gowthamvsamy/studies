@@ -1,0 +1,24 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_reversstring()
+        {
+            this.i=0;
+            this.l=this.n.length;
+            this.l=this.l-1;
+            while(this.i<=this.l)
+            {
+                document.write(this.n[this.l]);
+                this.l--;
+            }
+        }
+    }
+    var t=new test();
+    x=prompt("Enter the string");
+    t.get_data(x);
+    t.get_reversstring();
+</script>

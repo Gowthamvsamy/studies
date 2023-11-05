@@ -1,0 +1,25 @@
+<script>
+    class test
+    {
+        test()
+        {
+            this.n=x;
+        }
+        get_decimal()
+        {
+            this.i=0;
+            this.c=0;
+            do
+            {
+                this.a=n%2;
+                n=parseInt(n/2);
+                this.i=this.i+this.a*Math.pow(10,this.c);
+                this.c++;
+            }while(n>0);
+            document.write(this.i);
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new test();
+    t.get_decimal();
+</script>

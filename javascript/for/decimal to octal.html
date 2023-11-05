@@ -1,0 +1,14 @@
+<script>
+    var i,n,a,c;
+    n=parseInt(prompt("Enter decimal value"));
+    i=0;
+    for(c=0;n>0;c++)
+    {
+        a=n%8;
+        n=parseInt(n/8);
+        i=i+a*Math.pow(10,c);
+
+    }
+    document.write("Octal value is = ",i);
+
+</script>

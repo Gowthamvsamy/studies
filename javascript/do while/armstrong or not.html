@@ -1,0 +1,25 @@
+<script>
+    var i,n,a,b,c,d;
+    n=parseInt(prompt("Enter n"));
+    i=0;
+    b=0;
+    d=n;
+    do
+    {
+        a=n%10;
+        c=Math.pow(a,3); 
+        b=b+c;
+        n=parseInt(n/10);
+        i++;
+    }while(n>0);
+    //document.write(b);
+
+    if(b==d)
+    {
+        document.write("Give number is armstrong number");
+    }
+    else
+    {
+        document.write("Given number is not a armstrong numbers");
+    }
+</script>

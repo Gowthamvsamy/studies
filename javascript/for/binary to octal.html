@@ -1,0 +1,21 @@
+<script>
+    var n,i,a,b,c,d,e;
+    n=parseInt(prompt("Enter binary value"));
+    i=0;
+    d=0;
+    for(c=0;n>0;c++)
+    {
+        a=n%10;
+        n=parseInt(n/10);
+        i=i+a*Math.pow(2,c);
+    }
+
+    for(e=0;i>0;e++)
+    {
+        b=i%8;
+        i=parseInt(i/8);
+        d=d+b*Math.pow(10,e)
+    }
+
+    document.write("Octal value is = ",d);
+</script>

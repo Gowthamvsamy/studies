@@ -1,0 +1,38 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        get_data()
+        {
+            this.a=parseInt(prompt("Enter the a value"));
+            this.b=parseInt(prompt("Enter tha b value"));
+            this.c=parseInt(prompt("Enter tha c value"));
+            if(this.a>this.b)
+            {
+                if(this.a>this.c)
+                {
+                    document.write("A is biggest");
+                }
+                else
+                {
+                    document.write("C is biggest");
+                }
+            }
+            else
+            {
+                if(this.b>this.c)
+                {
+                    document.write("B is biggest");
+                }
+                else
+                {
+                    document.write("C is biggest");                }
+            }
+        }
+    }
+    var t=new test();
+    t.get_data();
+</script>

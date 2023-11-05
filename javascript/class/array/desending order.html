@@ -1,0 +1,40 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.a=Array;
+            this.n=x;
+            this.s=this.n;
+        }
+        get_decendingorder()
+        {
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.a[this.i]=parseInt(prompt("Enter the array element"));
+            }
+            for(this.i=0;this.i<this.n+this.s;this.i++)
+            {
+                for(this.j=this.i-this.s;this.j<this.n;this.j++)
+                {
+                    if(this.a[this.i]>this.a[this.j])
+                    {
+                        this.temp=this.a[this.i];
+                        this.a[this.i]=this.a[this.j];
+                        this.a[this.j]=this.temp;
+                    }
+                }
+            }
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                document.write(this.a[this.i]);
+            }
+            
+        }
+
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the array size"));
+    t.get_data(x);
+    t.get_decendingorder();
+</script>

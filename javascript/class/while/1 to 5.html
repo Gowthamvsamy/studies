@@ -1,0 +1,89 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+            this.i=1;
+        }
+        get_natural()
+        {
+            
+            while(this.i<=this.n)
+            {
+                document.write(this.i,"<br>");
+                this.i++;
+            }
+            document.write("<br><br>");
+        }
+        get_sumodd()
+        {
+            this.i=1;
+            this.sum=0;
+            while(this.i<=this.n)
+            {
+                if(this.i%2!=0)
+                {
+                    this.sum=this.sum+this.i
+                }
+                this.i++;
+            }
+            document.write("sum od odd no =",this.sum,"<br><br>");
+        }
+        get_factorial()
+        {
+            this.i=1;
+            this.m=1;
+            while(this.i<=this.n)
+            {
+                this.m=this.m*this.i;
+                this.i++;
+            }
+            document.write("factorial of n number = ",this.m,"<br><br>");
+        }
+        get_previousodd()
+        {
+            this.i=1;
+            this.j=this.i;
+            this
+            while(this.i<=this.n)
+            {
+                if(this.i%2!=0)
+                {
+                    this.j=this.i-2;
+                    document.write("previous odd no = ",this.j,"<br>");
+                    document.write("Current odd no = ",this.i,"<br>");
+                }
+                this.i++;
+                this.j++;
+            }
+            document.write("<br><br>");
+        }
+        get_previouseven()
+        {
+            this.i=1;
+            this.j=this.i;
+            this
+            while(this.i<=this.n)
+            {
+                if(this.i%2==0)
+                {
+                    this.j=this.i-2;
+                    document.write("previous even no = ",this.j,"<br>");
+                    document.write("Current even no = ",this.i,"<br>");
+                }
+                this.i++;
+                this.j++;
+            }
+            document.write("<br><br>");
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_natural();
+    t.get_sumodd();
+    t.get_factorial();
+    t.get_previousodd();
+    t.get_previouseven();
+</script>

@@ -1,0 +1,46 @@
+<script>
+    function hexa(n)
+    {
+        i=0;
+        s="";
+        for(c=0;n>0;c++)
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            i=i+a*Math.pow(8,c);
+        }
+        for(;i>0;)
+        {
+            b=i%16;
+            switch(b)
+            {
+                case 10:
+                    s=s+'A';
+                    break;
+                case 11:
+                    s=s+'B';
+                    break;
+                case 12:
+                    s=s+'C';
+                    break;
+                case 13:
+                    s=s+'D';
+                    break;
+                case 14:
+                    s=s+'E';
+                    break;
+                case 15:
+                    s=s+'F';
+                    break;
+                default:
+                    x=b.toString();
+                    s=x+s;
+            }
+            i=parseInt(i/16);
+        }
+        return(s);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    x=hexa(n);
+    document.write(s);
+</script>

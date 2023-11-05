@@ -1,0 +1,38 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_pasneg()
+        {
+            this.b=0;
+            this.c=0;
+            this.d=0;
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.a=parseInt(prompt("Enter the value of a"));
+                if(this.a>0)
+                {
+                    this.b=this.b+1;
+                }
+                else if(this.a<0)
+                {
+                    this.c=this.c+1;
+                }
+                else if(this.a==0)
+                {
+                    this.d=this.d+1;
+                }
+            }
+            document.write("Number of Pastive value is = ",this.b,"<br>");
+            document.write("Number of Negative value is = ",this.c,"<br>");
+            document.write("Number of Zero is = ",this.d,"<br>");
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_pasneg();
+</script>

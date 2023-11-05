@@ -1,0 +1,18 @@
+<script>
+    function bin()
+    {
+        n=parseInt(prompt("ENter the value of n"));
+        i=0;
+        c=0;
+        while(n>0)
+        {
+            a=n%10;
+            n=parseInt(n/10);
+            i=i+a*Math.pow(2,c);
+            c++;
+        }
+        return(i);
+    }
+    x=bin();
+    document.write(x);
+</script>

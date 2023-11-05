@@ -1,0 +1,42 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        get_automorphic()
+        {
+            
+            this.n=prompt("Enter the value of n");//n=25
+            
+            this.a=Math.pow(this.n,2);//a=625
+
+            this.s=this.n;
+            this.e=0;
+            for(this.i=0;this.s>0;this.i++)
+            {
+                this.d=this.s%10;
+                this.s=parseInt(this.s/10);
+                this.e=this.e+1;
+            }
+            //document.write("e=",this.e,"<br>");
+            //document.write("n=",this.n,"<br>");
+            //document.write("a=",this.a,"<br>");
+
+            this.c=this.a%(Math.pow(10,this.e));
+            //document.write("c=",this.c);
+
+            if(this.n==this.c)
+            {
+                document.write("Automorphic no");
+            }
+            else
+            {
+                document.write("Not a Automorphic no");
+            }
+        }
+    }
+    var t=new test();
+    t.get_automorphic();
+</script>

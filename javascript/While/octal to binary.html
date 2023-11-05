@@ -1,0 +1,27 @@
+<script>
+    var i,n,a,c,s,b,d,m;
+    n=parseInt(prompt("Enter octal no"));
+    document.write("Octal number "+n,"<br>");
+    i=0;
+    c=0;
+    d=0;
+    m=0;
+    while(n>0)
+    {
+        a=n%10;
+        n=parseInt(n/10);
+        i=i+a*Math.pow(8,c);
+        c++;
+        
+    }
+    document.write("Decimal numer "+i,"<br>");
+    while(i>0)
+    {
+        b=i%2;
+        i=parseInt(i/2);
+        d=d+b*Math.pow(10,m);
+        m++;
+        document.write("Binary number "+d,"<br>");
+    }
+    
+</script>

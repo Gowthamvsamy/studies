@@ -1,0 +1,43 @@
+<script>
+    class A
+    {
+        constructor(x,y)
+        {
+            this.n=x;
+            this.s=y;
+        }
+        get_tale()
+        {
+            var i=1;
+            while(i<=this.n)
+            {
+                var sum=i*this.s;
+                document.write(i,"*",this.s,"=",sum,"<br>");
+                i++;
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_fact()
+        {
+            var i=1;
+            var m=1;
+            while(i<=this.n)
+            {
+                m=m*i;
+                i++;
+            }
+            document.write(m);
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    s=parseInt(prompt("Enter the table"));
+    var t=new B(n,s);
+    t.get_tale();
+    t.get_fact();
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This veriable</title>
+</head>
+<body>
+    <p id="l"></p>
+    <script>
+        function person(first,last,age,qualification)
+        {
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.qualification=qualification;
+        }
+    var myDetails=new person("Gowtham","Velusamy",26,"BSc(cs)");
+    var myDetail=new person("pavin","A",22,"BE");
+    document.getElementById("l").innerHTML="Name:"+ myDetails.firstName+" "+ myDetails.lastName+
+    ".<br> Name:"+myDetail.firstName+" "+myDetail.lastName;
+    </script>
+    
+</body>
+</html>

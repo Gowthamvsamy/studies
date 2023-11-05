@@ -1,0 +1,60 @@
+<script>
+    /*
+    Output:
+     * * * * * * * * * *
+     * * * *     * * * *
+     * * *         * * *
+     * *             * *
+     *                 *
+     *                 *
+     * *             * *
+     * * *         * * *
+     * * * *     * * * *
+     * * * * * * * * * *
+    */
+        var n,i,j,s,k,a,b,c,d,e,l;
+        n=parseInt(prompt("Enter the value of n"));
+        a=1;
+        l=5;
+        for(i=5;i>=n;i--)
+        {
+            for(j=1;j<=i;j++)
+            {
+                document.write("&nbsp*");
+            }
+            for(;s>0;s--)
+            {
+                document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+            }
+            for(k=l;k>=1;k--)
+            {
+                document.write("&nbsp*");
+            }
+            document.write("<br>");
+            l--;
+            s=a;
+            a++;
+        }
+        b=1
+        n=b+4;
+        s=n-1;
+        d=1;
+        for(;b<=n;b++)
+        { 
+            for(c=1;c<=b;c++)
+            {
+                document.write("&nbsp*");
+            }
+            for(;s>0;s--)
+            {
+                document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+            }
+            for(e=d;e>=1;e--)
+            {
+                document.write("&nbsp*");
+            }
+            document.write("<br>");
+            d++;
+            s=n-d;
+        }
+    </script>

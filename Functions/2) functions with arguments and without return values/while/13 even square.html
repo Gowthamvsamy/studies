@@ -1,0 +1,18 @@
+<script>
+    function eve(n)
+    {
+        i=1;
+        sum=0;
+        while(i<=n)
+        {
+            if(1%2==0)
+            {
+                sum=sum+Math.pow(i,2);
+            }
+            i++;
+        }
+        document.write(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    eve(n);
+</script>

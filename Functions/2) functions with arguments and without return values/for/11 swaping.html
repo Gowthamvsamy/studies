@@ -1,0 +1,30 @@
+<script>
+    function swa(n)
+    {
+        b=n%10;
+        //document.write("b=",b,"<br>");
+        n=parseInt(n/10);
+        for(i=0;n>0;)
+        {
+            a=n%10;
+            i=i*10+a;
+            n=parseInt(n/10);
+        }
+        //document.write("i=",i,"<br>");
+        c=i%10;
+        //document.write("c=",c,"<br>");
+        s=parseInt(i/10);
+        //document.write("s=",s,"<br>");
+        j=0;
+        for(;s>0;)
+        {
+            d=s%10;
+            j=j*10+d;
+            s=parseInt(s/10);
+        }
+        //document.write("j=",j);
+        document.write(b,j,c);
+    }
+    n=parseInt(prompt("Enter the valiue of n"));
+    swa(n);
+</script>

@@ -1,0 +1,41 @@
+<script>
+    var a,b,c,n;
+    n=parseInt(prompt("Select \n1)biggest\n2)smallest"));
+    a=parseInt(prompt("Enter a"));
+    b=parseInt(prompt("Enter b"));
+    c=parseInt(prompt("Enter c"));
+  
+    switch(n)
+    {
+        case 1:
+           if(a>b && a>c)
+           {
+               document.write("a is biggest");
+           }
+           else if(b>a && b>c)
+           {
+               document.write("b is biggest");
+           }
+           else if(c>a && c>b)
+           {
+               document.write("c is biggest");
+           }
+           break;
+        case 2:
+            if(a<b && a<c)
+            {
+                document.write("a is smallest");
+            }
+            else if(b<a && b<c)
+            {
+                document.write("b is smallest");
+            }
+            else if(c<a && c<b)
+            {
+                document.write("c is smallest");
+            }
+            break;
+        default:
+            document.write("Invalide");
+    }
+</script>

@@ -1,0 +1,35 @@
+<script>
+    function arith(n)
+    {
+        if(n==1 || n=='+')
+        {
+            c=a+b;
+        }
+        else if(n==2 || n=='-')
+        {
+            c=a-b;
+        }
+        else if(n==3 || n=='*')
+        {
+            c=a*b;
+        }
+        else if(n==4 || n=='/')
+        {
+            c=a/b;
+        }
+        else if(n==5 || n=='%')
+        {
+            c=a%b;
+        }
+        else
+        {
+            c="Give valid input";
+        }
+        return(c);
+    }
+    n=prompt("Enter the value of n");
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    x=arith(n);
+    document.write(x);
+</script>

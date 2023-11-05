@@ -1,0 +1,29 @@
+<script>
+    class test
+    {
+        test()
+        {
+            
+        }
+        get_bigest()
+        {
+            this.a=parseInt(prompt("Enter the a value"));
+            this.b=parseInt(prompt("Enter the b value"));
+            this.c=parseInt(prompt("Enter the c value"));
+            if(this.a>this.b && this.a>this.c)
+            {
+                document.write("A is biggest");
+            }
+            else if(this.b>this.a && this.b>this.c)
+            {
+                document.write("B is biggest");
+            }
+            else
+            {
+                document.write("C is biggest");
+            }
+        }
+    }
+    var t=new test();
+    t.get_bigest();
+</script>

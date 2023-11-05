@@ -1,0 +1,157 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_palindeome()
+        {
+            document.write("<h2 style= color:blue >palindrome</h2>");
+            var i=0,s=this.n;
+            this.m=this.n;
+            do
+            {
+                var a=this.n%10;
+                i=i*10+a;
+                this.n=parseInt(this.n/10);
+            }while(this.n>0);
+            if(i==s)
+            {
+                document.write("Given number is palindrome");
+            }
+            else
+            {
+                document.write("Given number is not a palindrome");
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_armstrong()
+        {
+            document.write("<h2 style= color:blue >Armstrong number</h2>")
+            var i=0,b=0,d=this.m;
+            this.p=this.m;
+            do
+            {
+                var a=this.m%10;
+                var c=Math.pow(a,3);
+                b=b+c;
+                this.m=parseInt(this.m/10);
+                i++;
+            }while(this.m>0);
+            if(b==d)
+            {
+                document.write("Given number is armstrong number");
+            }
+            else
+            {
+                document.write("Given number is not armstrong number")
+            }
+        }
+    }
+    class C extends B
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_adam()
+        {
+            document.write("<h2 style=color:blue;>Adam number</h2>")
+            this.q=this.p;
+            var i=0,j=0,a,b,c,d;
+            a=Math.pow(this.p,2);
+            do
+            {
+                b=this.p%10;
+                i=i*10+b;
+                this.p=parseInt(this.p/10);
+            }while(this.p>0);
+            c=Math.pow(i,2);
+            do
+            {
+                d=c%10;
+                j=j*10+d;
+                c=parseInt(c/10);
+            }while(c>0);
+            if(j==a)
+            {
+                document.write("Given number is adam number");
+            }
+            else
+            {
+                document.write("Given number is not adam number");
+            }
+        }
+    }
+    class D extends C
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_perfactno()
+        {
+            document.write("<h2 style=color:blue;>Perfact Number</h2>")
+            var i=0,b=0;
+            this.r=this.q;
+            do
+            {
+                if(this.q%i==0)
+                {
+                    b=b+i;
+                }
+                i++;
+            }while(i<this.q);
+            if(b==this.r)
+            {
+                document.write(b," is a perfact number");
+            }
+            else
+            {
+                document.write(b," is a not perfact number");
+            }
+        }
+    }
+    class E extends D
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_prime()
+        {
+            document.write("<h2 style=color:blue;>Prime Number</h2>");
+            var i=1,b=0;
+            do
+            {
+                if(this.r%i==0)
+                {
+                    b=b+1;
+                }
+                i++;
+            }while(i<=this.r);
+            if(b==2)
+            {
+                document.write("It is a prime number");
+            }
+            else
+            {
+                document.write("It is not a prime number");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new E(n);
+    t.get_palindeome();
+    t.get_armstrong();
+    t.get_adam();
+    t.get_perfactno();
+    t.get_prime();
+</script>

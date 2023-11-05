@@ -1,0 +1,58 @@
+<script>
+    class sum1
+    {
+        n=new Array;
+        constructor(x,y)
+        {
+            this.n=x;
+            this.a=y;
+        }
+        get_3and5()
+        {
+            document.write("<h3>To find the 3<sup>rd</sub> and 5<sup>th</sup> element in array</h3>");
+            document.write("3<sup>rd</sup> element = ",this.n[2],"<br>");
+            document.write("5<sup>th</sup> element = ",this.n[4],"<br>");
+        }
+    }
+    class sum2 extends sum1
+    {
+
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_1andlast()
+        {
+            document.write("<h3>To find the 1<sup>st</sup> and last element in array</h3>");
+            document.write("1<sup>st</sup> element = ",this.n[1],"<br>");
+            document.write("last element in array = ",this.n[i-1],"<br>");
+        }
+    }
+    class sum3 extends sum1
+    {
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_2ndto50()
+        {
+            document.write("<h3>To change the 2<sup>nd</sup> value to 50</h3>");
+            this.n[1]=50;
+            for(var i=0;i<this.a;i++)
+            {
+                document.write(this.n[i],"<br>");
+            }
+        }
+    }
+    a=parseInt(prompt("Enter the size of array"));
+    b=new Array;
+    for(var i=0;i<a;i++)
+    {
+        b[i]=parseInt(prompt("Enter the array element"));
+    }
+    var t=new sum2(b,a);
+    var t1=new sum3(b,a);
+    t.get_3and5();
+    t.get_1andlast();
+    t1.get_2ndto50();
+</script>

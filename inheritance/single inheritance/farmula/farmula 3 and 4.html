@@ -1,0 +1,30 @@
+<script>
+    class A
+    {
+        constructor (x)
+        {
+            this.a=x;
+        }
+        get_far3()
+        {
+            this.b=Math.sqrt(3*(Math.pow(this.a,2)/4));
+            document.write("far 3 = ",this.b,"<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_far4()
+        {
+            this.b=this.a*3;
+            document.write("far 4 = ",this.b,);
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    var t=new B(a);
+    t.get_far3();
+    t.get_far4();
+</script>

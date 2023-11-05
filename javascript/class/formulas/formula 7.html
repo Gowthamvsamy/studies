@@ -1,0 +1,18 @@
+<script>
+    class circular
+    {
+        get_cir(x,y,z)
+        {
+            this.h=x;
+            this.r=y;
+            this.s=z;
+            this.p=3.14*this.h*(this.r-this.s);
+            document.write("circular cylinder =",this.p);
+        }
+    }
+    var t=new circular();
+    h=parseInt(prompt("Enter the value of h"));
+    r=parseInt(prompt("Enter the value of r"));
+    s=parseInt(prompt("Enter the value of s"));
+    t.get_cir(h,r,s);
+</script>

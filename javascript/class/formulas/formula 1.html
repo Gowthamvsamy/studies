@@ -1,0 +1,21 @@
+<script>
+    class formula
+    {
+        get_data()
+        {
+            this.s=parseInt(prompt("Enter the value of s"));
+            this.a=parseInt(prompt("Enter the value of a"));
+            this.b=parseInt(prompt("Enter the value of b"));
+            this.c=parseInt(prompt("Enter the value of c"));
+        }
+        display()
+        {
+            this.m=Math.sqrt(this.s*(this.s-this.a)*(this.s-this.b)*(this.s-this.c));
+            return(this.m);
+        }
+    }
+    var t=new formula();
+    t.get_data();
+    var x=t.display();
+    document.write("Area =",x);
+</script>

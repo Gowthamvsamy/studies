@@ -1,0 +1,44 @@
+<script>
+    class test
+    {
+        test()
+        {
+            this.n=x;
+            this.a=y;
+            this.b=z;
+        }
+        get_switch()
+        {
+            switch(n)
+            {
+                case "1":
+                case "add":
+                    this.c=a+b;
+                    document.write(this.c);
+                    break;
+                case "2":
+                case "sum":
+                    this.c=a-b;
+                    document.write(this.c);
+                    break;
+                case "3":
+                case "mul":
+                    this.c=a*b;
+                    document.write(this.c);
+                    break;
+                case "4":
+                case "div":
+                    this.c=a/b;
+                    document.write(this.c);
+                    break;
+                default:
+                    document.write("Give valid input");
+            }
+        }
+    }
+    n=prompt("Celect the function");
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t=new test();
+    t.get_switch();
+</script>

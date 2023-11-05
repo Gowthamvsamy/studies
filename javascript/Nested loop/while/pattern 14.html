@@ -1,0 +1,39 @@
+<script>
+/*
+Outout:
+123454321
+ 1234321
+  12321
+   121
+    1
+*/
+    var i,j,n,s,k,l;
+    n=parseInt(prompt("Enter n"));
+    i=5;
+    k=0;
+    s=n+5;
+    while(i>=n)
+    {
+        while(s<6)
+        {
+            document.write("&nbsp","&nbsp");
+            s++;
+        }
+        j=1;
+        while(j<=i)
+        {
+            document.write(j);
+            j++;
+        }
+        k=i-1;
+        while(k>=1)
+        {
+            document.write(k);
+            k--;
+        }
+        
+        document.write("<br>");
+        i--;
+        s=n+i;  
+    }
+</script>

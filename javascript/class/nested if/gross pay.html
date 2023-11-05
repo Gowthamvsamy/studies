@@ -1,0 +1,39 @@
+<script>
+    class test
+    {
+        get_data()
+        {
+            this.a=x;
+        }
+        get_gross()
+        {
+            if(this.a<20000)
+            {
+                if(this.a<10000)
+                {
+                    this.hra=(this.a*20)/100;
+                    this.da=(this.a*80)/100;
+                    this.pay=(this.a+this.hra+this.da);
+                }
+                else if(this.a>=10000 && this.a<20000)
+                {
+                    this.hra=(this.a*25)/100;
+                    this.da=(this.a*90)/100;
+                    this.pay=(this.a+this.hra+this.da);
+                }
+            }
+            else
+            {
+                this.hra=(this.a*30)/100;
+                this.da=(this.a*95)/100;
+                this.pay=(this.a+this.hra+this.da);
+            }
+            return(this.pay);
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the basic salary"));
+    t.get_data(x);
+    m=t.get_gross();
+    document.write(m);
+</script>

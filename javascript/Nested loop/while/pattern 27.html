@@ -1,0 +1,25 @@
+<script>
+/*
+Output:
+A
+BB
+CCC
+DDDD
+EEEEE
+*/
+    var i,j,n,a;
+    a=prompt("Enter the string");
+    n=a.length;
+    i=0;
+    while(i<n)
+    {
+        j=0;
+        while(j<=i)
+        {
+            document.write(a[i]);
+            j++;
+        }
+        document.write("<br>");
+        i++;
+    }
+</script>

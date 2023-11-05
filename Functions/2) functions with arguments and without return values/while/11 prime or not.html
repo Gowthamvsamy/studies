@@ -1,0 +1,25 @@
+<script>
+    function pri(n)
+    {
+        i=1;
+        sum=0;
+        while(i<=n)
+        {
+            if(n%i==0)
+            {
+                sum=sum+1;
+            }
+            i++;
+        }
+        if(sum==2)
+        {
+            document.write("Given number is prime");
+        }
+        else
+        {
+            document.write("Given number is not a prime");
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    pri(n);
+</script>

@@ -1,0 +1,22 @@
+<script>
+    var a=0,b=0,c=0,n,i;
+    i=0;
+    n=parseInt(prompt("Enter the size"));
+    while(i<=n*111)
+    {
+        document.write(a,b,c,"<br>");
+        c++;
+        if(c==10)
+        {
+            c=0;
+            b++;
+        }
+        if(b==10)
+        {
+            b=0;
+            a++;
+        }
+        //document.write(a,b,c,"<br>");
+        i++;
+    }
+</script>

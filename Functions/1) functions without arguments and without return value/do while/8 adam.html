@@ -1,0 +1,36 @@
+<script>
+    function adam()
+    {
+        n=parseInt(prompt("Enter the value od n"));
+        i=0;
+        j=0;
+        s=n;
+        a=Math.pow(n,2);
+        //document.write(a,"<br>");
+        do
+        {
+            b=s%10;
+            i=i*10+b;
+            s=parseInt(s/10);
+        }while(s!=0);
+        //document.write(i,"<br>");
+        c=Math.pow(i,2);
+        //document.write(c);
+        do
+        {
+            d=c%10;
+            j=j*10+d;
+            c=parseInt(c/10);
+        }while(c!=0);
+        //document.write(j);
+        if(a==j)
+        {
+            document.write("Given number is adam number");
+        }
+        else 
+        {
+            document.write("Given number is not a adam number");
+        }
+    }
+    adam();
+</script>

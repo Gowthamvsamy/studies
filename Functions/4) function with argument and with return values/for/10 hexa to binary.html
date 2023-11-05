@@ -1,0 +1,44 @@
+<script>
+    function hexa(n)
+    {
+        s=0;
+        c=0;
+        l=n.length;
+        l=l-1;
+        i=l;
+        j=0;
+        for(x=0;i>=0;x++)
+        {
+            a=n.charAt(i);
+            switch(a)
+            {
+                case 'A': s=10*Math.pow(16,x);
+                    break;
+                case 'B': s=11*Math.pow(16,x);
+                    break;
+                case 'C': s=12*Math.pow(16,x);
+                    break;
+                case 'D': s=13*Math.pow(16,x);
+                    break;
+                case 'E': s=14*Math.pow(16,x);
+                    break;
+                case 'F': s=15*Math.pow(16,x);
+                    break;
+                default: 
+                    s=a*Math.pow(16,x);
+            }
+            c=c+s;
+            i--;
+        }
+        for(d=0;c>0;d++)
+        {
+            b=c%2;
+            c=parseInt(c/2);
+            j=j+b*Math.pow(10,d);
+        }
+        return(j);
+    }
+    n=prompt("Enter the value of n");
+    x=hexa(n);
+    document.write(x);
+</script>

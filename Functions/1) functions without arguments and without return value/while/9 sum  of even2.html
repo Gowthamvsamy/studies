@@ -1,0 +1,19 @@
+<script>
+    function ensum()
+    {
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        sum=0;
+        while(i<=n)
+        {
+            if(i%2==0)
+            {
+                a=Math.pow(i,2);
+                sum=sum+a;
+            }
+            i++;
+        }
+        document.write(sum);
+    }
+    ensum();
+</script>

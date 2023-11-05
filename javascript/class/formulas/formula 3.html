@@ -1,0 +1,16 @@
+<script>
+    class Equilateral
+    {
+        get_equilateral(x)
+        {
+            this.a=x;
+            this.b=Math.sqrt(3)*(Math.pow(this.a,2)/4);
+            return(this.b);
+        }
+    }
+    var t=new Equilateral();
+    
+    a=parseInt(prompt("Enter the value of a"));
+    var y=t.get_equilateral(a);
+    document.write(y);
+</script>

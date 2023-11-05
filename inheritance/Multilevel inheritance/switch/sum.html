@@ -1,0 +1,94 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_day()
+        {
+            switch(n)
+            {
+                case 1:
+                    document.write("Sun");
+                    break;
+                case 2:
+                    document.write("Mon");
+                    break;
+                case 3:
+                    document.write("Tue");
+                    break;
+                case 4:
+                    document.write("Wed");
+                    break;
+                case 5:
+                    document.write("Ths");
+                    break;
+                case 6:
+                    document.write("Fri");
+                    break;
+                case 7:
+                    document.write("Sat");
+                    break;
+                default:
+                    document.write("Give vaid input");
+            }
+            document.write("<br>");
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_month()
+        {
+            switch(n)
+            {
+                case 1:
+                    document.write("Jan");
+                    break;
+                case 2:
+                    document.write("Fib");
+                    break;
+                case 3:
+                    document.write("Mar");
+                    break;
+                case 4:
+                    document.write("Apr");
+                    break;
+                case 5:
+                    document.write("May");
+                    break;
+                case 6:
+                    document.write("Jun");
+                    break;
+                case 7:
+                    document.write("Jul");
+                    break;
+                case 8:
+                    document.write("Aug");
+                    break;
+                case 9:
+                    document.write("Sep");
+                    break;
+                case 10:
+                    document.write("Oct");
+                    break;
+                case 11:
+                    document.write("Nov");
+                    break;
+                case 12:
+                    document.write("Dec");
+                    break;
+                default:
+                    document.write("Give a valid input");
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new B(n);
+    t.get_day();
+    t.get_month();
+</script>

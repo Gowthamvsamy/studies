@@ -1,0 +1,21 @@
+<script>
+    /*
+    Output:
+    A
+    AB
+    ABC
+    ABCD
+    ABCDE
+    */
+        var i,j,n,a;
+        a=prompt("Enter the string");
+        n=a.length;
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<=i;j++)
+            {
+                document.write(a[j]);
+            }
+            document.write("<br>");
+        }
+    </script>

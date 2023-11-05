@@ -1,0 +1,19 @@
+<script>
+    function div()
+    {
+        n=parseInt(prompt("Enter the valie of n"));
+        sum=0;
+        m=1;
+        for(i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                m=m+1/i;
+                sum=sum+m;
+            }
+        }
+        return(sum);
+    }
+    x=div();
+    document.write(x);
+</script>

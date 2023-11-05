@@ -1,0 +1,28 @@
+<script>
+	var n;
+	n=parseFloat(prompt("Enter the temperature "));
+	if(n<=0)
+	{
+		document.write(" Freezing ");
+	}
+	else if((n>0) && (n<=10)) // (n<=10)
+	{
+		document.write(" Very cold ");
+	}
+	else if((n>10) && (n<=20)) // (n<=20)
+	{
+		document.write(" Cold ");
+	}
+	else if((n>20) && (n<=30))// (n<=30)
+	{
+		document.write(" Normal ");
+	}
+	else if((n>30) && (n<=40))// (n<=40)
+	{
+		document.write(" Hot ");
+	}
+	else
+	{
+		document.write( "Very hot ");
+	}
+</script>

@@ -1,0 +1,32 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+            this.a=Array;
+            this.b=Array;
+            this.c=Array;
+        }
+        get_add()
+        {
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.a[this.i]=parseInt(prompt("Enter the first array element"));
+            }
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.b[this.i]=parseInt(prompt("Enter thr secand array element"));
+            }
+            for(this.i=0;this.i<this.n;this.i++)
+            {
+                this.c=this.a[this.i]+this.b[this.i];
+                document.write(this.c,"<br>");
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the size of array"));
+    t.get_data(x);
+    t.get_add();
+</script>

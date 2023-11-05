@@ -1,0 +1,25 @@
+<script>
+    var n,l,a,b,c,i;
+    n=parseInt(prompt("Enter n"));
+    i=0;
+    
+    while(i<=n)
+    {
+        k=i;
+        l=Math.pow(i,2);
+        s=i;
+        a=0;
+        while(k>0)
+        {
+            b=k%10;
+            k=parseInt(k/10);
+            a=a+1;
+        }
+        c=l%Math.pow(10,a);
+        if(c==s)
+        {
+            document.write(s,"<br>");
+        }
+        i++;
+    }
+  </script>

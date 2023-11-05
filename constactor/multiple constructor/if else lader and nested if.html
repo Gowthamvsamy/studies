@@ -1,0 +1,66 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        test(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+        }
+        get_big()
+        {
+            this.a=parseInt(prompt("Enter the value of a"));
+            this.b=parseInt(prompt("ENter the value of b"));
+            this.c=parseInt(prompt("Enter the value of c"));
+            if(this.a>this.b && this.a>this.c)
+            {
+                document.write("A is biggets<br>");
+            }
+            else if(this.b>this.a && this.b>this.c)
+            {
+                document.write("B is biggest<br>");
+            }
+            else
+            {
+                document.write("C is biggest<br>");
+            }
+        }
+        get_small()
+        {
+            if(a<b)
+            {
+                if(a<c)
+                {
+                    document.write("A is smallest<br>");
+                }
+                else
+                {
+                    document.write("C is smallest<br>");
+                }
+            }
+            else
+            {
+                if(b<c)
+                {
+                    document.write("B is smallest<br>");
+                }
+                else
+                {
+                    document.write("C is smallest<br>");
+                }
+            }
+        }
+
+    }
+    var t=new test();
+    t.get_big();
+    this.a=parseInt(prompt("Enter the value of a"));
+    this.b=parseInt(prompt("ENter the value of b"));
+    this.c=parseInt(prompt("Enter the value of c"));
+    var t1=new test(a,b,c);
+    t1.get_small();
+</script>

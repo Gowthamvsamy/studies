@@ -1,0 +1,18 @@
+<script>
+    var i,n,a,s,j;
+    n=parseInt(prompt("Enter the value of n"));
+    for(i=100;i<=n;i++)
+    {
+        s=0;
+        for(j=i;j>0;)
+        {
+            a=j%10;
+            s=s*10+a;
+            j=parseInt(j/10);
+        }
+        if(s==i)
+        {
+            document.write(i,"<br>");
+        }
+    }
+</script>

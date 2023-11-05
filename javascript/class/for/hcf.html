@@ -1,0 +1,26 @@
+<script>
+    class test
+    {
+        get_data(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_hcf()
+        {
+            for(this.i=1;this.a>=this.i && this.b>=this.i;this.i++)
+            {
+                if(this.a%this.i==0 && this.b%this.i==0)
+                {
+                    this.c=this.i;
+                }
+            }
+            document.write("HCF = ",this.c);
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of a"));
+    y=parseInt(prompt("Enter the value of b"));
+    t.get_data(x,y);
+    t.get_hcf();
+</script>

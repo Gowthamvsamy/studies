@@ -1,0 +1,25 @@
+<script>
+/*
+Output:
+1
+23
+456
+78910
+*/
+    var n,i,j,k;
+    n=parseInt(prompt("Enter the value of n"));
+    i=1;
+    k=1;
+    do
+    {
+        j=1;
+        do
+        {
+            document.write(k);
+            j++;
+            k++;
+        }while(i>=j);
+        document.write("<br>");
+        i++;
+    }while(i<=n);
+</script>

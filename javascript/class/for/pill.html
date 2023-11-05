@@ -1,0 +1,25 @@
+<script>
+    class test
+    {
+        get_data(x)
+        {
+            this.n=x;
+        }
+        get_pill()
+        {
+            this.a=0;
+            this.b=1;
+            for(this.i=0;this.n>this.i;this.i++)
+            {
+                this.c=(2*this.b)+this.a;
+                document.write(this.a,"<br>");
+                this.a=this.b;
+                this.b=this.c;
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of n"));
+    t.get_data(x);
+    t.get_pill();
+</script>

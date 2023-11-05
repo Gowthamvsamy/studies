@@ -1,0 +1,34 @@
+<script>
+    class test
+    {
+        test()
+        {
+
+        }
+        test(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_data()
+        {
+            this.a=parseInt(prompt("Enter the value of a"));
+            this.b=parseInt(prompt("Enter the value of b"));
+
+            this.c=this.a+this.b;
+
+            document.write("Sum of two no = ",this.c);
+        }
+        display()
+        {
+            this.d=this.a-this.b;
+            document.write("sub of two nos=",this.d);
+        }
+    }
+    var t=new test();
+    t.get_data();
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t1=new test(a,b);
+    t1.display();
+</script>

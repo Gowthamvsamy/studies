@@ -1,0 +1,16 @@
+<script>
+    function div(n)
+    {
+        i=1;
+        sum=0;
+        a=1;
+        do
+        {   a=a*i;
+            sum=1/sum+a;
+            i++;
+        }while(i<=n);
+        document.write(sum);
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    div(n);
+</script>

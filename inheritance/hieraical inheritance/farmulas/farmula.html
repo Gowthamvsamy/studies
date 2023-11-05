@@ -1,0 +1,91 @@
+<script>
+    class far1
+    {
+        constructor(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+        }
+        get_sum1()
+        {
+            var s=parseInt(prompt("Enter the value of s"));
+            var d=Math.sqrt(s*(s-this.a)*(s-this.b)*(s-this.c));
+            document.write("sum 1 = ",d,"<br>");
+        }
+    }
+    class far2 extends far1
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum2()
+        {
+            var d=(this.a+this.b+this.c)/2;
+            document.write("Sum 2 = ",d,"<br>");
+        }
+    }
+    class far3 extends far1
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum3()
+        {
+            var d=Math.sqrt(3*Math.pow(this.a,2)/4);
+            document.write("Sum 3 = ",d,"<br>");
+        }
+    }
+    class far4 extends far1
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum4()
+        {
+            var d=3*this.a;
+            document.write("sum 4 = ",d,"<br>");
+        }
+    }
+    class far5 extends far1
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum5()
+        {
+            var d=2*((this.a*this.b)+(this.b*this.c)+(this.c*this.a));
+            document.write("sum 5 = ",d,"<br>");
+        }
+    }
+    class far6 extends far1
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum6()
+        {
+            var d=4*(this.a+this.b+this.c);
+            document.write("Sum 6 = ",d,"<br>");
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    var t=new far2(a,b,c);
+    var t1=new far3(a,b,c);
+    var t2=new far4(a,b,c);
+    var t3=new far5(a,b,c);
+    var t4=new far6(a,b,c);
+    t.get_sum1();
+    t.get_sum2();
+    t1.get_sum3();
+    t2.get_sum4();
+    t3.get_sum5();
+    t4.get_sum6();
+</script>

@@ -1,0 +1,131 @@
+<script>
+    class A
+    {
+        constructor(x)
+        {
+            this.n=x;
+        }
+        get_natural()
+        {
+            var i=1;
+            document.write("<h2 style= color:red >Natural no</h2>");
+            while(i<=this.n)
+            {
+                document.write(i,"<br>");
+                i++;
+            }
+        }
+    }
+    class B extends A
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_sumodd()
+        {
+            var i=1,sum=0;
+            document.write("<h2 style= color:red >Sum of odd number</h2>");
+            while(i<=this.n)
+            {
+                if(i%2!=0)
+                {
+                    sum=sum+i;
+                }
+                i++;
+            }
+            document.write(sum);
+        }
+    }
+    class C extends B
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_fib()
+        {
+            var a=0,b=1,i=1;
+            document.write("<h2 style= color:red >Fibonacci series</h2>");
+            while(i<=this.n)
+            {
+                var c=a+b;
+                document.write(a,"<br>");
+                a=b;
+                b=c;
+                i++;
+            }
+        }
+    }
+    class D extends C
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_previous_odd()
+        {
+            var i=1;
+            document.write("<h2 style= color:red >Current and previous odd number</h2>");
+            while(i<=this.n)
+            {
+                if(i%2!=0)
+                {
+                    document.write("Current odd number = ",i,"<br>");
+                    var p=i-2;
+                    document.write("previous odd number = ",p,"<br>");
+                }
+                i++;
+            }
+        }
+    }
+    class E extends D
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_previous_even()
+        {
+            var i=1;
+            document.write("<h2 style= color:red >Current and previous even number</h2>");
+            while(i<=this.n)
+            {
+                if(i%2==0)
+                {
+                    document.write("Current even number = ",i,"<br>");
+                    var p=i-2;
+                    document.write("previous even number = ",p,"<br>");
+                }
+                i++;
+            }
+        }
+    }
+    class F extends E
+    {
+        constructor(x)
+        {
+            super(x);
+        }
+        get_table()
+        {
+            var i=1;
+            document.write("<h2 style= color:red >Table</h2>");
+            var a=parseInt(prompt("Enter the value of a"));
+            while(i<=this.n)
+            {
+                var ta=i*a;
+                document.write(i,"*",a,"=",ta,"<br>");
+                i++;
+            }
+        }
+    }
+    n=parseInt(prompt("Enter the value of n"));
+    var t=new F(n);
+    t.get_natural();
+    t.get_sumodd();
+    t.get_fib();
+    t.get_previous_odd();
+    t.get_previous_even();
+    t.get_table();
+</script>

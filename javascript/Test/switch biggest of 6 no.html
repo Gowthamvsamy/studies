@@ -1,0 +1,68 @@
+<script>
+    var a,b,c,d,e,f,n;
+    n=parseInt(prompt("select \n1)biggest\n2)smallest"));
+    a=parseInt(prompt("Enter a"));
+    b=parseInt(prompt("Enter b"));
+    c=parseInt(prompt("Enter c"));
+    d=parseInt(prompt("Enter d"));
+    e=parseInt(prompt("Enter e"));
+    f=parseInt(prompt("Enter f"));
+    
+    switch(n)
+    {
+        case 1:
+            if(a>b && a>c && a>d && a>e && a>f)
+            {
+                document.write("a is biggest");
+            }
+            else if(b>a && b>c && b>d && b>e && b>f)
+            {
+                document.write("b is biggest");
+            }
+            else if(c>a && c>b && c>d && c>e && c>f)
+            {
+                document.write("c is biggest");
+            }
+            else if(d>a && d>b && d>c && d>e && d>f)
+            {
+                document.write("d is biggest");
+            }
+            else if(e>a && e>b && e>c && e>d && e>f)
+            {
+                document.write("e is biggest");
+            }
+            else if(f>a && f>b && f>c && f>d && f>e)
+            {
+                document.write("f is biggest");
+            }
+            break;
+        case 2:
+            if(a<b && a<c && a<d && a<e && a<f)
+            {
+                document.write("a is smallest");
+            }
+            else if(b<a && b<c && b<d && b<e && b<f)
+            {
+                document.write("b is smallest");
+            }
+            else if(c<a && c<b && c<d && c<e && c<f)
+            {
+                document.write("c is smallest");
+            }
+            else if(d<a && d<b && d<c && d<e && d<f)
+            {
+                document.write("d is smallest");
+            }
+            else if(e<a && e<b && e<c && e<d && e<f)
+            {
+                document.write("e is smallest");
+            }
+            else if(f<a && f<b && f<c && f<d && f<e)
+            {
+                document.write("d is smallest");
+            }
+            break;
+        default:
+            document.write("Invalid");
+    }
+</script>

@@ -1,0 +1,36 @@
+<script>
+    function oper()
+    {
+        n=prompt("Enter the value of n");
+        a=parseInt(prompt("Enter the value of a"));
+        b=parseInt(prompt("Enter the value of b"));
+        switch(n)
+        {
+            case '1':
+            case '+':
+                c=a+b;
+                break;
+            case '2':
+            case '-':
+                c=a-b;
+                break;
+            case '3':
+            case '*':
+                c=a*b;
+                break;
+            case '4':
+            case '/':
+                c=a/b;
+                break;
+            case '5':
+            case '%':
+                c=a%b;
+                break;
+            default:
+                c="Give a valid input";
+        }
+        return(c);
+    }
+    c=oper();
+    document.write(c);
+</script>

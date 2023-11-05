@@ -1,0 +1,41 @@
+<script>
+    var i,n,a,b,c,d,e,j;
+    n=parseInt(prompt("Enter n"));
+    for(i=1;i<=n;i++)
+    {
+        k=i;
+        e=0;
+        j=0;
+        a=Math.pow(k,2);
+        for(;k!=0;)
+        {
+            b=k%10;
+            j=j*10+b;
+            k=parseInt(k/10);
+        }
+        c=Math.pow(j,2);
+        for(;c!=0;)
+        {
+            d=c%10;
+            e=e*10+d;
+            c=parseInt(c/10);
+        }
+        s=1;
+        t=n;
+        m=0;
+        if(a==e)
+        {
+            for(s=1;s<=t;s++)
+            {
+                if(e%s==0)
+                {
+                    m=m+1;
+                }
+            }
+            if(m==2)
+            {
+                document.write(i,"<br>");
+            }
+        }
+    }
+</script>

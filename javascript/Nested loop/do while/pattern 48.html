@@ -1,0 +1,53 @@
+<script>
+    /*
+    Output:
+          ****
+        *   *
+       *   *
+      ****
+    */
+        var a,b,i,j,n;
+        n=parseInt(prompt("Enter the value of n"));
+        i=1;
+        s=n-1;
+        do
+        {
+            do
+            {
+                document.write("&nbsp&nbsp");
+                s--;
+            }while(s>=0);
+            j=1;
+            do
+            {
+                if((i==2 && j==2) || (i==3 && j==2) || (i==3 && j==3))
+                {
+                    document.write("&nbsp&nbsp")
+                }
+                else
+                {
+                    document.write("*");
+                }
+                j++;
+            }while(j<=i);
+            j=3;
+            do
+            {
+                if(i==2 && j==3)
+                {
+                    document.write("&nbsp&nbsp");
+                }
+                else
+                {
+                    if(j>=i)
+                    {
+                        document.write("*");
+                    }
+                }
+                j--;
+            }while(j>=i);
+            document.write("<br>");
+            i++;
+            s=n-i;
+        }while(i<=n);
+    </script>

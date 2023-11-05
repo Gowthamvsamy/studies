@@ -1,0 +1,33 @@
+<script>
+    function eb(unit)
+    {
+        if(unit<199)
+        {
+            bill=unit*1.20;
+        }
+        else if(unit>=200 && unit<400)
+        {
+            bill=((199*1.20)+(unit-199)*1.50);
+        }
+        else if(unit>=400 && unit<600)
+        {
+            bill=((199*1.20)+(200*1.50)+(unit-400)*1.80)
+        }
+        else if(unit>=600)
+        {
+            bill=((199*1.20)+(200*1.50)+(200*1.80)+(unit-600)*2)
+        }
+        if(bill>=400)
+        {
+            bill2=bill*15/100;
+            bill=bill+bill2;
+            document.write("bill amount is =",bill);
+        }
+        else if(bill<=100)
+        {
+            document.write("bill amount is = 100");
+        }
+    }
+    unit=parseInt(prompt("Enter the unit"));
+    eb(unit);
+</script>

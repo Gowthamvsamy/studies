@@ -1,0 +1,72 @@
+<script>
+/*
+Output:
+     1
+    121
+   12321
+  1234321
+ 123454321
+  1234321
+   12321
+    121
+     1
+*/
+    var i,j,n,s,k,a,b,c,d;
+    n=parseInt(prompt("Enter n"));
+    i=1;
+    k=1;
+    a=5;
+    d=1;
+    c=n-0;
+    s=n-1;
+    while(i<=n)
+    {
+        while(s>0)
+        {
+            document.write("&nbsp","&nbsp");
+            s--;
+        }
+
+        j=1;
+        while(j<=i)
+        {
+            document.write(j);
+            j++;
+        }
+        k=i-1;
+        while(k>=1)
+        {
+            document.write(k);
+            k--;
+        }
+        document.write("<br>");
+        i++;
+        s=n-i; 
+    }
+    n=n-4;
+    a=a-1;
+    while(n<=a)
+    {
+        while(c<6)
+        {
+            document.write("&nbsp","&nbsp");
+            c++;
+        }
+        b=1;
+        while(b<=a)
+        {
+            document.write(b);
+            b++;
+        }
+        d=a-1;
+        while(d>=1)
+        {
+            document.write(d);
+            d--;
+        }
+        
+        document.write("<br>");
+        a--;
+        c=n+a;  
+    }
+</script>

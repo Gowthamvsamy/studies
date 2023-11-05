@@ -1,0 +1,21 @@
+<script>
+    class test
+    {
+        constructor(x,y)//constructor with arguments or parameterized constructor
+        {
+            this.a=x;
+            this.b=y;
+           
+        }
+        get_div()
+        {
+           this.div=this.a/this.b;
+
+            document.write("div of a and b = ",this.div);
+        }
+    }
+    var a=parseInt(prompt("Enter a"));
+    var b=parseInt(prompt("Enter b"));
+    var t=new test(a,b);//calling with arguments constructor
+    t.get_div();
+</script>

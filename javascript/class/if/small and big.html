@@ -1,0 +1,41 @@
+<script>
+    class test
+    {
+        get_data(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_big()
+        {
+            
+            if(this.a>this.b)
+            {
+                document.write("A is biggest<br>");
+            }
+            if(this.b>this.a)
+            {
+                document.write("B is biggest<br>");
+            }
+        }
+        get_small()
+        {
+            
+            
+            if(this.a<this.b)
+            {
+                document.write("A is smallest<br>");
+            }
+            if(this.a>this.b)
+            {
+                document.write("B is smallest<br>");
+            }
+        }
+    }
+    var t=new test();
+    x=parseInt(prompt("Enter the value of a"));
+    y=parseInt(prompt("Enter the value of b"));
+    t.get_data(x,y);
+    t.get_big();
+    t.get_small();
+</script>

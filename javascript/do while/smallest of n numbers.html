@@ -1,0 +1,18 @@
+<script>
+    var i,n,a,b;
+    n=parseInt(prompt("Enter n value"));
+    n=n-1;
+    a=parseInt(prompt("Enter a"));
+    i=0;
+    do
+    {
+        b=parseInt(prompt("Enter b"));
+        if(a>b)
+        {
+            a=b;
+        }
+        i++;
+
+    }while(n>i);
+    document.write(a," is Smallest");
+</script>

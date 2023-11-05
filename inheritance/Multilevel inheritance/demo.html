@@ -1,0 +1,45 @@
+<script>
+    class A
+    {
+        constructor(x,y)
+        {
+            this.a=x;
+            this.b=y;
+        }
+        get_sum()
+        {
+            var c=this.a+this.b;
+            document.write("Sum = ",c);
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_sub()
+        {
+            var c=this.a-this.b;
+            document.write("sub = ",c);
+        }
+    }
+    class C extends B
+    {
+        constructor(x,y)
+        {
+            super(x,y);
+        }
+        get_mul()
+        {
+            var c=this.a*this.b;
+            document.write("div = ",c);
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    var t=new C(a,b);
+    t.get_sum();
+    t.get_sub();
+    t.get_mul();
+</script>

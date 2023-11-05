@@ -1,0 +1,99 @@
+<script>
+    class A
+    {
+        constructor(x,y,z)
+        {
+            this.a=x;
+            this.b=y;
+            this.c=z;
+        }
+        get_sum1()
+        {
+            var s,d;
+            s=parseInt(prompt("Enter the value of s"));
+            d=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            return(d);
+        }
+    }
+    class B extends A
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z)
+        }
+        get_sum2()
+        {
+            var d;
+            d=(a+b+c)/2;
+            return(d);
+        }
+    }
+    class C extends B
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z)
+        }
+        get_sum3()
+        {
+            var d;
+            d=Math.sqrt(3*(Math.pow(a,2))/4);
+            return(d);
+        }
+    }
+    class D extends C
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z)
+        }
+        get_sum4()
+        {
+            var d;
+            d=3*a;
+            return(d);
+        }
+    }
+    class E extends D
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum5()
+        {
+            var d;
+            d=2*((a*b)+(b*c)+(c*a));
+            return(d);
+        }
+    }
+    class F extends E
+    {
+        constructor(x,y,z)
+        {
+            super(x,y,z);
+        }
+        get_sum6()
+        {
+            var d;
+            d=4*(a+b+c);
+            return(d);
+        }
+    }
+    a=parseInt(prompt("Enter the value of a"));
+    b=parseInt(prompt("Enter the value of b"));
+    c=parseInt(prompt("Enter the value of c"));
+    var t=new F(a,b,c);
+    g=t.get_sum1();
+    document.write("Sum1 = ",g,"<br>");
+    g=t.get_sum2();
+    document.write("sum 2 = ",g,"<br>");
+    g=t.get_sum3();
+    document.write("sum 3 = ",g,"<br>");
+    g=t.get_sum4();
+    document.write("sum 4 = ",g,"<br>");
+    g=t.get_sum5();
+    document.write("sum 5 = ",g,"<br>");
+    g=t.get_sum6();
+    document.write("sum 6 = ",g,"<br>");
+</script>

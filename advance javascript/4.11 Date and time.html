@@ -1,0 +1,18 @@
+<!-- <script>
+    let now = new Date();
+    alert(now);
+</script> -->
+
+<!-- <script>
+    let date = new Date(2013,0,18);
+    alert(date);
+</script> -->
+
+<script>
+    let start = Date.now();
+    for(let i = 0;i < 100000; i++) {
+        let doSomething = i * i * i ;
+    }
+    let end = Date.now();
+    alert( `The loop took ${end - start} ms`);
+</script>
